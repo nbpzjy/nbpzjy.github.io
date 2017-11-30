@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title type="text">...</title>
+<subtitle type="html">...</subtitle>
+<updated>...</updated>
+<id>...</id>
+<link rel="alternate" type="text/html"
+   hreflang="en" href="http://example.org/"/>
+<copyright>...</copyright>
+<generator uri="http://www.example.com/" version="1.0">    ...</generator>
+<entry>
+    <title>...</title>
+    <link rel="alternate" type="text/html"
+     href="http://example.org/2005/04/02/atom"/>
+    <link rel="enclosure" type="audio/mpeg" length="1337"
+     href="http://example.org/audio/ph34r_my_podcast.mp3"/>
+    <id>...</id>
+    <updated>...</updated>
+    <published>...</published>
+    <author>
+      <name>...</name>
+      <uri>...</uri>
+      <email>...</email>
+    </author>
+    <contributor>
+      <name>...</name>
+      <uri>...</uri>
+    </contributor>
+    <contributor>
+      <name>...</name>
+      <uri>...</uri>
+    </contributor>
+    <content type="xhtml" xml:lang="en"
+     xml:base="http://diveintomark.org/">...</content>
+</entry>
+</feed>
