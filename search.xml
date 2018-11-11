@@ -4,6 +4,63 @@
   
     
     <entry>
+      <title><![CDATA[用 Au 调整 BGM 的长度]]></title>
+      <url>https://www.oldzhou.com/2018/11/11/%E7%94%A8AU%E8%B0%83%E6%95%B4BGM%E9%95%BF%E5%BA%A6/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>很多时候剪辑视频时会遇到一个问题，就是喜欢的背景音乐的长度与视频的长度不一样，长了短了，都很麻烦。学到了用 Adobe Audition CC 来调整背景音乐的长度。首先感谢大疆社区的小六六，教程<a href="https://bbs.dji.com/thread-202752-1-1.html" target="_blank" rel="external">在这里</a></p>
+</blockquote>
+<p>使用到的工具当然就是大名鼎鼎的Adobe Audition CC 啦。<img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a1.png" alt="Au"></p>
+<p>打开Au之后<img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a2.png" alt="Au界面"></p>
+<ol>
+<li>点击文件</li>
+<li>新建</li>
+<li>多轨会话</li>
+</ol>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a3.png" alt=""></p>
+<p>在弹出的框中填写这个会话的名称，并选择村粗文职，之后确定就建立好了。</p>
+<p>在左下方按照原始音频文件存储的地方找到，并拖到上面。</p>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a4.png" alt=""></p>
+<p>然后把拖入的音频再拖到右面的音轨上去<br><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a5.png" alt=""><br><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a6.png" alt=""><br>这时会出现一个警告，不用管，确定就好。</p>
+<p>这就是导入完成之后的模样：<br><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a7.png" alt=""><br>现在就开始最精彩的部分了。</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>点击左下的<strong>属性</strong>.再点击<strong>启用重新混合</strong></p>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a8.png" alt=""></p>
+<p>这时会自动对音频进行分析</p>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a9.png" alt=""></p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>分析完成之后，就可以修改时间了<br><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a10.png" alt=""></p>
+<p>按照需要来修改，改长或者改短都可以，直接输入需要的时间长度之后回车。软件就自动修改好了。下面是加长的</p>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a11.png" alt=""></p>
+<p>有两个地方有锯齿一样的标记，这就是切割的地方，并补上了一段系统认为合适的声音。可以试听一下是否满意。</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>然后就是导出了</p>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a12.png" alt=""></p>
+<ol>
+<li>点击文件</li>
+<li>导出</li>
+<li>多轨混音</li>
+<li>整个会话</li>
+</ol>
+<p><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a13.png" alt=""></p>
+<p>点击浏览，又是选择存储位置，注意在下面选择需要的格式，上面填好存储的文件名，然后确定，再确定，就OK了。</p>
+<p>有一点需要注意的是文件存储有些特殊符号不能用。<br><img src="https://myhexo-1258032690.cos.ap-shanghai.myqcloud.com/a14.png" alt=""></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 音频 </tag>
+            
+            <tag> Au </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[视宁度]]></title>
       <url>https://www.oldzhou.com/2018/06/29/%E8%A7%86%E5%AE%81%E5%BA%A6/</url>
       <content type="html"><![CDATA[<p><img src="http://olpnkpi4k.bkt.clouddn.com/3.8M.jpg" alt="第一次拍摄的月亮"></p>
