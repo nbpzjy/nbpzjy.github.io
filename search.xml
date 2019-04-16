@@ -4,6 +4,61 @@
   
     
     <entry>
+      <title><![CDATA[我们的2017年]]></title>
+      <url>https://www.oldzhou.com/2019/04/16/%E6%88%91%E4%BB%AC%E7%9A%842017%E5%B9%B4/</url>
+      <content type="html"><![CDATA[<p>现在是2019年，2017年已经过去好久了，怎么现在才写个总结呢？因为现在才把hexo又重新搞定。</p>
+<p>其实我的hexo一直没出问题，但是有点懒，又不知道该写点啥，一拖就是几个月半年的过去了。现在除了在 Github 托管之外还在 NAS 上跑起了web服务，虽然运营商封锁了 80/443 等端口，没法优雅地访问 web 服务，但是加个端口号再路由器端口转发还是可以搞定的。</p>
+<p>2017年，过去一年多了，还是一个值得纪念的一年。</p>
+<p>这一年，工作学习生活都算平安，孕育并生下了第二个儿子。上海学习，也算是过得蛮开心的，压力是有一些，总体来讲是舒服的。妻子也很给力，孕期坚持上班不说，每个周末都回家看望大儿子，辛苦是辛苦的，显然还算是比较充实。上海生下了第二个儿子，也算是为上海之行，画下浓墨重彩的一笔。下面是一些视频，就算是记录我们的2017吧。音乐是银临的《浮生辞》，古典风格，让人安静、沉思，为过去感怀，为将来祝福。</p>
+<video src="http://www.oldzhou.com:2020/hexophoto/fushengciour2017.mp4" controls="controls" width="100%"></video>
+
+<p>愿你们一切都好。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 视频 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 音乐 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[问心]]></title>
+      <url>https://www.oldzhou.com/2019/04/15/%E9%97%AE%E5%BF%83/</url>
+      <content type="html"><![CDATA[<p>我们的潘师傅</p>
+<video src="https://www.oldzhou.com:2021/hexophoto/searchthesoul415.mp4" controls="controls" width="100%"></video>
+
+<p>引航初心</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 视频 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 音乐 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[怎么再外网访问 NAS]]></title>
       <url>https://www.oldzhou.com/2019/03/31/NAS/</url>
       <content type="html"><![CDATA[<p>最近在蜗牛星际矿难的熏陶下，在同事一两酒童鞋的带动下，在咸鱼那方便快捷万物皆有的光芒下，以低廉的“车票”费用，搭上了矿难这趟车。对于爱折腾的人来说，不用解释，直接上车。与此同时也开始了 NAS 折腾之路。</p>
@@ -12,7 +67,7 @@
 <p>经过多方了解，说是 D 款翻车的概率小点，单口又不存在什么双口的百兆千兆的问题，据说机箱还是 ABCD 几款中最好看的。所以，没有与一两酒童鞋的相同（他是 C ）。以 290 的价格，拜了一个 D 款单口。</p>
 <p>来了就开始 NAS 之路：说干就干。</p>
 <h1 id="什么是-NAS"><a href="#什么是-NAS" class="headerlink" title="什么是 NAS"></a>什么是 NAS</h1><p>NAS，全称应该是 Network Attached Storage ，即网络存错设备。目前市场上的NAS有比较多的选择，其中群晖、U-Nas、铁马威、威联通等等常见的也是大家玩得起的，企业级的就不敢说了（也没关注过），而那些玩客云、路由器接移动硬盘什么的，也算是其中的一种方式，但是由于可玩性一般，所以暂时不说。</p>
-<p>用的多的，应该就是那四种的。其中群晖应该是玩的比较多的，而且各种套件应该也是最齐全的——本来嘛，玩的人多了，自然玩法也就多了。各种黑白群晖，随便一搜都是一大把的教程、分享、问题等等。<br><img src="https://www.oldzhou.com/hexophoto/baidusearchqunhui.png" alt=""></p>
+<p>用的多的，应该就是那四种的。其中群晖应该是玩的比较多的，而且各种套件应该也是最齐全的——本来嘛，玩的人多了，自然玩法也就多了。各种黑白群晖，随便一搜都是一大把的教程、分享、问题等等。<br><img src="http://www.oldzhou.com:2020/hexophoto//baidusearchqunhui.png" alt=""></p>
 <p>而我的矿难车，自然要玩的是群晖了。具体安装方法以及其中的坑，就不在这里细说了，毕竟这里是说外网访问的问题的。</p>
 <p>简单讲，NAS 就是一个网络存错设备。比如百度云、oneDrive、GoogleDrive 等的东西，只不过那些是别人家的服务器，说不定哪天就跟360 云那样拜拜了。而 NAS 是你自己家的，只要你家还有电还有网络，他就在，具有绝对的控制权，而且想要多大空间就买多大空间——只要你有钱。而起其可玩性，远比那些某某云的要多得多，比如 Docker 啦，比如 Moments 啦……</p>
 <p>不过多说这个问题，什么感觉请入坑来体验。</p>
@@ -23,7 +78,7 @@
 <p>而我们需要从外面访问我们的 NAS ，就需要我们的路由器有一个公网的 IP ，也就是在全球互联网上能被访问到的这样一个 IP ，这个 IP 是全球都可以访问的被暴露在全球互联网上的一个 IP 地址——牛不？但是由于 IP 地址资源有限，所以一般人家，网络服务提供商，也就是移动联通电信等，是不会给一个固定的 IP 地址的，而是每次拨号上网都会是一个不同的 IP ，甚至一段时间之后也会改变，这个会改变的 IP 就是动态 IP ，尽管这个已经是一个公网 IP ，但是一个会变化的公网 IP 。想要一个固定的公网 IP 么？花钱。</p>
 <h1 id="什么是-DDNS"><a href="#什么是-DDNS" class="headerlink" title="什么是 DDNS"></a>什么是 DDNS</h1><p>上面说过，服务商给我们的 IP 是动态改变的。</p>
 <p>那么一个在变化的 IP ，怎么才能访问 NAS 呢？显然不可能每次都去查一下现在的公网 IP 是多少再去使用 NAS ，那也太糟糕了。</p>
-<p>DDNS，动态域名解析。<br><img src="https://www.oldzhou.com/hexophoto/whatisddns.png" alt=""><br>这个就是为了对付这些老是变化的 IP 地址的。其实市面上也有很多的解决方案，来对付这种变化的 IP 地址，实现外网访问内网的方法，比如花生壳等。但是需要花钱，当然也有免费的，给一个难看的二级域名，而且速度垃圾。最妙的还是自己注册一个域名，然后 DDNS ，完美高效地解决这个外网访问内网，连接 NAS 的伟大任务。</p>
+<p>DDNS，动态域名解析。<br><img src="http://www.oldzhou.com:2020/hexophoto/whatisddns.png" alt=""><br>这个就是为了对付这些老是变化的 IP 地址的。其实市面上也有很多的解决方案，来对付这种变化的 IP 地址，实现外网访问内网的方法，比如花生壳等。但是需要花钱，当然也有免费的，给一个难看的二级域名，而且速度垃圾。最妙的还是自己注册一个域名，然后 DDNS ，完美高效地解决这个外网访问内网，连接 NAS 的伟大任务。</p>
 <h1 id="开始外网访问之路"><a href="#开始外网访问之路" class="headerlink" title="开始外网访问之路"></a>开始外网访问之路</h1><p>上面介绍了蛮多内容，对 NAS 有了一定的了解——至于安装，以后再说。也说到了内网外网以及公网IP，还提到了 DDNS ，下面就开始外网访问之路。</p>
 <h2 id="先说踩过的坑"><a href="#先说踩过的坑" class="headerlink" title="先说踩过的坑"></a>先说踩过的坑</h2><p>开始之前，先说说踩过的坑。</p>
 <p>由于 DDNS ，可以有多钟方式来实现：</p>
@@ -32,7 +87,7 @@
 <li>NAS 自带</li>
 <li>NAS 运行 Docker 来实现</li>
 </ol>
-<p>其实也就是通过一种方式，把目前自己的公网 IP 发送给域名解析服务器，并修改域名解析服务器里面的 A 记录。这个过程说起来简单，实现起来还是挺麻烦的。首先需要能提供 DDNS 的设置的设备，不管是路由器还是群晖（NAS）本身，都有自己的调性，对自己熟悉的域名解析服务商不提供选择，那就无解。比如我的 Linksys ，只提供 NO-IP 和 DynDNS ,<br><img src="https://www.oldzhou.com/hexophoto/noipdyndns.png" alt=""></p>
+<p>其实也就是通过一种方式，把目前自己的公网 IP 发送给域名解析服务器，并修改域名解析服务器里面的 A 记录。这个过程说起来简单，实现起来还是挺麻烦的。首先需要能提供 DDNS 的设置的设备，不管是路由器还是群晖（NAS）本身，都有自己的调性，对自己熟悉的域名解析服务商不提供选择，那就无解。比如我的 Linksys ，只提供 NO-IP 和 DynDNS ,<br><img src="http://www.oldzhou.com:2020/hexophoto/noipdyndns.png" alt=""></p>
 <p>而国内的域名服务商一个都没有，这两个是国外的访问性能不佳是其次，重点是竟然还收钱——真是不能忍。所以刚买的 Linksys 就成了一个拦路虎，把在路由器上设置 DDNS 的路挡得死死的——要么放弃要么换路由器，可是这玩意才为了即将升级到 200M 的电信宽带而买来的双千兆路由器，难道就这么放弃？显然不能这么任性。不换路由器，那就想其他办法。</p>
 <p>也想过插一个之前的路由器，专门为了 DDNS 而插一个空的路由器。毕竟 DDNS 只需要设置完成并由这个设备把IP地址信息发送到 DDNS 域名解析服务商并成功更新 IP 地址，即完成其任务了，所以单单独连接一个路由器并保持为路由转发或者叫 AP 模式，也就是不单独组网为下游提供服务，而是在目前路由器的旁边，不需要获取IP地址地接入网络，为 DDNS 提供 IP 地址更新信息的发送服务。可惜把我当小米路由器 R3 打开看看，只有花生壳一家。如果想用那么得刷路由器，难度应该不大，但现在重点是解决 DDNS 问题。所以还得想别的办法。</p>
 <p>开心的是，群晖的 DSM 设置页面的外部访问，提供了设置 DDNS 的方法。群晖自己可能也希望用户自己解决外网访问的问题，毕竟 QuickConnect 是要消耗其服务器资源的。并且这个 DDNS 设置提供了毕竟丰富的选择，其中 DNSPod.cn 是国内用的比较多的，马化腾家的。</p>
@@ -41,7 +96,7 @@
 <p>后来联系电信，确实不是公网 IP ，申请更改为公网 IP ，对方说没有问题，大溉 24H 生效。实际上不到 24 小时就生效了。然后度娘查到的 IP 也能轻松 PING 通了，设置好路由器的转发，用路由器也能轻松地访问到 NAS 了，简直是太棒了。</p>
 <p>然后是继续折腾 DDNS 的问题。问题是依然找不到主机名。</p>
 <h2 id="域名申请"><a href="#域名申请" class="headerlink" title="域名申请"></a>域名申请</h2><p>上面提到了 DDNS 中的顶级域名，这是要花钱的。国内提供域名注册的还不少，花生壳也有，但是价格贵。马云家也有，马化腾家也有。通过对比，马化腾家的价格最低，而且重点是现在的 DNSPod 也是他家的，所以自然域名也在他家注册了。</p>
-<p>注册很简单的，找一个喜欢的名字，最好是英文名，当然中文也可以。比如这样的<br><img src="https://www.oldzhou.com/hexophoto/yumingshuishangguomenxingxiangdiyiren.png" alt="">。当然我还是喜欢英文的，一来访问的时候好输入，二来基本比较少用中文做域名的。所以选择了这样的<br><img src="https://www.oldzhou.com/hexophoto/yumingnbpilotcn.png" alt="">。价格也不贵。题外话：这个域名最有意思，单位的是 .com 结尾的，这个是 .com.cn 结尾的，前面一样，这有没有碰瓷的嫌疑？有就有吧。</p>
+<p>注册很简单的，找一个喜欢的名字，最好是英文名，当然中文也可以。比如这样的<br><img src="http://www.oldzhou.com:2020/hexophoto/yumingshuishangguomenxingxiangdiyiren.png" alt="">。当然我还是喜欢英文的，一来访问的时候好输入，二来基本比较少用中文做域名的。所以选择了这样的<br><img src="http://www.oldzhou.com:2020/hexophoto/yumingnbpilotcn.png" alt="">。价格也不贵。题外话：这个域名最有意思，单位的是 .com 结尾的，这个是 .com.cn 结尾的，前面一样，这有没有碰瓷的嫌疑？有就有吧。</p>
 <p>注册是很简单的，提供一些身份信息，然后付钱， OK 了，等待审核通过就完成了。提示 24 小时内，其实没几个小时就通过了。</p>
 <h2 id="公网IP申请"><a href="#公网IP申请" class="headerlink" title="公网IP申请"></a>公网IP申请</h2><p>需要外网能访问，最大的一个重点就是要有公网 IP ，不管是固定的还是动态的。有固定的最好，连 DDNS 都省了，但是得花钱，个人用户没必要去占用固定的 IP ，主要是没必要花钱，更重要的是有 DDNS 可以解决。所以，只要是公网 IP ，不管固定还是动态，足矣。</p>
 <p>申请公网 IP 不难，我指的是电信网络，至于其他的，没用过不了解，但据说移动宽带是不提供公网 IP 的，直接放弃吧，要么换其他的网络。</p>
@@ -51,12 +106,12 @@
 <p>上面的坑踩到的，其中一部分是把私网IP当成公网IP来用，自然是失败了。现在已经确认是公网 IP 了，再设置。</p>
 <p>DNSPod.cn 提供了 DDNS 服务，而群晖自带的 DDNS 设置里面也有 DNSPod.cn 可以选择，简直是完美。思路很简单：</p>
 <p>首先在 DNSPod.cn 中把之前申请的域名加入，并添加一个解析信息。由于是在马化腾家申请的域名，所以直接点击域名解析就有了这个域名，进去之后发现已经有了连个信息，是关于免费的域名解析的，记录类型是NS，需要做的是点击添加记录，主机记录里面填 www ，类型选择 A ，后面填入当前的IP地址，这样一不会犯错，二也保证在 DDNS 提供修改 IP 信息之前已经是正确的 IP 了，当然随便填一个 123.123.123.123 也没问题，反正这个 IP 是要被 DDNS 修改的。</p>
-<p>再在用户控制中心的安全设置中获取 API Token 。这个玩意在群晖的外网访问中就是用户名和邮箱。点击创建 API Token ，会要求输入一个名字，代表这个 API Tolen ，之后生成<br><img src="https://www.oldzhou.com/hexophoto/apitoken.png" alt="">，得到一小串数字，和一大段数字字母组合。这个就是需要填在邮箱和密码那里的信息了。友情提示：上面这个 API Token 已经被我删掉了，只是作为例图。</p>
+<p>再在用户控制中心的安全设置中获取 API Token 。这个玩意在群晖的外网访问中就是用户名和邮箱。点击创建 API Token ，会要求输入一个名字，代表这个 API Tolen ，之后生成<br><img src="http://www.oldzhou.com:2020/hexophoto/apitoken.png" alt="">，得到一小串数字，和一大段数字字母组合。这个就是需要填在邮箱和密码那里的信息了。友情提示：上面这个 API Token 已经被我删掉了，只是作为例图。</p>
 <p>可是，在外网链接里面设置完成，点击联机测试，刷新之后任然是可怕的红色的找不到主机名。也就是说还是出问题了。难点是，这回想象不出问题出在哪里了。</p>
 <h2 id="完美解决"><a href="#完美解决" class="headerlink" title="完美解决"></a>完美解决</h2><p>域名解析，设置完成，外网访问的 DDNS 设置也完成，但是测试仍然是失败，仍然是找不到主机名，真是折腾人。</p>
 <p>一度认为，真的要去折腾路由器刷固件么？</p>
 <p>灵光一闪：有没有可能是因为 .cn 结尾的问题？是不是测试一下就知道了。</p>
-<p>正好之前的 .com 域名还在用，用作博客了。试试能不能走得通。由于 .com  是在马云家注册的，所以这个还跟 .com.cn 结尾那个不太一样，需要再马云家修改 DNS 服务器。修改这个 DNS 服务器要去马云家的域名控制台，点击域名，然后在这个域名的最后面点击“管理”<br><img src="https://www.oldzhou.com/hexophoto/aliyunyumingguanli.png" alt="">，然后在 DNS 修改中把马化腾家说好的两个免费DNS地址输入<br><img src="https://www.oldzhou.com/hexophoto/aliyunyumingxiugaidns.png" alt="">，保存，就完成了，并且由于之前用作博客了，现在要换给 DDNS 测试，所以把解析信息也都暂停，不用删除——万一失败了还得用回博客，不用再设置，点击启用即可。</p>
+<p>正好之前的 .com 域名还在用，用作博客了。试试能不能走得通。由于 .com  是在马云家注册的，所以这个还跟 .com.cn 结尾那个不太一样，需要再马云家修改 DNS 服务器。修改这个 DNS 服务器要去马云家的域名控制台，点击域名，然后在这个域名的最后面点击“管理”<br><img src="http://www.oldzhou.com:2020/hexophoto/aliyunyumingguanli.png" alt="">，然后在 DNS 修改中把马化腾家说好的两个免费DNS地址输入<br><img src="http://www.oldzhou.com:2020/hexophoto/aliyunyumingxiugaidns.png" alt="">，保存，就完成了，并且由于之前用作博客了，现在要换给 DDNS 测试，所以把解析信息也都暂停，不用删除——万一失败了还得用回博客，不用再设置，点击启用即可。</p>
 <p>再回到马化腾家的控制台，把 .com 的域名加入进来，按照之前的 .com.cn 那个方法，添加一个A记录，也是 www，以及 IP 地址。</p>
 <p>回到群晖的外部访问中，修改为 .com 的主机信息，由于 API Token 没变，所以都不用修改，直接点击联机测试——我的天，竟然显示绿色的成功。这真的是太棒了。</p>
 <p>之后就是在路由器设置端口转发，外部端口自己指定一个，转发到群晖的 IP 地址，端口 5000 ，就可以用自己的域名后面带刚才指定的端口访问到内网中的 NAS 了。其他的比如 Web 服务、或者图床服务等之后再折腾了。</p>
@@ -1180,37 +1235,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>短声——1s</p>
@@ -1372,6 +1396,37 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
             
         </tags>
         
@@ -2107,7 +2162,7 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
       <content type="html"><![CDATA[<blockquote>
 <p>给74黄师傅的一段视频，清晰度不是很高，将就看吧。</p>
 </blockquote>
-<video src="http://olpnkpi4k.bkt.clouddn.com/VLCC%20Collision%20&%20Propeller%20Fouling.mp4" controls="controls" width="100%"></video>
+<video src="https://www.oldzhou.com:2021/hexophoto/VLCCCollisionPropellerFouling.mp4" controls="controls" width="100%"></video>
 ]]></content>
       
         
@@ -2908,44 +2963,6 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
     </entry>
     
     <entry>
-      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
-      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
-      <content type="html"><![CDATA[<hr>
-<blockquote>
-<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
-</blockquote>
-<hr>
-<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
-<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
-<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
-<ol>
-<li>虽然很难做到早、大、宽，但目的必须是清。</li>
-<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
-</ol>
-<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
-<p>(还没写完，敬请期待）</p>
-<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
-<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 引航 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 引航 </tag>
-            
-            <tag> 港区 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[DaVinci出现RED Decoder错误]]></title>
       <url>https://www.oldzhou.com/2017/02/21/DaVinci%E5%87%BA%E7%8E%B0RED%20Decoder%E9%94%99%E8%AF%AF/</url>
       <content type="html"><![CDATA[<p>先上图</p>
@@ -2983,6 +3000,44 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
             <tag> 视频 </tag>
             
             <tag> 达芬奇 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
+      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
+      <content type="html"><![CDATA[<hr>
+<blockquote>
+<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
+</blockquote>
+<hr>
+<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
+<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
+<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
+<ol>
+<li>虽然很难做到早、大、宽，但目的必须是清。</li>
+<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
+</ol>
+<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
+<p>(还没写完，敬请期待）</p>
+<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
+<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 引航 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 引航 </tag>
+            
+            <tag> 港区 </tag>
             
         </tags>
         
