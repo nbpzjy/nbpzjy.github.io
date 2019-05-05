@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>nbpzjy&#39;s blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://www.oldzhou.com/"/>
   <updated>2019-04-30T01:05:15.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://www.oldzhou.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Zhou Jianyong</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>关于低潮后45分钟台塑 2-1 离泊那些事</title>
-    <link href="http://yoursite.com/2019/04/29/%E4%BD%8E%E6%BD%AE%E5%90%8E45%E5%88%86%E9%92%9F%E5%8F%B0%E5%A1%912-1%E7%A6%BB%E6%B3%8A/"/>
-    <id>http://yoursite.com/2019/04/29/低潮后45分钟台塑2-1离泊/</id>
+    <link href="https://www.oldzhou.com/2019/04/29/%E4%BD%8E%E6%BD%AE%E5%90%8E45%E5%88%86%E9%92%9F%E5%8F%B0%E5%A1%912-1%E7%A6%BB%E6%B3%8A/"/>
+    <id>https://www.oldzhou.com/2019/04/29/低潮后45分钟台塑2-1离泊/</id>
     <published>2019-04-29T14:31:15.000Z</published>
     <updated>2019-04-30T01:05:15.000Z</updated>
     
@@ -35,21 +35,21 @@
     
     </summary>
     
-      <category term="引航" scheme="http://yoursite.com/categories/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="台塑" scheme="http://yoursite.com/tags/%E5%8F%B0%E5%A1%91/"/>
+      <category term="台塑" scheme="https://www.oldzhou.com/tags/%E5%8F%B0%E5%A1%91/"/>
     
-      <category term="涨流" scheme="http://yoursite.com/tags/%E6%B6%A8%E6%B5%81/"/>
+      <category term="涨流" scheme="https://www.oldzhou.com/tags/%E6%B6%A8%E6%B5%81/"/>
     
   </entry>
   
   <entry>
     <title>飞驰的引航艇及其他</title>
-    <link href="http://yoursite.com/2019/04/29/%E9%A3%9E%E9%A9%B0%E7%9A%84%E5%BC%95%E8%88%AA%E8%89%87/"/>
-    <id>http://yoursite.com/2019/04/29/飞驰的引航艇/</id>
+    <link href="https://www.oldzhou.com/2019/04/29/%E9%A3%9E%E9%A9%B0%E7%9A%84%E5%BC%95%E8%88%AA%E8%89%87/"/>
+    <id>https://www.oldzhou.com/2019/04/29/飞驰的引航艇/</id>
     <published>2019-04-29T03:49:15.000Z</published>
     <updated>2019-04-30T13:25:51.000Z</updated>
     
@@ -66,19 +66,19 @@
     
     </summary>
     
-      <category term="视频" scheme="http://yoursite.com/categories/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-      <category term="视频" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
   </entry>
   
   <entry>
     <title>三岁的小豆打预防针</title>
-    <link href="http://yoursite.com/2019/04/27/%E4%B8%89%E5%B2%81%E7%9A%84%E5%B0%8F%E8%B1%86%E6%89%93%E9%A2%84%E9%98%B2%E9%92%88/"/>
-    <id>http://yoursite.com/2019/04/27/三岁的小豆打预防针/</id>
+    <link href="https://www.oldzhou.com/2019/04/27/%E4%B8%89%E5%B2%81%E7%9A%84%E5%B0%8F%E8%B1%86%E6%89%93%E9%A2%84%E9%98%B2%E9%92%88/"/>
+    <id>https://www.oldzhou.com/2019/04/27/三岁的小豆打预防针/</id>
     <published>2019-04-27T15:50:15.000Z</published>
     <updated>2019-04-30T00:58:24.000Z</updated>
     
@@ -94,21 +94,21 @@
     
     </summary>
     
-      <category term="照片" scheme="http://yoursite.com/categories/%E7%85%A7%E7%89%87/"/>
+      <category term="照片" scheme="https://www.oldzhou.com/categories/%E7%85%A7%E7%89%87/"/>
     
     
-      <category term="gif" scheme="http://yoursite.com/tags/gif/"/>
+      <category term="gif" scheme="https://www.oldzhou.com/tags/gif/"/>
     
-      <category term="摄影" scheme="http://yoursite.com/tags/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="https://www.oldzhou.com/tags/%E6%91%84%E5%BD%B1/"/>
     
-      <category term="回忆" scheme="http://yoursite.com/tags/%E5%9B%9E%E5%BF%86/"/>
+      <category term="回忆" scheme="https://www.oldzhou.com/tags/%E5%9B%9E%E5%BF%86/"/>
     
   </entry>
   
   <entry>
     <title>落流时段台塑1-2开船是什么感觉</title>
-    <link href="http://yoursite.com/2019/04/25/%E8%90%BD%E6%B5%81%E6%97%B6%E6%AE%B5%E5%8F%B0%E5%A1%911-2%E5%BC%80%E8%88%B9%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89/"/>
-    <id>http://yoursite.com/2019/04/25/落流时段台塑1-2开船是什么感觉/</id>
+    <link href="https://www.oldzhou.com/2019/04/25/%E8%90%BD%E6%B5%81%E6%97%B6%E6%AE%B5%E5%8F%B0%E5%A1%911-2%E5%BC%80%E8%88%B9%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89/"/>
+    <id>https://www.oldzhou.com/2019/04/25/落流时段台塑1-2开船是什么感觉/</id>
     <published>2019-04-25T05:52:15.000Z</published>
     <updated>2019-04-25T05:53:30.000Z</updated>
     
@@ -123,21 +123,21 @@
     
     </summary>
     
-      <category term="引航" scheme="http://yoursite.com/categories/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="台塑" scheme="http://yoursite.com/tags/%E5%8F%B0%E5%A1%91/"/>
+      <category term="台塑" scheme="https://www.oldzhou.com/tags/%E5%8F%B0%E5%A1%91/"/>
     
-      <category term="落流" scheme="http://yoursite.com/tags/%E8%90%BD%E6%B5%81/"/>
+      <category term="落流" scheme="https://www.oldzhou.com/tags/%E8%90%BD%E6%B5%81/"/>
     
   </entry>
   
   <entry>
     <title>雾与风的洗礼</title>
-    <link href="http://yoursite.com/2019/04/20/%E9%9B%BE%E4%B8%8E%E9%A3%8E%E7%9A%84%E6%B4%97%E7%A4%BC/"/>
-    <id>http://yoursite.com/2019/04/20/雾与风的洗礼/</id>
+    <link href="https://www.oldzhou.com/2019/04/20/%E9%9B%BE%E4%B8%8E%E9%A3%8E%E7%9A%84%E6%B4%97%E7%A4%BC/"/>
+    <id>https://www.oldzhou.com/2019/04/20/雾与风的洗礼/</id>
     <published>2019-04-20T14:34:15.000Z</published>
     <updated>2019-04-21T10:02:29.000Z</updated>
     
@@ -156,19 +156,19 @@
     
     </summary>
     
-      <category term="视频" scheme="http://yoursite.com/categories/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-      <category term="视频" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="音乐" scheme="http://yoursite.com/tags/%E9%9F%B3%E4%B9%90/"/>
+      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
   <entry>
     <title>是不是快了？反省一下</title>
-    <link href="http://yoursite.com/2019/04/17/%E6%98%AF%E4%B8%8D%E6%98%AF%E5%BF%AB%E4%BA%86%EF%BC%9F%E5%8F%8D%E7%9C%81%E4%B8%80%E4%B8%8B/"/>
-    <id>http://yoursite.com/2019/04/17/是不是快了？反省一下/</id>
+    <link href="https://www.oldzhou.com/2019/04/17/%E6%98%AF%E4%B8%8D%E6%98%AF%E5%BF%AB%E4%BA%86%EF%BC%9F%E5%8F%8D%E7%9C%81%E4%B8%80%E4%B8%8B/"/>
+    <id>https://www.oldzhou.com/2019/04/17/是不是快了？反省一下/</id>
     <published>2019-04-17T04:35:15.000Z</published>
     <updated>2019-04-17T04:40:53.000Z</updated>
     
@@ -183,19 +183,19 @@
     
     </summary>
     
-      <category term="引航" scheme="http://yoursite.com/categories/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="港区" scheme="http://yoursite.com/tags/%E6%B8%AF%E5%8C%BA/"/>
+      <category term="港区" scheme="https://www.oldzhou.com/tags/%E6%B8%AF%E5%8C%BA/"/>
     
   </entry>
   
   <entry>
     <title>桃花岛云雾缭绕</title>
-    <link href="http://yoursite.com/2019/04/16/%E6%A1%83%E8%8A%B1%E5%B2%9B%E4%BA%91%E9%9B%BE%E7%BC%AD%E7%BB%95/"/>
-    <id>http://yoursite.com/2019/04/16/桃花岛云雾缭绕/</id>
+    <link href="https://www.oldzhou.com/2019/04/16/%E6%A1%83%E8%8A%B1%E5%B2%9B%E4%BA%91%E9%9B%BE%E7%BC%AD%E7%BB%95/"/>
+    <id>https://www.oldzhou.com/2019/04/16/桃花岛云雾缭绕/</id>
     <published>2019-04-16T14:43:15.000Z</published>
     <updated>2019-04-16T14:48:14.000Z</updated>
     
@@ -211,19 +211,19 @@
     
     </summary>
     
-      <category term="照片" scheme="http://yoursite.com/categories/%E7%85%A7%E7%89%87/"/>
+      <category term="照片" scheme="https://www.oldzhou.com/categories/%E7%85%A7%E7%89%87/"/>
     
     
-      <category term="摄影" scheme="http://yoursite.com/tags/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="https://www.oldzhou.com/tags/%E6%91%84%E5%BD%B1/"/>
     
-      <category term="照片" scheme="http://yoursite.com/tags/%E7%85%A7%E7%89%87/"/>
+      <category term="照片" scheme="https://www.oldzhou.com/tags/%E7%85%A7%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>我们的2017年</title>
-    <link href="http://yoursite.com/2019/04/16/%E6%88%91%E4%BB%AC%E7%9A%842017%E5%B9%B4/"/>
-    <id>http://yoursite.com/2019/04/16/我们的2017年/</id>
+    <link href="https://www.oldzhou.com/2019/04/16/%E6%88%91%E4%BB%AC%E7%9A%842017%E5%B9%B4/"/>
+    <id>https://www.oldzhou.com/2019/04/16/我们的2017年/</id>
     <published>2019-04-16T13:45:15.000Z</published>
     <updated>2019-04-16T14:02:28.000Z</updated>
     
@@ -239,19 +239,19 @@
     
     </summary>
     
-      <category term="视频" scheme="http://yoursite.com/categories/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-      <category term="视频" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="音乐" scheme="http://yoursite.com/tags/%E9%9F%B3%E4%B9%90/"/>
+      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
   <entry>
     <title>问心</title>
-    <link href="http://yoursite.com/2019/04/15/%E9%97%AE%E5%BF%83/"/>
-    <id>http://yoursite.com/2019/04/15/问心/</id>
+    <link href="https://www.oldzhou.com/2019/04/15/%E9%97%AE%E5%BF%83/"/>
+    <id>https://www.oldzhou.com/2019/04/15/问心/</id>
     <published>2019-04-15T15:54:15.000Z</published>
     <updated>2019-04-16T14:04:43.000Z</updated>
     
@@ -269,19 +269,19 @@
     
     </summary>
     
-      <category term="视频" scheme="http://yoursite.com/categories/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-      <category term="视频" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="音乐" scheme="http://yoursite.com/tags/%E9%9F%B3%E4%B9%90/"/>
+      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
   <entry>
     <title>怎么在外网访问 NAS</title>
-    <link href="http://yoursite.com/2019/03/31/NAS/"/>
-    <id>http://yoursite.com/2019/03/31/NAS/</id>
+    <link href="https://www.oldzhou.com/2019/03/31/NAS/"/>
+    <id>https://www.oldzhou.com/2019/03/31/NAS/</id>
     <published>2019-03-31T14:54:35.000Z</published>
     <updated>2019-05-01T13:47:44.000Z</updated>
     
@@ -299,16 +299,16 @@
     </summary>
     
     
-      <category term="NAS" scheme="http://yoursite.com/tags/NAS/"/>
+      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
     
-      <category term="群晖" scheme="http://yoursite.com/tags/%E7%BE%A4%E6%99%96/"/>
+      <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
     
   </entry>
   
   <entry>
     <title>涨水靠泊镇海20是什么感觉？”</title>
-    <link href="http://yoursite.com/2019/03/22/%E6%B6%A8%E6%B0%B4%E9%9D%A0%E6%B3%8A%E9%95%87%E6%B5%B720%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89%EF%BC%9F%E2%80%9D/"/>
-    <id>http://yoursite.com/2019/03/22/涨水靠泊镇海20是什么感觉？”/</id>
+    <link href="https://www.oldzhou.com/2019/03/22/%E6%B6%A8%E6%B0%B4%E9%9D%A0%E6%B3%8A%E9%95%87%E6%B5%B720%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89%EF%BC%9F%E2%80%9D/"/>
+    <id>https://www.oldzhou.com/2019/03/22/涨水靠泊镇海20是什么感觉？”/</id>
     <published>2019-03-22T12:09:56.000Z</published>
     <updated>2019-04-18T12:18:15.000Z</updated>
     
@@ -326,19 +326,19 @@
     
     </summary>
     
-      <category term="引航" scheme="http://yoursite.com/categories/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="航海" scheme="http://yoursite.com/tags/%E8%88%AA%E6%B5%B7/"/>
+      <category term="航海" scheme="https://www.oldzhou.com/tags/%E8%88%AA%E6%B5%B7/"/>
     
   </entry>
   
   <entry>
     <title>用 Au 调整 BGM 的长度</title>
-    <link href="http://yoursite.com/2018/11/11/%E7%94%A8AU%E8%B0%83%E6%95%B4BGM%E9%95%BF%E5%BA%A6/"/>
-    <id>http://yoursite.com/2018/11/11/用AU调整BGM长度/</id>
+    <link href="https://www.oldzhou.com/2018/11/11/%E7%94%A8AU%E8%B0%83%E6%95%B4BGM%E9%95%BF%E5%BA%A6/"/>
+    <id>https://www.oldzhou.com/2018/11/11/用AU调整BGM长度/</id>
     <published>2018-11-11T13:44:13.000Z</published>
     <updated>2018-11-11T15:17:05.000Z</updated>
     
@@ -354,19 +354,19 @@
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://www.oldzhou.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="音频" scheme="http://yoursite.com/tags/%E9%9F%B3%E9%A2%91/"/>
+      <category term="音频" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E9%A2%91/"/>
     
-      <category term="Au" scheme="http://yoursite.com/tags/Au/"/>
+      <category term="Au" scheme="https://www.oldzhou.com/tags/Au/"/>
     
   </entry>
   
   <entry>
     <title>视宁度</title>
-    <link href="http://yoursite.com/2018/06/29/%E8%A7%86%E5%AE%81%E5%BA%A6/"/>
-    <id>http://yoursite.com/2018/06/29/视宁度/</id>
+    <link href="https://www.oldzhou.com/2018/06/29/%E8%A7%86%E5%AE%81%E5%BA%A6/"/>
+    <id>https://www.oldzhou.com/2018/06/29/视宁度/</id>
     <published>2018-06-29T02:57:15.000Z</published>
     <updated>2019-04-30T04:13:40.000Z</updated>
     
@@ -382,19 +382,19 @@
     
     </summary>
     
-      <category term="星空" scheme="http://yoursite.com/categories/%E6%98%9F%E7%A9%BA/"/>
+      <category term="星空" scheme="https://www.oldzhou.com/categories/%E6%98%9F%E7%A9%BA/"/>
     
     
-      <category term="天文" scheme="http://yoursite.com/tags/%E5%A4%A9%E6%96%87/"/>
+      <category term="天文" scheme="https://www.oldzhou.com/tags/%E5%A4%A9%E6%96%87/"/>
     
-      <category term="star" scheme="http://yoursite.com/tags/star/"/>
+      <category term="star" scheme="https://www.oldzhou.com/tags/star/"/>
     
   </entry>
   
   <entry>
     <title>转自DJI的《航拍西藏》</title>
-    <link href="http://yoursite.com/2018/06/20/%E8%88%AA%E6%8B%8D%E8%A5%BF%E8%97%8FbyLing/"/>
-    <id>http://yoursite.com/2018/06/20/航拍西藏byLing/</id>
+    <link href="https://www.oldzhou.com/2018/06/20/%E8%88%AA%E6%8B%8D%E8%A5%BF%E8%97%8FbyLing/"/>
+    <id>https://www.oldzhou.com/2018/06/20/航拍西藏byLing/</id>
     <published>2018-06-20T06:54:15.000Z</published>
     <updated>2019-04-25T05:59:47.000Z</updated>
     
@@ -410,19 +410,19 @@
     
     </summary>
     
-      <category term="视频" scheme="http://yoursite.com/categories/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
     
     
-      <category term="视频" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="音乐" scheme="http://yoursite.com/tags/%E9%9F%B3%E4%B9%90/"/>
+      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
   <entry>
     <title>升级 Phantom 3 Pro 到1.7.60</title>
-    <link href="http://yoursite.com/2018/06/20/%E5%8D%87%E7%BA%A7P3P/"/>
-    <id>http://yoursite.com/2018/06/20/升级P3P/</id>
+    <link href="https://www.oldzhou.com/2018/06/20/%E5%8D%87%E7%BA%A7P3P/"/>
+    <id>https://www.oldzhou.com/2018/06/20/升级P3P/</id>
     <published>2018-06-20T05:32:29.000Z</published>
     <updated>2019-04-30T01:12:37.000Z</updated>
     
@@ -438,19 +438,19 @@
     
     </summary>
     
-      <category term="无人机" scheme="http://yoursite.com/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
+      <category term="无人机" scheme="https://www.oldzhou.com/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
     
     
-      <category term="精灵3" scheme="http://yoursite.com/tags/%E7%B2%BE%E7%81%B53/"/>
+      <category term="精灵3" scheme="https://www.oldzhou.com/tags/%E7%B2%BE%E7%81%B53/"/>
     
-      <category term="升级" scheme="http://yoursite.com/tags/%E5%8D%87%E7%BA%A7/"/>
+      <category term="升级" scheme="https://www.oldzhou.com/tags/%E5%8D%87%E7%BA%A7/"/>
     
   </entry>
   
   <entry>
     <title>NMEA 学习</title>
-    <link href="http://yoursite.com/2018/05/20/NMEA%20%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://yoursite.com/2018/05/20/NMEA 学习/</id>
+    <link href="https://www.oldzhou.com/2018/05/20/NMEA%20%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://www.oldzhou.com/2018/05/20/NMEA 学习/</id>
     <published>2018-05-20T14:55:08.000Z</published>
     <updated>2018-05-20T15:28:18.000Z</updated>
     
@@ -466,16 +466,16 @@
     </summary>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="电子" scheme="http://yoursite.com/tags/%E7%94%B5%E5%AD%90/"/>
+      <category term="电子" scheme="https://www.oldzhou.com/tags/%E7%94%B5%E5%AD%90/"/>
     
   </entry>
   
   <entry>
     <title>低潮前四期两号开船的一些思考</title>
-    <link href="http://yoursite.com/2018/04/15/%E4%BD%8E%E6%BD%AE%E5%89%8D%E5%9B%9B%E6%9C%9F%E4%B8%A4%E5%8F%B7%E5%BC%80%E8%88%B9%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/2018/04/15/低潮前四期两号开船的一些思考/</id>
+    <link href="https://www.oldzhou.com/2018/04/15/%E4%BD%8E%E6%BD%AE%E5%89%8D%E5%9B%9B%E6%9C%9F%E4%B8%A4%E5%8F%B7%E5%BC%80%E8%88%B9%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
+    <id>https://www.oldzhou.com/2018/04/15/低潮前四期两号开船的一些思考/</id>
     <published>2018-04-15T09:18:08.000Z</published>
     <updated>2018-04-22T14:38:31.000Z</updated>
     
@@ -491,16 +491,16 @@
     </summary>
     
     
-      <category term="引航" scheme="http://yoursite.com/tags/%E5%BC%95%E8%88%AA/"/>
+      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
     
-      <category term="四期" scheme="http://yoursite.com/tags/%E5%9B%9B%E6%9C%9F/"/>
+      <category term="四期" scheme="https://www.oldzhou.com/tags/%E5%9B%9B%E6%9C%9F/"/>
     
   </entry>
   
   <entry>
     <title>那些年遇到的海盗</title>
-    <link href="http://yoursite.com/2018/04/07/%E9%82%A3%E4%BA%9B%E5%B9%B4%E9%81%87%E5%88%B0%E7%9A%84%E6%B5%B7%E7%9B%97/"/>
-    <id>http://yoursite.com/2018/04/07/那些年遇到的海盗/</id>
+    <link href="https://www.oldzhou.com/2018/04/07/%E9%82%A3%E4%BA%9B%E5%B9%B4%E9%81%87%E5%88%B0%E7%9A%84%E6%B5%B7%E7%9B%97/"/>
+    <id>https://www.oldzhou.com/2018/04/07/那些年遇到的海盗/</id>
     <published>2018-04-07T08:19:08.000Z</published>
     <updated>2018-04-22T13:11:05.000Z</updated>
     
@@ -517,16 +517,16 @@
     </summary>
     
     
-      <category term="航海" scheme="http://yoursite.com/tags/%E8%88%AA%E6%B5%B7/"/>
+      <category term="航海" scheme="https://www.oldzhou.com/tags/%E8%88%AA%E6%B5%B7/"/>
     
-      <category term="回忆" scheme="http://yoursite.com/tags/%E5%9B%9E%E5%BF%86/"/>
+      <category term="回忆" scheme="https://www.oldzhou.com/tags/%E5%9B%9E%E5%BF%86/"/>
     
   </entry>
   
   <entry>
     <title>解决hexo d的权限问题</title>
-    <link href="http://yoursite.com/2017/11/30/%E8%A7%A3%E5%86%B3hexo-d%E7%9A%84%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2017/11/30/解决hexo-d的权限问题/</id>
+    <link href="https://www.oldzhou.com/2017/11/30/%E8%A7%A3%E5%86%B3hexo-d%E7%9A%84%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.oldzhou.com/2017/11/30/解决hexo-d的权限问题/</id>
     <published>2017-11-30T10:12:46.000Z</published>
     <updated>2017-11-30T10:51:39.000Z</updated>
     
@@ -546,8 +546,8 @@
   
   <entry>
     <title>我理解的能见度不良的行动规则</title>
-    <link href="http://yoursite.com/2017/11/16/%E6%88%91%E7%90%86%E8%A7%A3%E7%9A%84%E8%83%BD%E8%A7%81%E5%BA%A6%E4%B8%8D%E8%89%AF%E7%9A%84%E8%A1%8C%E5%8A%A8%E8%A7%84%E5%88%99/"/>
-    <id>http://yoursite.com/2017/11/16/我理解的能见度不良的行动规则/</id>
+    <link href="https://www.oldzhou.com/2017/11/16/%E6%88%91%E7%90%86%E8%A7%A3%E7%9A%84%E8%83%BD%E8%A7%81%E5%BA%A6%E4%B8%8D%E8%89%AF%E7%9A%84%E8%A1%8C%E5%8A%A8%E8%A7%84%E5%88%99/"/>
+    <id>https://www.oldzhou.com/2017/11/16/我理解的能见度不良的行动规则/</id>
     <published>2017-11-16T12:31:29.000Z</published>
     <updated>2017-11-30T10:58:08.000Z</updated>
     
@@ -562,14 +562,14 @@
     
     </summary>
     
-      <category term="PilotSuff" scheme="http://yoursite.com/categories/PilotSuff/"/>
+      <category term="PilotSuff" scheme="https://www.oldzhou.com/categories/PilotSuff/"/>
     
     
-      <category term="上海" scheme="http://yoursite.com/tags/%E4%B8%8A%E6%B5%B7/"/>
+      <category term="上海" scheme="https://www.oldzhou.com/tags/%E4%B8%8A%E6%B5%B7/"/>
     
-      <category term="考试" scheme="http://yoursite.com/tags/%E8%80%83%E8%AF%95/"/>
+      <category term="考试" scheme="https://www.oldzhou.com/tags/%E8%80%83%E8%AF%95/"/>
     
-      <category term="避碰" scheme="http://yoursite.com/tags/%E9%81%BF%E7%A2%B0/"/>
+      <category term="避碰" scheme="https://www.oldzhou.com/tags/%E9%81%BF%E7%A2%B0/"/>
     
   </entry>
   
