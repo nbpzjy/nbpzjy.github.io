@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title><![CDATA[PVE 安装 LEDE ——命令行]]></title>
+      <url>https://www.oldzhou.com/2019/05/08/PVE%20%E5%AE%89%E8%A3%85%20LEDE%E2%80%94%E2%80%94%E5%91%BD%E4%BB%A4%E8%A1%8C/</url>
+      <content type="html"><![CDATA[<h2 id="创建一个空的虚拟机"><a href="#创建一个空的虚拟机" class="headerlink" title="创建一个空的虚拟机"></a>创建一个空的虚拟机</h2><p>在节点下，创建一个新的虚拟机，磁盘不用任何介质<br>基本按默认来，一路下一步下一步，之后可以再修改。网络使用默认的半虚拟化。最后确认，完成</p>
+<p>点击刚才创建的虚拟机。<br>磁盘需要删除：<br>    分离——删除。</p>
+<p>至此，空的虚拟机完成。</p>
+<h2 id="下载-LEDE-固件"><a href="#下载-LEDE-固件" class="headerlink" title="下载 LEDE 固件"></a>下载 LEDE 固件</h2><h3 id="koolshare-固件下载"><a href="#koolshare-固件下载" class="headerlink" title="koolshare 固件下载"></a>koolshare 固件下载</h3><p>连接：<br><figure class="highlight llvm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://firmware.koolshare.cn/LEDE_X<span class="number">64</span>_fw<span class="number">867</span>/<span class="symbol">%E8</span><span class="symbol">%99</span><span class="symbol">%9</span>A<span class="symbol">%E6</span><span class="symbol">%8</span>B<span class="symbol">%9</span>F<span class="symbol">%E6</span><span class="symbol">%9</span>C<span class="symbol">%BA</span><span class="symbol">%E8</span><span class="symbol">%BD</span><span class="symbol">%AC</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E6</span><span class="symbol">%88</span><span class="symbol">%96</span>PE<span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%8</span>B<span class="symbol">%E5</span><span class="symbol">%86</span><span class="symbol">%99</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%93</span><span class="symbol">%E7</span><span class="symbol">%94</span><span class="symbol">%A8</span>/openwrt-koolshare-mod-v<span class="number">2.31</span>-r<span class="number">10822</span><span class="number">-50</span>aa<span class="number">0525</span>d<span class="number">1</span>-<span class="keyword">x</span><span class="number">86</span><span class="number">-64</span>-combined-squashfs.img.gz</div></pre></td></tr></table></figure></p>
+<p>在 PVE 节点，点击 shell，进入终端。</p>
+<h3 id="下载命令"><a href="#下载命令" class="headerlink" title="下载命令"></a>下载命令</h3><p><code>wget</code></p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://firmware.koolshare.cn/LEDE_X<span class="number">64</span>_fw<span class="number">867</span>/<span class="symbol">%E8</span><span class="symbol">%99</span><span class="symbol">%9</span>A<span class="symbol">%E6</span><span class="symbol">%8</span>B<span class="symbol">%9</span>F<span class="symbol">%E6</span><span class="symbol">%9</span>C<span class="symbol">%BA</span><span class="symbol">%E8</span><span class="symbol">%BD</span><span class="symbol">%AC</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E6</span><span class="symbol">%88</span><span class="symbol">%96</span>PE<span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%8</span>B<span class="symbol">%E5</span><span class="symbol">%86</span><span class="symbol">%99</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%93</span><span class="symbol">%E7</span><span class="symbol">%94</span><span class="symbol">%A8</span>/openwrt-koolshare-mod-v<span class="number">2.31</span>-r<span class="number">10822</span><span class="number">-50</span>aa<span class="number">0525</span>d<span class="number">1</span>-<span class="keyword">x</span><span class="number">86</span><span class="number">-64</span>-combined-squashfs.img.gz</div></pre></td></tr></table></figure>
+<p>ls -al 可以查看是否有此文件</p>
+<h3 id="解压命令"><a href="#解压命令" class="headerlink" title="解压命令"></a>解压命令</h3><p>gzip</p>
+<p>gzip     带 -d 参数，要解压的文件名</p>
+<p><code>gizp -d openwrt-koolshare-mod-v2.31-r10822-50aa0525d1-x86-64-combined-squashfs.img.gz</code></p>
+<p>完成后再查看是否有 .img 的文件解压成功</p>
+<h3 id="转换格式命令"><a href="#转换格式命令" class="headerlink" title="转换格式命令"></a>转换格式命令</h3><p><code>qemu-img -f raw -o qcow2</code> 转换前文件名 转换后文件名</p>
+<p><code>qemu-img -f raw -o qcow2 openwrt-koolshare-mod-v2.31-r10822-50aa0525d1-x86-64-combined-squashfs.img vm-152-disk-1.qcow2</code></p>
+<p>转换后的文件命名：<br>vm+虚拟机的编号+磁盘+编号+文件名后缀，例如： vm-152-disk-1.qcow2</p>
+<h3 id="检查转换后的文件是否完整"><a href="#检查转换后的文件是否完整" class="headerlink" title="检查转换后的文件是否完整"></a>检查转换后的文件是否完整</h3><p><code>qemu-img check</code> 文件</p>
+<h3 id="查看转换后的文件信息"><a href="#查看转换后的文件信息" class="headerlink" title="查看转换后的文件信息"></a>查看转换后的文件信息</h3><p><code>qemu-img info</code> 文件</p>
+<h2 id="导入-PVE"><a href="#导入-PVE" class="headerlink" title="导入 PVE"></a>导入 PVE</h2><p>local（pve）镜像文件<br>local-lvm(虚拟磁盘）</p>
+<p>导入虚拟机的即是由 local 导入到 local-lvm</p>
+<p>命令<br><code>qm importdisk xxxxx local-lvm</code></p>
+<p>导入时注意名字不能错，不然会失败。</p>
+<h2 id="虚拟机添加磁盘"><a href="#虚拟机添加磁盘" class="headerlink" title="虚拟机添加磁盘"></a>虚拟机添加磁盘</h2><p>导入的磁盘会显示未使用的磁盘，双击-&gt;添加，挂载</p>
+<h2 id="WEB-界面点开机"><a href="#WEB-界面点开机" class="headerlink" title="WEB 界面点开机"></a>WEB 界面点开机</h2><p>开机之后，需要设置 IP 地址</p>
+<p>开机成功，再点回车，查看ip<br><code>ifconfig | less</code></p>
+<p>查看 IP 地址，之后 q 返回命令行</p>
+<p><code>vi /etc/ipconfig/network</code></p>
+<p>进入编辑界面，按 <code>i</code> 开始编辑</p>
+<p>完成之后按 <code>ESC</code> 键，之后输入<code>:wq</code> 回车，退回命令行，再 <code>reboot</code> 重启</p>
+<p>重启之后可以再查看 IP 是不是刚才设置的。</p>
+<h2 id="进入web-页面管理-LEDE"><a href="#进入web-页面管理-LEDE" class="headerlink" title="进入web 页面管理 LEDE"></a>进入web 页面管理 LEDE</h2><p>浏览器输入 IP 地址即可进入，默认密码 <code>koolshare</code></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> NAS </tag>
+            
+            <tag> PVE </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[添加 valine 评论到博客]]></title>
       <url>https://www.oldzhou.com/2019/05/05/%E6%B7%BB%E5%8A%A0%20valine%20%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
       <content type="html"><![CDATA[<p>hexo 运行有几年了，最初跑在 gitbub 上的 pages，自己的域名，现在也还在，但是也同时原样同步到自己的群晖服务器上了——这一步是自动的。反正为了外网访问群晖，已经 DDNS 了，多跑一个 web 服务也不耽误什么，除了因为 80、443 端口被封锁，只能自己定义一个端口进行转发，需要带端口访问之外，一切都很完美。</p>
@@ -1570,6 +1622,37 @@
     </entry>
     
     <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>短声——1s</p>
@@ -1731,37 +1814,6 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
             
         </tags>
         
