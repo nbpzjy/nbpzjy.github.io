@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2019-05-12T14:49:10.000Z</updated>
+  <updated>2019-05-14T16:00:48.000Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -17,28 +17,117 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>群晖运行 VPN Server</title>
-    <link href="https://www.oldzhou.com/2019/05/12/%E7%BE%A4%E6%99%96%E8%BF%90%E8%A1%8C%20VPN%20Server/"/>
-    <id>https://www.oldzhou.com/2019/05/12/群晖运行 VPN Server/</id>
-    <published>2019-05-12T14:42:35.000Z</published>
-    <updated>2019-05-12T14:49:10.000Z</updated>
+    <title>阿里云 DDNS 那些事</title>
+    <link href="https://www.oldzhou.com/2019/05/14/190514%E9%98%BF%E9%87%8C%E4%BA%91%20DDNS%20%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>https://www.oldzhou.com/2019/05/14/190514阿里云 DDNS 那些事/</id>
+    <published>2019-05-14T15:38:35.000Z</published>
+    <updated>2019-05-14T16:00:48.000Z</updated>
     
-    <content type="html"><![CDATA[<p>外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开发很多的端口转发，一点也不优雅。</p><p>如何更好地访问家里的群晖文件呢？</p><p>VPN 就上场了。</p><p>VPN 全称就是虚拟专用网络。使用 VPN，可以在共的互联网上建立一个与目标主机直接好像是专用的链接一样，之所以说好像，是因为实际上没用这个专用网络，但是通过 VPN 来建设了一个专用的通道，叫虚拟专用网络。</p><p>群晖本身带有一个条件较 VPN Server。使用这个套件就可以完成上面提到的专用网络，让远在外地的客户端就如同在本地的路由器下的一个客户端一样的使用在本地的群晖服务了。这个妙就妙在，这个远端处于外部网络的客户端，直接虚拟专用网络连接，让其完全跟在本地路由器下面的任何一台服务器一样，直接使用局域网 IP 就能访问相应的服务。比如直接使用局域网内的 IP 192.168.1.x 访问相应的服务，不用再担心端口的问题。</p><p>使用起来说简单也复杂，说复杂其实也简单。遇到问题了，就难搞，没问题就太简单。</p><p>安装，直接搜索 VPV Server。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4871557670384.jpg" alt=""><br>安装完成，再打开。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4881557670421.jpg" alt=""><br>可以设置三种 VPN</p><ol><li>PPTP</li><li>OpenVPN</li><li>L2TP/IPSec</li></ol><p>第一种最简单，最容易成功。第二种没试过，是因为用不到，要么第一种，要么第三种。比如 iOS，很多版本之前就开始放弃支持 PPTP 了，直接就没有这个选项了。所以第一种很简单搞定了，反正 Android 可以用。之后尝试第三种，iOS 和 MacOS 用，失败了一段时间，现在终于搞定。</p><p>PPTP</p><p>设置最容易，基本打开，点击应用就好了，基本不用修改什么，默认就可以。需要注意的是，PPTP 需要在路由器设置端口转发，对应到本地的 1723 端口，注意，外部也需要 1723 端口。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4891557670984.jpg" alt=""><br>这样就可以远端连接 PPTP 了。</p><p>L2TP/IPSec</p><p>这个之前失败很多次，现在才搞定。失败有两方面的原因。</p><p>一是服务器设置的问题：</p><p>预共享密匙，这里设置 8 位的能成功，其他的不知道，但是 6 位的失败。之前就是一直设置 6 位的，一直连接失败。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4911557671364.jpg" alt=""></p><p>二是客户端设置的问题：<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4921557671498.jpg" alt=""><br>建立 L2TP/IPSec 连接，选择 L2TP/SecPSK 类型，填写服务器——对应自己的域名，后面的两个 L2TP 密匙和 IPSec 标识符都空着，再填好之前设置的 IPSec 预共享密匙，就可以点保存了。再点击连接的时候，才提示输入用户名和密码，这个用户名和密码指的是群晖的账户和密码。别搞错了。这样基本就成功了。</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>今天遇到一个坑：</strong></p><p>深色群晖上的个人博客突然上不去了，在局域网内用 IP 地址直接访问可以打开页面，文字都能正确显示，但是所有的图片和视频都挂了。原因是域名访问不到了。深色群晖做成的 DDNS 看来是挂了。</p><p>由于是第一次玩外网访问，所以作为第一次使用 DDNS 的我，踩过很多坑，就算是稳定运行一月有余的刚刚挂掉的这个设置，也是一个曲折的故事。</p><p>大多数时候，DDNS 应该设置在路由器上，但是我的刚刚买来的为了新近安装的 200 M 宽带的路由器 Linksys 花了五六百大洋，但是这货不好刷著名的梅林，只能玩个 pandora box 之类的，之前的斐讯玩过所以没兴趣。要命的是这个 Linksys 自带的 DDNS 只能支持国外的两个服务提供商，这让我很是惆怅。</p><p>所以在群晖上入手。</p><p>群晖自带的 DDNS 设置里面支持 Dnspod.cn 这个被马化腾收购的服务提供商。所以就一直在群晖的自带设置里折腾 Dnspod，遗憾的是这货竟然对我新申请的 .com.cn结尾的域名一直找不到域名。</p><p>不得已，把之前的 oldzhou.com换过来给外网访问家里用，而把新申请的 nbpilot.com.cn 给之前的托管在 Github 上的个人博客使用。反正基本也就只有我自己访问，想换就换。</p><p>所以有意思的事情就来了：</p><p>把阿里系的域名，放到腾讯系来解析，目的就是使用群晖自带的 DDNS 设置。虽然曲折，但是成功了，而且稳定运行了一月有余。</p><p><strong>问题出现了</strong></p><p>该来的始终会来的，早晚的问题。</p><p>我一直对群晖自带的设置有些顾虑，因为它莫名其妙就成功了，也会莫名其妙地失败。虽然换成 .com 结尾的域名之后似乎正常了，但是日志记录里经常会看到地址更新失败的记录。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/4951557844767_.pic_hd.jpg" alt=""><br>今天突然无法访问，就猜到事情还是会发生的。其实我大可以等等改天再看看，也许一样会莫名其妙的又成功。只是这绝不是最好的方案。</p><p><strong>软路由上试试</strong></p><p>安装了 LEDE 软路由，目前只用做科学上网的跳板。昨天本来要尝试把 LEDE 作为主路由的，试验了一下，拨号是成功了，但是其他用户端都没能成功上网，虽然把 Linksys 的 DHCP 关闭，使用 LEDE 来提供 DHCP 服务，其他设备可以获取到 IP，但是仍然上不去网，时间关系没有继续深入研究是什么问题，来日方长。</p><p>扯远了，这里说的是 DDNS 设置。</p><p>在 LEDE 上设置 DDNS 也有两个方法：</p><ul><li><p>一是 LEDE 自带的服务里面的动态 DNS 来设置。<img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/4971557845142_.pic_hd.jpg" alt="">操作是简单的，但不一定能成功。最突出的问题是竟然没有阿里云的也没有 Dnspod 的，根本玩不起来。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/4981557845177_.pic_hd.jpg" alt=""></p></li><li><p>二是酷软中心的 kooldns 动态域名解析工具。安装之前的网络上可以搜索到的信息，这货应该以前是专门做阿里云 DDNS 的，后来才改成可以设置很多服务提供商的。这些不重要。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/4991557845329_.pic_hd.jpg" alt=""><br>首先遇到的一个坑，就是接口。点开选择，有一个是 url 还有一个是 eth0，也就是目前插线的这个网口。第二个直接报错。失败告终。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5011557845560_.pic_hd.jpg" alt=""><br>选择 url，这回倒是接口不出错了，但是仍然是失败的：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5021557845640_.pic_hd.jpg" alt=""><br>这日志显示也让我很惆怅，html 代码，看起来吃力，但是最下面的几行我已经知道，又双失败了。</p></li></ul><p><strong>Docker 虚拟机上场</strong></p><p>经过一番折腾，我知道群晖自带的 DDNS 不太靠谱，路由器的 DDNS 指望不上了，LEDE 的两种方式都失败了。终于让我祭出 Docker 大法。</p><p>只用于 DDNS，那么应该是一个小小的服务就可以了。</p><p>阿里云域名解析端的 app ID 及 Key 什么的就不多介绍了。需要注意的，跟马化腾家的 Dnspod 不同的，是需要把域名解析里面的 A 记录删除掉，就是将域名指向 IP 地址的这个解析记录，删除。值得注意的是，这里的 DDNS 是更新到 <code>www</code> 的，也就是 DDNS 成功之后访问域名是需要完整输入 <code>www.oldzhou.com</code> 这样的，如果想使用更简短的地址如 oldzhou.com，那么可以再添加一条解析记录 CNAME 的记录为 <code>@`` 值为</code>oldzhou.com` 这样就可以了。</p><p>现在进入 Docker 配置阿里云的 DDNS 解析。</p><p>首先启动 Docker，在注册表里面输入 aliyun，搜索。chenhw2 的这个下载。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5041557846451_.pic_hd.jpg" alt=""><br>完成之后，点击下载下来的映像，点击启动。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5031557846334_.pic_hd.jpg" alt=""><br>在高级设置里，选择最右边的环境，修改里面的值：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5051557846579_.pic_hd.jpg" alt=""><br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">PATH 不用改</div><div class="line"><span class="string">AKID :</span>就是 AccessKey ID</div><div class="line"><span class="string">AKSCT:</span> Access Key Secret</div><div class="line"><span class="string">DOMAIN:</span> 输入域名，带 www，如 www.oldzhou.com</div><div class="line">IPAPI 不用改</div><div class="line">REDO 设置为<span class="number">600</span>——为啥呢？我也不知道。</div></pre></td></tr></table></figure></p><p>如此这般，设置就完成了。点击应用，就启动了：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5071557846863_.pic_hd.jpg" alt=""><br>CPU 使用 0%，内存 17MB，感人不？最重要的是刚才删除掉的阿里云域名解析里面的 A 记录自动添加了。我的天哪，竟然成功了。</p><p>至此，使用 Docker 来做阿里云的 DDNS，就成功解决了。目前看起来是表现良好，持久性如何有待观察。</p><p><strong>不带 www 访问域名的设置</strong></p><p>这里似乎跟之前的腾讯系不同。同样是添加一个 CNAME 类型的记录，主机记录 @，记录值设置为自己的完整域名（带 www), 如 <code>www.olzhou.com</code><br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5081557849463_.pic_hd.jpg" alt=""></p><h2 id="如此就实现了不带-www也能正常访问。"><a href="#如此就实现了不带-www也能正常访问。" class="headerlink" title="如此就实现了不带 www也能正常访问。"></a>如此就实现了不带 <code>www</code>也能正常访问。</h2><h1 id="最后：安全是回家最快的路。"><a href="#最后：安全是回家最快的路。" class="headerlink" title="最后：安全是回家最快的路。"></a>最后：安全是回家最快的路。</h1><hr><p><strong>再来每日一题：</strong></p><blockquote><p>北仑锚地范围小，旁又有码头，故应开启雷达，准确定位，离大码头距离涨水时不少于(0.6’)，落水时不少于（0.4’），离岸距离不可少于（0.5’），离北仑山亦不可少于0.5’。</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开发很多的端口转发，一点也不优雅。&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;今天遇到一个坑：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;深色群晖上的个人博客突然上不去了，在局域网内用 IP 地址直接访问可以打开页面，文字都能正确显示，但是所有的图片和视频都挂了。原因是域名访问不到了。深色群晖做成的 DDNS 看来是挂了。&lt;/p&gt;
+&lt;p&gt;由于是
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="DDNS" scheme="https://www.oldzhou.com/tags/DDNS/"/>
+    
+      <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>华为手机定位服务无法开启怎么办</title>
+    <link href="https://www.oldzhou.com/2019/05/13/190513%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%AE%9A%E4%BD%8D%E6%9C%8D%E5%8A%A1%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E6%80%8E%E4%B9%88%E5%8A%9E/"/>
+    <id>https://www.oldzhou.com/2019/05/13/190513华为手机定位服务无法开启怎么办/</id>
+    <published>2019-05-13T11:32:35.000Z</published>
+    <updated>2019-05-13T11:33:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这两天遇到一个很奇怪的事情，就是华为手机的定位服务无法开启了。</p><p>这个事情最早应该是上周五替某人打卡的时候出现的，当时并不严重，只是需要设置然后开启定位，之后就可以了，并没有特别留意。之后一次发行问题严重是周日晚上给某人叭叭打车的时候，发现定位无法开启了，启动叭叭打车的时候提示需要开启定位服务，进入设置，点击开启，但是瞬间又回到关闭的状态。</p><video src="http://oldzhou.com:2020/hexophoto/huaweiloacationservice/SVID_20190513_180117_1.mp4" controls="controls" width="100%"></video><br>可以通过重启手机，临时性解决一下。但是似乎没过多久，症状又复发了。<br><br>搜索了一下，遇到这个问题的人有一些，但不是特别多。<br><br>最终的解决方案：<br><br>一个网友提出是因为 Google paly 服务更新之后与系统不兼容，导致这个定位问题。解决的办法就是将 Google play 服务的更新卸载掉，就好了。<br><img src="http://oldzhou.com:2020/hexophoto/huaweiloacationservice/Screenshot_20190513_180153.jpg" alt=""><br>经过测试，确实能解决问题。当然其中还是会遇到一些意想不到的问题。比如无法卸载 Google play 服务的更新。需要点击停用，然后会提示卸载恢复到初始版本。确认就可以了。完事就可以卸载 Google play 服务的更新了。<br><video src="http://oldzhou.com:2020/hexophoto/huaweiloacationservice/SVID_20190513_180340_1.mp4" controls="controls" width="100%"></video><p>然后，确实可以自由操作开启关闭华为手机的定位服务了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这两天遇到一个很奇怪的事情，就是华为手机的定位服务无法开启了。&lt;/p&gt;
+&lt;p&gt;这个事情最早应该是上周五替某人打卡的时候出现的，当时并不严重，只是需要设置然后开启定位，之后就可以了，并没有特别留意。之后一次发行问题严重是周日晚上给某人叭叭打车的时候，发现定位无法开启了，启动叭
+      
+    
+    </summary>
+    
+      <category term="记录" scheme="https://www.oldzhou.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="华为" scheme="https://www.oldzhou.com/tags/%E5%8D%8E%E4%B8%BA/"/>
+    
+      <category term="定位故障" scheme="https://www.oldzhou.com/tags/%E5%AE%9A%E4%BD%8D%E6%95%85%E9%9A%9C/"/>
+    
+      <category term="Mate 20X" scheme="https://www.oldzhou.com/tags/Mate-20X/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题  好好学习</title>
+    <link href="https://www.oldzhou.com/2019/05/13/190513%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    <id>https://www.oldzhou.com/2019/05/13/190513每日一题记录/</id>
+    <published>2019-05-13T07:18:15.000Z</published>
+    <updated>2019-05-15T03:31:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>根据李科长的建议，我们小组将以每日一题的方式，发一些应知应会的题目，供大家复习练习，也欢迎各位师傅们有针对性地发一些好的题目，供大家共同学习。大家一起努力，同心协力，积沙成丘，在此感谢各位师傅！</p></blockquote><p>金塘大桥主通航孔及其对应的桥区航道允许（50000）载重吨及以下的船舶双向通行，金塘大桥主通航孔通航高度为（51）米，通航宽度为（544）米。</p><p>每日一题:<br>拖轮口令有关名词的含义：<br>最慢车：拖轮单车合上的最小转速<br>微速：拖轮双车合上的最小转速；<br>慢车：二分之一的拖轮工作马力<br>快车：四分之三的拖轮工作马力<br>最快车：拖轮的最大工作马力<br>保持拖缆得力：拖缆刚受力但未能拖动大船</p><p>镇海化工泊位系带缆方案：载重吨4500吨以下，甬江内（前4后4），甬江外（前5后5）；载重吨4501-12500，甬江内（前5后5），甬江外（前6后6）；载重吨12501-27500，甬江外（前后3-2-2），载重吨27501吨以上（前后4-2-2）。</p><p>超大型船舶使用深水航槽时应遵守下列规定：（一）配备经最新改正的航海图书资料。（二）船长在驾驶台值班，轮机长在机舱值班。（三）在白天且能见度（2海里）及以上，风力不超过（8级）（风力参照上海中心气象台预报）的情况下使用深水航槽。（四）船舶富裕水深不小于船舶最大吃水的（10%），且最小不少于（2米）。（五）编队航行时，按顺序依次通行，前后两船的间距不少于（4）海里。</p><p>船舶在金塘锚地单锚锚泊时，出链长度不得小于（6节）。船舶在七里锚地单锚锚泊时，出链长度不得小于（5节）。 船舶达不到上述要求或一舷出链长度超过（8节）时，应向VTS中心报告，并说明原因。</p><p>根据当时潮流情况控制抵泊（艏进泊位范围）速度，各类船舶要求如下：（1）5千吨级以内船舶，余速不得大于（3节）。<br>（2）3万吨级以内船舶，余速不得大于（2.5节）。<br>（3）5万吨级以内船舶，余速不得大于（2节）。<br>（4）10万吨级以内船舶，余速不得大于（1.5节）。<br>（5）10万吨级以上船舶，余速不得大于（1节）。</p><p>甬江水域码头，靠落水开涨水，把开锚绞至吃力，留一前倒缆和艏头缆，当船转至与码头（80°-90°）角时，方可解头缆和倒缆，并开始绞锚。</p><p>当水域能见距离小于（1000米）或海事管理机构发布能见度不良黄色预警信息时，禁止船舶驶入金塘大桥桥区航道、象山港公路大桥桥区航道、下湾门航道和从虾峙门东口驶入虾峙门航道。</p><p>（2万）总吨及以上船舶进入双向航路时，应事先向周围船舶通报本船动态，避免在第一双向航路（下篮山）灯桩前后500米航段和第二双向航路（黄礁头）灯桩前后500米航段与他船交会。</p><p>1.虾峙门航道引水登轮点-L1报告线里外（1海里)，离轮点-老虎礁往外（5链至1.5海里)。</p><p>2.金塘登离轮点为-鹅礁正北（1.8海里)为圆心，半径为（5链)的区域</p><p>3.金塘大桥北登离轮点为大桥北（2.5海里)为圆心，半径为5链的区域</p><p>4.笤帚门登轮点浪高大于1.5米，风力大于6级时，登轮点为L2报告线至往里（1.5海里)区域，离轮点为小黄礁往外（1.5至2.5海里)区。一般气象海况时，登离轮点为雷康N正东（4海里)处为圆心，5链为半径的区域。</p><p>金塘水道为       水道，平均流速      ，最大流速达      。（A）<br>A.强流   3节   6节             B.混流   3节   6节<br>C.半日潮   3节   7节           D一般   2节   5节</p><p>二万吨级重载船舶靠泊镇海港区甬江内码头，其最佳靠泊时间大潮汛与小潮汛分别是：（B）                          A 镇海高潮时   镇海高潮后1小时  B 镇海高潮后45分钟 镇海高潮后1小时1刻钟C 只要有落水就行       D 镇海高潮后1小时    镇海高潮后1小时</p><p>北仑港区涨潮流由东向西，落潮流由西向东，以(落潮流)为主。冬天落潮约(8～9)小时，涨潮约(2～3)小时，如遇西北风健，可能终日无涨水；夏天落潮约(7～8)小时，涨潮(3～4)小时。涨潮时，外海的重盐度水与来自杭州湾、甬江的低盐度水相遇，锲入下层，形成下层强流，表层缓流的现象，有时表层无流而底层流已有力,一般以(10)米为分隔层。</p><p>北仑锚地范围小，旁又有码头，故应开启雷达，准确定位，离大码头距离涨水时不少于(0.6’)，落水时不少于（0.4’），离岸距离不可少于（0.5’），离北仑山亦不可少于0.5’。</p><ol><li>穿白水域船舶航行时实际速度顺流不得超过（10）节，逆流不得超过（8）节。在甬江航道内航行时，顺流不得超过（ 8）节，逆流不得超过（ 6）节；进出甬江航行实际富裕水深不少于（ 0.5）米。金塘大桥桥区航道顺流不得超过（12）节，逆流不得超过（10）节。</li></ol><p>宁波海事局辖区水域以北纬29°40′线为界分南、北两部分，南部以石浦(东门岛)（29°12′18″N/121°57′15″E）为参考基点，北部以(北仑山)（29°56′30″N/121°50′57″E）为参考基点。根据《宁波海事局辖区水上防台监督管理规定》，锚泊船舶应与桥梁保持足够的安全距离。其中，与金塘大桥、象山港公路大桥应保持3000米以上的距离；与其他桥梁应保持1000米以上的距离。</p><p><strong>Ⅳ级防台</strong>–防台戒备阶段：根据台风动态分析，预计<strong>(72)小时</strong>内宁波沿海水域可能受台风外围影响时。<br><strong>Ⅲ级防台</strong>–防台准备阶段：当台风中心距参考基点(580)海里并可能影响宁波沿海水域，或在未来<strong>(48)小时</strong>内宁波沿海水域平均风力将达(8)级及以上时。<br><strong>Ⅱ级防台</strong>–防台实施阶段：当台风中心距参考基点(320)海里并可能影响宁波沿海水域，或在未来<strong>(24)</strong>小时内宁波沿海水域平均风力将达(10)级及以上时。<br><strong>Ⅰ级防台</strong>–抗击台风阶段：当台风中心预计在未来<strong>(12)小时</strong>内进入宁波沿海水域，或在未来(12)小时内宁波沿海水域平均风力将达(12)级及以上时。</p><p>进出梅山航道的船舶在溜网山附近，即宁波-舟山港深水航路船舶定线制航路第一警戒区附近航行时，应充分考虑到该区域(<strong>通航密度大</strong>)、(<strong>流态复杂</strong>)、(<strong>大角度</strong>)及<strong>居间障碍物</strong>等因素的影响，引航员应特别保持警戒，提前减速，以留有更多的时间判断局面和采取行动。</p><p>北仑9#锚位水深<strong>38米/允许最大吃水24.5</strong>米，为泥底/危险品锚地，由于地形关系，该锚点潮流较为复杂。一般镇海<strong>高潮后2.0小时初落</strong>，镇海<strong>低潮后2小时初涨</strong>，目前控制的抛锚时间为镇海<strong>高潮后（2）个小时或镇海低潮前（1）小时</strong>，抛落水。抛锚方法及出链长度：（<strong>顶流、深水抛锚</strong>）法，至少（<strong>9节</strong>）入水；<strong>过驳</strong>时至少（<strong>11节</strong>）入水。 重要节点：涂泥嘴正东，距锚位航行距离3.7nm，速度控制（7）节以下，船首抛锚人员就位；距离锚点1.0nm，速度控制（4）节左右；船首距落锚点<strong>0.15nm</strong>,速度控制在（<strong>2.0</strong>）节左右，令船头用锚机松锚至1节落水，准备抛锚。</p><hr><p> 【5月13日】满载万吨轮以2kn余速拖单锚，淌航距离约为<strong>A__</strong>。<br>A．1.0倍船长     B．1.5倍船长<br>C．2.0倍船长    D．2.5倍船长</p><p>【5月9日】吊拖时拖缆的俯角一般应低于<strong>B__</strong>。<br>A．10°   B．15°   C．20°   D．25°</p><p>【5月10号】镇海18泊位主靠把最大间距<strong><strong>，两侧最大间距</strong></strong>，靠离小型化工船时应十分注意。需先对靠把贴拢后，再前后移船对上接卸管子。  (A)<br>A  72米   42米            B   55米     40米<br>C  85米   50米            D   79米     54米</p><p>甬江口进口引导灯桩为     ，射程     海里，引导方向为       。（）<br>A定红  10   260°30′    B闪红前1.5秒后2秒    8    260°<br>C定绿  10   260°30′    D闪绿前1.5秒后2秒    8    260°</p><p>每日一题  某轮总长84米，驾驶台至船尾14米。落水头靠镇海14#泊位。在涨水调头过程中，当船身与码头前沿垂直且在驾驶台看甬江进口导标一线时，船头与码头距离大约为（）。<br>A．10米          B.15米           C.20米          D.25米</p><p>【每日一“题”醒】<br>4月19日  在甬江航道内航行时，顺流不得超过（ ）节，逆流不得超过（ ）节；进出甬江航行实际富裕水深不少于（ ）米。</p><p>【5月15日】被引船主机发生故障而停车，应立即通知船方备妥双锚，淌航至船速小于（ ）节后，用锚机松出锚链，长度为（  ），当速度小于（ ）节后再时松时停，慢慢松链至需要长度，如情况紧急，可同时用同样方法下双锚，不可采取抛锚和一次出链太多，以免断链和损坏锚机。B<br>A  2 水深加0.5节链 1         B  3 水深加半节链 1<br>C  2 水深加1节链 0.5         D  3 水深加1节链 0.5</p><hr><p>80# </p><ol><li>平行靠泊入泊前要作好靠泊力学分析和充分的准备,船到码头边要细心观察现场的风流,确认泊位情况和所要协助靠泊拖轮马力配备等相关情况，合理控制入泊速度和入泊角度。</li><li>大型船舶平行靠泊，关键是控制靠泊三要素，速度，横距和靠拢角度。</li><li>拖轮的配备要考虑风流的综合影响，考虑船舶的吃水和受风面及侧推的配备情况。</li><li>实际操纵中首尾很难时完全同时并以几乎为零的速度贴拢码头，我们能做到的时尽量的平行靠泊，作为最基本要求，集装箱船舶触靠码头的速度不得超过10~15cm/s，大型矿油船不超过5cm/s。</li><li>用好最后一车对平行靠泊非常重要，尤其在大风浪天气，我们将这个一车叫做“救命车”，用这一车前，最好要先留好余地，包括前冲和偏转的余地。</li><li>靠码头时我们经常给大船一个惯性漂移的过程，这不仅仅是让大船有个惯性衰减的过程，实际上也是让其附加质量有个能量衰减的过程。</li></ol><p>招宝山大桥的净空高度（ 32）米桥梁通航净空宽度(200)米，，金塘大桥主通航孔通航净空高度(51)米，桥梁通航净空宽度(544)米，航道走向(178°-358°)。允许(50000)载重吨及以下船舶双向通行。西喉咙门大桥主通航孔通航净空高度(47)米，桥梁通航净宽度(636)米允许3万载重吨及以下船舶双向通行。象山大桥主通航孔通航净空高度( 53) 米，桥梁通航净宽度(448)米。明州大桥净空24米。<br>中柱门电缆净高20米<br>穿山东口外峙—-外神马电缆净高39米<br>梅山多用西电缆线净空69米<br>条帚门小黄礁架空电缆72.5米<br>螺头角电缆净空高度83.26米</p><p>1.根据宁波引航操作规程相关规定，船舶靠泊速度要求，1万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</p><ol><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求,5万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求,10万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求10万吨级以上船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;根据李科长的建议，我们小组将以每日一题的方式，发一些应知应会的题目，供大家复习练习，也欢迎各位师傅们有针对性地发一些好的题目，供大家共同学习。大家一起努力，同心协力，积沙成丘，在此感谢各位师傅！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;金塘大桥主
+      
+    
+    </summary>
+    
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
+    
+    
+      <category term="应知应会" scheme="https://www.oldzhou.com/tags/%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A/"/>
+    
+      <category term="做题" scheme="https://www.oldzhou.com/tags/%E5%81%9A%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>群晖运行 VPN Server</title>
+    <link href="https://www.oldzhou.com/2019/05/12/%E7%BE%A4%E6%99%96%E8%BF%90%E8%A1%8C%20VPN%20Server/"/>
+    <id>https://www.oldzhou.com/2019/05/12/群晖运行 VPN Server/</id>
+    <published>2019-05-12T14:42:35.000Z</published>
+    <updated>2019-05-12T14:55:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开放很多的端口转发，一点也不优雅。</p><p>如何更好地访问家里的群晖文件呢？</p><p>VPN 就上场了。</p><p>VPN 全称就是虚拟专用网络。使用 VPN，可以在公共的互联网上建立一个与目标主机直接的好像是专用的链接一样，之所以说好像，是因为实际上没用这个真的直接连接，而是通过 VPN 来建设了一个专用的通道，通过这个通道来传输数据，叫虚拟专用网络。</p><p>群晖本身带有一个套件叫 VPN Server。使用这个套件和相应的客户端就可以实现上面提到的专用网络，让远在外地的客户端就如同在本地的路由器下的一个客户端一样的使用在本地的群晖服务了。妙就妙在，这个远端处在外部网络下的客户端，直接虚拟专用网络连接，让其完全跟在本地路由器下面的任何一台服务器一样，直接使用局域网内的同网段 IP 就能访问相应的服务。比如直接使用局域网内的 IP 192.168.1.x 访问相应的服务，不用再担心端口的问题，前提是 VPN 的端口做好了，只需要这个端口就够了。</p><p>使用起来说简单也复杂，说复杂其实也简单。遇到问题了，就难搞，没问题就太简单。</p><p>安装，直接搜索 VPV Server。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4871557670384.jpg" alt=""><br>安装完成，再打开。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4881557670421.jpg" alt=""><br>可以设置三种 VPN</p><ol><li>PPTP</li><li>OpenVPN</li><li>L2TP/IPSec</li></ol><p>第一种最简单，最容易成功。第二种没试过，是因为用不到，要么第一种，要么第三种。比如 iOS，很多版本之前就开始放弃支持 PPTP 了，直接就没有这个选项了。所以第一种很简单搞定了，反正 Android 可以用。之后尝试第三种，iOS 和 MacOS 用，失败了一段时间，现在终于搞定。</p><p>PPTP</p><p>设置最容易，基本打开，点击应用就好了，基本不用修改什么，默认就可以。需要注意的是，PPTP 需要在路由器设置端口转发，对应到本地的 1723 端口，注意，外部也需要 1723 端口。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4891557670984.jpg" alt=""><br>这样就可以远端连接 PPTP 了。</p><p>L2TP/IPSec</p><p>这个之前失败很多次，现在才搞定。失败有两方面的原因。</p><p>一是服务器设置的问题：</p><p>预共享密匙，这里设置 8 位的能成功，其他的不知道，但是 6 位的失败。之前就是一直设置 6 位的，一直连接失败。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4911557671364.jpg" alt=""></p><p>二是客户端设置的问题：<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4921557671498.jpg" alt=""><br>建立 L2TP/IPSec 连接，选择 L2TP/SecPSK 类型，填写服务器——对应自己的域名，后面的两个 L2TP 密匙和 IPSec 标识符都空着，再填好之前设置的 IPSec 预共享密匙，就可以点保存了。再点击连接的时候，才提示输入用户名和密码，这个用户名和密码指的是群晖的账户和密码。别搞错了。这样基本就成功了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开放很多的端口转发，一点也不优雅。&lt;/p&gt;
 &lt;p&gt;如何更好地访问家里的群晖文件呢？&lt;
       
     
     </summary>
     
     
-      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
-    
       <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
+    
+      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
     
   </entry>
   
@@ -93,11 +182,11 @@
   </entry>
   
   <entry>
-    <title>PVE 安装 LEDE ——命令行</title>
+    <title>PVE 命令行安装 LEDE</title>
     <link href="https://www.oldzhou.com/2019/05/08/PVE%20%E5%AE%89%E8%A3%85%20LEDE%E2%80%94%E2%80%94%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     <id>https://www.oldzhou.com/2019/05/08/PVE 安装 LEDE——命令行/</id>
     <published>2019-05-08T14:17:35.000Z</published>
-    <updated>2019-05-09T06:37:40.000Z</updated>
+    <updated>2019-05-14T18:57:47.000Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a><h2 id="创建一个空的虚拟机"><a href="#创建一个空的虚拟机" class="headerlink" title="创建一个空的虚拟机"></a>创建一个空的虚拟机</h2><p>在节点下，创建一个新的虚拟机，磁盘不用任何介质<br>基本按默认来，一路下一步下一步，之后可以再修改。网络使用默认的半虚拟化。最后确认，完成</p><p>点击刚才创建的虚拟机。<br>磁盘需要删除：<br>    分离——&gt;删除。</p><p>至此，空的虚拟机完成。</p><h2 id="下载并转换-LEDE-固件"><a href="#下载并转换-LEDE-固件" class="headerlink" title="下载并转换 LEDE 固件"></a>下载并转换 LEDE 固件</h2><h3 id="koolshare-固件下载"><a href="#koolshare-固件下载" class="headerlink" title="koolshare 固件下载"></a>koolshare 固件下载</h3><p>连接：</p><figure class="highlight llvm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://firmware.koolshare.cn/LEDE_X<span class="number">64</span>_fw<span class="number">867</span>/<span class="symbol">%E8</span><span class="symbol">%99</span><span class="symbol">%9</span>A<span class="symbol">%E6</span><span class="symbol">%8</span>B<span class="symbol">%9</span>F<span class="symbol">%E6</span><span class="symbol">%9</span>C<span class="symbol">%BA</span><span class="symbol">%E8</span><span class="symbol">%BD</span><span class="symbol">%AC</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E6</span><span class="symbol">%88</span><span class="symbol">%96</span>PE<span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%8</span>B<span class="symbol">%E5</span><span class="symbol">%86</span><span class="symbol">%99</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%93</span><span class="symbol">%E7</span><span class="symbol">%94</span><span class="symbol">%A8</span>/openwrt-koolshare-mod-v<span class="number">2.31</span>-r<span class="number">10822</span><span class="number">-50</span>aa<span class="number">0525</span>d<span class="number">1</span>-<span class="keyword">x</span><span class="number">86</span><span class="number">-64</span>-combined-squashfs.img.gz</div></pre></td></tr></table></figure><p>在 PVE 节点，点击 shell，进入终端。</p><h3 id="下载命令"><a href="#下载命令" class="headerlink" title="下载命令"></a>下载命令</h3><p><code>wget</code></p><figure class="highlight llvm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://firmware.koolshare.cn/LEDE_X<span class="number">64</span>_fw<span class="number">867</span>/<span class="symbol">%E8</span><span class="symbol">%99</span><span class="symbol">%9</span>A<span class="symbol">%E6</span><span class="symbol">%8</span>B<span class="symbol">%9</span>F<span class="symbol">%E6</span><span class="symbol">%9</span>C<span class="symbol">%BA</span><span class="symbol">%E8</span><span class="symbol">%BD</span><span class="symbol">%AC</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E6</span><span class="symbol">%88</span><span class="symbol">%96</span>PE<span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%8</span>B<span class="symbol">%E5</span><span class="symbol">%86</span><span class="symbol">%99</span><span class="symbol">%E7</span><span class="symbol">%9</span>B<span class="symbol">%98</span><span class="symbol">%E4</span><span class="symbol">%B8</span><span class="symbol">%93</span><span class="symbol">%E7</span><span class="symbol">%94</span><span class="symbol">%A8</span>/openwrt-koolshare-mod-v<span class="number">2.31</span>-r<span class="number">10822</span><span class="number">-50</span>aa<span class="number">0525</span>d<span class="number">1</span>-<span class="keyword">x</span><span class="number">86</span><span class="number">-64</span>-combined-squashfs.img.gz</div></pre></td></tr></table></figure><p><code>ls -al</code> 可以查看是否有此文件</p><h3 id="解压命令-gzip"><a href="#解压命令-gzip" class="headerlink" title="解压命令 gzip"></a>解压命令 gzip</h3><p>gzip     带 -d 参数，要解压的文件名</p><p><code>gizp -d openwrt-koolshare-mod-v2.31-r10822-50aa0525d1-x86-64-combined-squashfs.img.gz</code></p><p>完成后再查看是否有 .img 的文件解压成功</p><h3 id="转换格式命令"><a href="#转换格式命令" class="headerlink" title="转换格式命令"></a>转换格式命令</h3><p><code>qemu-img -f raw -o qcow2</code> 转换前文件名 转换后文件名</p><p><code>qemu-img -f raw -o qcow2 openwrt-koolshare-mod-v2.31-r10822-50aa0525d1-x86-64-combined-squashfs.img vm-152-disk-1.qcow2</code></p><p>转换后的文件命名：<br>vm+虚拟机的编号+磁盘+编号+文件名后缀，例如： vm-152-disk-1.qcow2</p><h3 id="检查转换后的文件是否完整"><a href="#检查转换后的文件是否完整" class="headerlink" title="检查转换后的文件是否完整"></a>检查转换后的文件是否完整</h3><p><code>qemu-img check</code> 文件</p><h3 id="查看转换后的文件信息"><a href="#查看转换后的文件信息" class="headerlink" title="查看转换后的文件信息"></a>查看转换后的文件信息</h3><p><code>qemu-img info</code> 文件</p><h2 id="导入-PVE"><a href="#导入-PVE" class="headerlink" title="导入 PVE"></a>导入 PVE</h2><p>local（pve）镜像文件<br>local-lvm(虚拟磁盘）<br>导入虚拟机的即是由 local 导入到 local-lvm<br>命令</p><p><code>qm importdisk xxxxx local-lvm</code></p><p>导入时注意名字不能错，不然会失败。</p><h2 id="虚拟机添加磁盘"><a href="#虚拟机添加磁盘" class="headerlink" title="虚拟机添加磁盘"></a>虚拟机添加磁盘</h2><p>导入的磁盘会显示未使用的磁盘，双击-&gt;添加，挂载</p><h2 id="WEB-界面点开机"><a href="#WEB-界面点开机" class="headerlink" title="WEB 界面点开机"></a>WEB 界面点开机</h2><p>开机之后，需要设置 IP 地址<br>开机成功，再点回车，查看ip</p><p><code>ifconfig | less</code></p><p>查看 IP 地址，之后 q 返回命令行</p><p><code>vi /etc/ipconfig/network</code></p><p>进入编辑界面，按 <code>i</code> 开始编辑<br>完成之后按 <code>ESC</code> 键，之后输入<code>:wq</code> 回车，退回命令行，再 <code>reboot</code> 重启<br>重启之后可以再查看 IP 是不是刚才设置的。</p><h2 id="进入web-页面管理-LEDE"><a href="#进入web-页面管理-LEDE" class="headerlink" title="进入web 页面管理 LEDE"></a>进入web 页面管理 LEDE</h2><p>浏览器输入 IP 地址即可进入，默认密码 <code>koolshare</code>，然后就可以飞翔了。</p>]]></content>
     
@@ -397,9 +486,9 @@
     </summary>
     
     
-      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
-    
       <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
+    
+      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
     
   </entry>
   
@@ -454,80 +543,6 @@
       <category term="音频" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E9%A2%91/"/>
     
       <category term="Au" scheme="https://www.oldzhou.com/tags/Au/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>视宁度</title>
-    <link href="https://www.oldzhou.com/2018/06/29/%E8%A7%86%E5%AE%81%E5%BA%A6/"/>
-    <id>https://www.oldzhou.com/2018/06/29/视宁度/</id>
-    <published>2018-06-29T02:57:15.000Z</published>
-    <updated>2019-05-09T06:42:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://oldzhou.com:2020/hexophoto/3.8M.jpg" alt="第一次拍摄的月亮"></p><h2 id="视宁度"><a href="#视宁度" class="headerlink" title="视宁度"></a>视宁度</h2><p><code>seeing</code><br>视宁度指望远镜显示图像的清晰度。它取决于大气湍流活动程度。肉眼所见星体的闪烁，一般认为是高层大气湍流引起。望远镜清晰度不佳往往是低层大气湍流所致。各层大气湍流使大气中产生密度不同的不稳定区域，使光线不能顺利地直接通过并保持强度不变。<br><a id="more"></a></p><h2 id="视宁度简介"><a href="#视宁度简介" class="headerlink" title="视宁度简介"></a>视宁度简介</h2><p>对受地球大气扰动影响的天体图像质量的量度，主要用以描述点源图像的质量优劣和角大小 。</p><p><strong>视宁度</strong> 指望远镜显示图像的清晰度。它取决于大气湍流活动程度。肉眼所见星体的闪烁，一般认为是高层大气湍流引起。望远镜清晰度不佳往往是低层大气湍流所致。各层大气湍流使大气中产生密度不同的不稳定区域，使光线不能顺利地直接通过并保持强度不变。如果大气湍流使天体发出的光迅速而不规则地变换方向，那么，小型望远镜所显示的图像就会闪烁跳动。大型望远镜则扩大失真度，使图像更为弥散。</p><p>受视宁度影响，地面望远镜极限分辨率只有1角秒，远小于大型望远镜的衍射极限。为克服其影响，近年来发明了自适应光学技术。</p><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><blockquote><p>视宁度是用于描述天文观测的目标受大气湍流的影响而看起来变得模糊和闪烁程度的物理量。视宁度严格来说是属于大气科学研究的范畴，可从事天文观测的科学家对此非常关注，因为它的好坏对天文光学观测的质量影响很大。</p></blockquote><p>中国的国家天文台兴隆观测站，有报告称其视宁度不甚理想；而新建的云南天文台丽江高美古观测站的视宁度就比较好；上海天文台佘山观测站在每年夏天受副热带高压控制的气象条件下视宁度也还行。</p><p>世界上重要的光学天文台，如夏威夷的莫纳克亚山、加那利群岛的拉帕尔玛岛等的视宁度条件都很理想。</p><h2 id="温度有关"><a href="#温度有关" class="headerlink" title="温度有关"></a>温度有关</h2><p>视宁度和星光抵达望远镜前所穿过的不同温度的大气有关</p><p>空气弯曲光的能力，也就是折射率，取决于它的密度，更直接地说是温度。当温度不同的空气团相遇时，它们之间的边界层会瓦解成漩涡或者涡流，其对光线的作用就像是薄透镜。在火焰的上方或者是被太阳拷热的公路上，你也能看到类似的情况；热气流会使本就糟糕的视宁度更加突出。在拥有各种天气现象的大气层中到处充满了微小的温度变化，当用望远镜观测时，也放大了这些天气的效应。</p><h2 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h2><h4 id="视宁度取决于天气"><a href="#视宁度取决于天气" class="headerlink" title="视宁度取决于天气"></a>视宁度取决于天气</h4><p>但是并没有一条简单的规律可以适用于任何地方。当天气变化、多云、刮风以及反常寒冷天气的前后视宁度都会变差。任何会带来剪切气流的天气都是坏消息。一些观测者认为，当高气压控制某一地区数天就会出现较好的视宁度。绘制一张当地的视宁度－天气图，你会发现其中的规律，它将成为你观测的得力助手。季节特征通常更易于预报。当高纬度地区高空有气流经过时，美国北部和加拿大南部的视宁度往往表现一般。最好的视宁度出现在无风湿热的夏夜，此时空气中充满着水分，天空看起来呈白雾状。一些天文学家认为工业废气也能使空气稳定下来，就象夏天的湿气——更准确地讲，它伴随着宁静空气出现，而后者会带来良好的视宁度。</p><h4 id="时间也扮演着重要的角色"><a href="#时间也扮演着重要的角色" class="headerlink" title="时间也扮演着重要的角色"></a>时间也扮演着重要的角色</h4><p>但是同样没有一条普适的原理。日落之后的视宁度通常非常好，因此你应该在黄昏时就开始行星观测。黄昏之后视宁度开始恶化。一些观测者发现，午夜之后视宁度又会有所改善；但是另一些观测者的看法正好相反。其实这取决于你所处的地形；夜晚冷空气会涌入山谷使那里的视宁度变差。而黎明之后又会出现另一个良好视宁度时期。</p><h4 id="地理因素也至关重要"><a href="#地理因素也至关重要" class="headerlink" title="地理因素也至关重要"></a>地理因素也至关重要</h4><p>天文台选址委员会在全世界范围内寻找有平缓片流的地方。地球上最好的地方是面向信风吹来方向的山顶，此时信风穿越了数千英里平坦而寒冷的海洋。你不会想要山峰的下风口，因为当气流经过山峰之后就会瓦解成湍流。同样地，你也不会要地形变化的下风口，那里会不均匀的吸收太阳的热量。广阔的平原或者逐渐抬升的山脉也会带来和海洋相似的片流。这样你就可以通过风向来预报视宁度了。对抗视宁度的关键是耐心。多看一会儿，你就会发现一些惊人的影像。这就是有经验的行星观测者会比初学者多看一会儿的原因，他们会忽略所有的模糊影像，而只保留那些最稳定的画面。而且，视宁度一般每分钟甚至每秒种都在变化。当大气宁静的时刻到来时，只有专注的观测者才能在目镜中捕捉到它。</p><h2 id="等级划分"><a href="#等级划分" class="headerlink" title="等级划分"></a>等级划分</h2><p>通常爱好者在自己的观测日志中主观地从1到10对视宁度进行评定，其中1最差，10最好。每个人对这些数字可能都有自己的定义。为了统一起见，这儿给出了哈佛大学天文台威廉·皮克林早年所提出来的标准。皮克林使用5英寸的折射望远镜进行观测。对于更大或者更小的望远镜，他所描述的衍射圆面和衍射环的大小必须进行修正。<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>）星像的直径通常是第<span class="number">3</span>衍射环的<span class="number">2</span>倍（如果第<span class="number">3</span>衍射环能被看见的话），直径为<span class="number">13</span><span class="string">"。</span></div><div class="line">2）星像的直径偶尔会达到第3衍射环的2倍（直径为13"）。</div><div class="line"><span class="number">3</span>）星像的直径与第<span class="number">3</span>衍射环的直径（<span class="number">6.7</span><span class="string">"）相当，且中心明亮。</span></div><div class="line">4）中央的爱里衍射斑通常可见；有时亮星会出现衍射弧。</div><div class="line">5）爱里斑一直可见；亮星经常出现衍射弧。</div><div class="line">6）爱里斑一直可见；短衍射弧通常可见。</div><div class="line">7）爱里斑有时很明显；衍射弧长而且能形成完整的圆形。</div><div class="line">8）爱里斑一直很明显；衍射弧长而且能形成完整的圆形，但总是在变化。</div><div class="line">9）内衍射环保持静止；外衍射环有时保持静止。</div><div class="line">10）整个衍射环都保持静止。</div></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://oldzhou.com:2020/hexophoto/3.8M.jpg&quot; alt=&quot;第一次拍摄的月亮&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;视宁度&quot;&gt;&lt;a href=&quot;#视宁度&quot; class=&quot;headerlink&quot; title=&quot;视宁度&quot;&gt;&lt;/a&gt;视宁度&lt;/h2&gt;&lt;p&gt;&lt;code&gt;seeing&lt;/code&gt;&lt;br&gt;视宁度指望远镜显示图像的清晰度。它取决于大气湍流活动程度。肉眼所见星体的闪烁，一般认为是高层大气湍流引起。望远镜清晰度不佳往往是低层大气湍流所致。各层大气湍流使大气中产生密度不同的不稳定区域，使光线不能顺利地直接通过并保持强度不变。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="星空" scheme="https://www.oldzhou.com/categories/%E6%98%9F%E7%A9%BA/"/>
-    
-    
-      <category term="天文" scheme="https://www.oldzhou.com/tags/%E5%A4%A9%E6%96%87/"/>
-    
-      <category term="star" scheme="https://www.oldzhou.com/tags/star/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>转自DJI的《航拍西藏》</title>
-    <link href="https://www.oldzhou.com/2018/06/20/%E8%88%AA%E6%8B%8D%E8%A5%BF%E8%97%8FbyLing/"/>
-    <id>https://www.oldzhou.com/2018/06/20/航拍西藏byLing/</id>
-    <published>2018-06-20T06:54:15.000Z</published>
-    <updated>2019-05-09T06:42:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这个是转自dji官网论坛的Ling的《航拍西藏》，一个字：太特么漂亮了。</p><video src="https://www.oldzhou.com:2021/hexophoto/hangpaitibet1080.mp4" controls="controls" width="100%"></video><a id="more"></a><blockquote><p>一直都在想要一个想走就走的旅行，目前看来，连回趟老家都成了奢侈——养娃赚钱生活。希望这些不会磨灭那颗躁动的充满激情的心，希望在不远的将来能想去哪儿去哪儿，比如看火山，比如拍星空……</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这个是转自dji官网论坛的Ling的《航拍西藏》，一个字：太特么漂亮了。&lt;/p&gt;
-&lt;video src=&quot;https://www.oldzhou.com:2021/hexophoto/hangpaitibet1080.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-    
-    </summary>
-    
-      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>升级 Phantom 3 Pro 到1.7.60</title>
-    <link href="https://www.oldzhou.com/2018/06/20/%E5%8D%87%E7%BA%A7P3P/"/>
-    <id>https://www.oldzhou.com/2018/06/20/升级P3P/</id>
-    <published>2018-06-20T05:32:29.000Z</published>
-    <updated>2019-05-09T06:39:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://oldzhou.com:2020/hexophoto/p3pupgrade_1.54.47.png" alt=""><br><a id="more"></a></p><h1 id="情况"><a href="#情况" class="headerlink" title="情况"></a>情况</h1><p>首先是遥控器出现问题，无法开机。尝试过拆开后断开电池再重连，但是无效。估计是电池死了。本来想修的，转念一想，这玩意要是寄回大疆，顺便弄弄估计都不便宜。于是咸鱼上看看，一般三百多一个，估计这价格大疆应该不会给我修——即使是换个遥控器电池都不会这价格。算了，直接买个得了。为啥这么便宜呢？我猜，遥控器应该挺多的，毕竟炸鸡的都是飞机炸了，遥控器还在，不是说炸鸡都是提控回家么？所以应该二手遥控器不少。</p><p>过了两天就收到了。首先是对频的问题，Mi Max 2 尝试好几次都没有连接成功，就是单纯的手机连接不上遥控器：一度怀疑遥控器有问题。安卓的USB调试有的时候是挺麻烦。又要上班，拖了一天再试。顺便把闲置的iPhone 5s ，起码排除是安卓或者小米Max 2 造成的问题。</p><h1 id="对频"><a href="#对频" class="headerlink" title="对频"></a>对频</h1><p>经过测试，iPhone 5s 第一次尝试还是失败的，没有连接遥控器。再尝试小米 Max 2 的时候，竟然连接成功了，准备好飞机之后，点击遥控器的相机界面的设置中的遥控器设置最下面的对频，出现提示确定，然后给出60秒超时的提示，这个时候用圆珠笔头之类的东西捅一下飞机右侧的对频按钮——注意是靠前的一个，别太大力，据说有人捅打了整个捅进去了，那就悲剧了。</p><p>本来蓝灯闪烁的滴滴叫唤的遥控器，在轻捅飞机对频按钮之后一小会儿，就停止叫唤了，也提示对频成功。</p><h1 id="版本问题"><a href="#版本问题" class="headerlink" title="版本问题"></a>版本问题</h1><p>遥控器对频后，满以为我就可以爽飞了，结果提示遥控器版本与飞行器不匹配，死活要求升级，也无法启动电机。一查看，我的飞机固件是1.6.40，而遥控器固件是1.9.2，这怎么搞？ <img src="http://oldzhou.com:2020/hexophoto/WechatIMG245.jpeg" alt=""></p><p>用过大疆的都知道，每个版本的飞机与遥控器并不一定是一样的版本号，比如我的飞机1.6.40，可能对应的是1.6.0也说不定，这怎么匹配呢？我怎么知道现在遥控器的1.9.2对应的飞机固件版本是什么呢？难度大了。</p><p>网上搜索，大疆官网，都找不到历史版本的固件下载了，只有大疆的最新的1.11.20可以有<a href="https://www.dji.com/cn/phantom-3-pro/info#downloads" target="_blank" rel="external">下载地址</a>,怎么才能找到比如1.9.2呢？</p><p>据说大疆的设备基本只能升级不能降级，这可难倒我了，毕竟我还不想把我的飞机升级到1.11.20呢——据说升级到这个版本之后限制很多基本不能飞了。我虽然不是做什么违法的事情但也不喜欢升级到这么对限制的版本。于是尝试在网上寻找历史版本的固件。尝试了百度，基本是废物，没什么卵用。后来尝试谷歌，竟然找到了一个.</p><p>经过一番搜索，找到一个关于Downgrading firmware on P3P from 1.10.9 to 1.7.6的页面，<a href="https://phantompilots.com/threads/downgrading-firmware-on-p3p-from-1-10-9-to-1-7-6.105384/" target="_blank" rel="external">点这里可以看到</a>,可以找到1.7.60到1.10.90的历史固件。<br><img src="http://oldzhou.com:2020/hexophoto/p3pupgrade_1.10.58" alt=""></p><p>于是把这几个历史固件都下载了。一开始打算升级到1.9.60，但是查询之后很多人反映相比1.8.80，1.9.60的信号变差了，距离也短了，同样1.8.80也有很多问题，所以打算升级到1.7.60。</p><p>同时也找到了降级遥控器的办法，在连接遥控器的页面，点击右上角长按，之后会出现选择固件版本的页面，选择之后点击刷入，会自动下载并自动刷入。先从1.9.2降级到1.8.0，再到1.6.0。同时飞机升级到1.7.6也完成了。</p><p>本来发现遥控器不匹配，打算用1.7.60的固件包去升级遥控器，方法是这样的<a href="https://zhidao.baidu.com/question/1737021060449293027.html" target="_blank" rel="external">飞行器固件升级步骤</a>。但是尝试把估计包的bin文件放入根目录再插入读卡器并插入遥控器的USB口后等了很久也没反应。<img src="http://oldzhou.com:2020/hexophoto/1529472343024.jpg" alt="">这个方法还是行不通。看来还是需要搜索到底1.7.60的飞机需要的遥控器版本是多少？</p><p>打开飞机及遥控器，之后，还是显示飞机与遥控器的版本不匹配。大疆官网也有几个类似问题的，比如这个<a href="http://bbs.dji.com/thread-53241-1-1.html" target="_blank" rel="external">遥控器与飞行器固件不匹配，怎么解决</a>，还有这个<a href="http://bbs.dji.com/thread-54943-1-1.html" target="_blank" rel="external">问大家版本1.76飞行器固件对应的遥控器固件版本是多少</a>.后来确定，对应飞机1.7.60的遥控器起码是1.5.7，经过观察，现在能降级到的遥控器版本是1.5.80，所以再次降级到1.5.80。</p><p>降级之后打开，遥控器滴滴滴地叫。估计是固件降级之后需要重新对频。按照对频方法，再来一次，成功！可以启动飞机了。新问题：貌似启动后的声音有些怪异，不知道是不是因为没放平。只能再测试了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://oldzhou.com:2020/hexophoto/p3pupgrade_1.54.47.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="无人机" scheme="https://www.oldzhou.com/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/"/>
-    
-    
-      <category term="精灵3" scheme="https://www.oldzhou.com/tags/%E7%B2%BE%E7%81%B53/"/>
-    
-      <category term="升级" scheme="https://www.oldzhou.com/tags/%E5%8D%87%E7%BA%A7/"/>
     
   </entry>
   
