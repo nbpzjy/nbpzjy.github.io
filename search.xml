@@ -4,6 +4,47 @@
   
     
     <entry>
+      <title><![CDATA[群晖中用 docker 部署 h5ai 文件服务器]]></title>
+      <url>https://www.oldzhou.com/2019/05/15/190515%E7%BE%A4%E6%99%96%E4%B8%AD%E7%94%A8%20Docker%20%E9%83%A8%E7%BD%B2%20h5ai%20%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1/</url>
+      <content type="html"><![CDATA[<p>最近在油管上闲逛，发现了一个好玩的东西叫  h5ai 的文件目录服务。这是一个部署很简单，但执行起来很高效的服务器。什么架构啊什么技术啊，就不多说了，直接使用就好了。这方便了外网时的访问，mac 或者 pc 不用再担心找不到合适的协议连接出问题，直接使用浏览器搞定一切。</p>
+<p>为了简单方便，打算采用 docker 来部署，这样的好处是不用担心很多依赖问题，简单，高效。</p>
+<p>群晖运行的 docker 跟普通的使用命令行运行的 docker 稍有区别，提供了一个可视化的界面，所以有一些配置，跟命令行相比有时是简单了，但有时又复杂了。一个命令可以解决的事，在可视化的界面上设置可能出现各种问题。</p>
+<h3 id="下载映像"><a href="#下载映像" class="headerlink" title="下载映像"></a>下载映像</h3><p>运行 docker，在注册表里面输入 h5ai 搜索，找到 clue/h5ai 的这个，点击下载。文件不小，大约有 270 M，需要点耐心等待其下载完成。<br><img src="http://www.oldzhou.com:2020/hexophoto/docker-h5ai/5101557928290_.pic_hd.jpg" alt=""></p>
+<h3 id="运行映像"><a href="#运行映像" class="headerlink" title="运行映像"></a>运行映像</h3><p>下载完成之后，就可以开始部署了。</p>
+<p>点击映像，选择下载好的 clue/h5ai:latest，再点击启动。<br><img src="http://www.oldzhou.com:2020/hexophoto/docker-h5ai/5111557928469_.pic_hd.jpg" alt=""><br>容器名称。——这里顺便说一下，现在用的 docker 容器多了，就出现端口记不住的问题，学到一个新的方法，就是在容器命名时，把名字后面带上本地端口（也就是外部访问这个容器时的端口号），这样一看就知道该容器运行在什么端口上，管理方便，使用也方便，算是最近学到的一个小技巧。<br><img src="http://www.oldzhou.com:2020/hexophoto/docker-h5ai/5121557928632_.pic_hd.jpg" alt=""></p>
+<p>高级设置，进入之后要做两件事：</p>
+<ul>
+<li><p>设置端口号，这个端口不要跟一句运行的其他容器搞冲突了就好，可以自动，但是自动的话总觉得不可控，最好还是自己添加一个喜欢的数字。顺便把这个端口号写到上面提到的容器名称那里去。</p>
+</li>
+<li><p>还有一个重要的事情，就是卷的添加。这里需要多说说，因为我遇到的坑就在这里。添加文件夹，可以进入到群晖的目录里面去选择需要挂载到 h5ai 文件服务的目录，原则上可以选择所有的目录或者目录里面的子目录。然后重点来了：装载路径。在网上搜来搜去也没找到具体该填什么，后来在初始的 h5ai 里面的 readme.md 文件里面看到了，叫 <code>/var/www</code> ，可以在这个目录下新建一个对应的文件目录的名字，当然也不写，那样就直接挂载在根目录下面了。个人觉得还是写一个好些，反正又不要钱。然后这样就挂载好了。<br><img src="http://www.oldzhou.com:2020/hexophoto/docker-h5ai/5131557928904_.pic_hd.jpg" alt=""></p>
+</li>
+</ul>
+<p>你以为这样就成功了吗？<br>Too young too simple.</p>
+<h3 id="群晖共享文件的权限问题"><a href="#群晖共享文件的权限问题" class="headerlink" title="群晖共享文件的权限问题"></a>群晖共享文件的权限问题</h3><p>这时打开是空白的，虽然新添加的目录确实出现了，但是里面是空的。 nani？明明里面有文件的啊，咋就啥都没有呢？我一度怀疑我没有挂载成功，只是添加了一个空目录。但是把之前专门给 docker 使用的目录挂载进来，却是成功读取到文件的。那么就是权限的问题了。</p>
+<p>找到问题就好解决了。这个问题在其他平台上不知会不会遇到，但群晖是会遇到的。权限出问题，那就去需要挂载的目录添加权限：</p>
+<p>回到群晖，打开 file station，找到需要共享的目录（前面已经挂载的目录），右键点击，再选择属性，弹出栏的第二个标签<strong>权限</strong>，新增一个 <code>Everyone</code> 的用户，把其权限改为读取（也可以完全控制，但最少要有读取权限），注意记得选择应用到子文件夹，不然后面还得出现空白的文件目录——别问我怎么知道的。<br><img src="http://www.oldzhou.com:2020/hexophoto/docker-h5ai/5151557929770_.pic_hd.jpg" alt=""><br>这样，再次运行已经设置好的容器，用浏览器访问群晖的地址加上 <code>:端口号</code>， 就可以访问到刚才做好的 h5ai 目录服务了。赞不赞？</p>
+<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>简单高效的文件服务就搞定了，外网也可以轻松访问小姐姐们了。虽然群晖有自带的 webDav 套件可用，但是一直没用过，不好评论，这个 h5ai 却是极好的，起码安装方便，目录可控。</p>
+<p>越发觉得 Docker 容器是个好东西了。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 群晖 </tag>
+            
+            <tag> docker </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[阿里云 DDNS 那些事]]></title>
       <url>https://www.oldzhou.com/2019/05/14/190514%E9%98%BF%E9%87%8C%E4%BA%91%20DDNS%20%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
       <content type="html"><![CDATA[<p><strong>今天遇到一个坑：</strong></p>
@@ -31,16 +72,17 @@
 <p><strong>Docker 虚拟机上场</strong></p>
 <p>经过一番折腾，我知道群晖自带的 DDNS 不太靠谱，路由器的 DDNS 指望不上了，LEDE 的两种方式都失败了。终于让我祭出 Docker 大法。</p>
 <p>只用于 DDNS，那么应该是一个小小的服务就可以了。</p>
-<p>阿里云域名解析端的 app ID 及 Key 什么的就不多介绍了。需要注意的，跟马化腾家的 Dnspod 不同的，是需要把域名解析里面的 A 记录删除掉，就是将域名指向 IP 地址的这个解析记录，删除。值得注意的是，这里的 DDNS 是更新到 <code>www</code> 的，也就是 DDNS 成功之后访问域名是需要完整输入 <code>www.oldzhou.com</code> 这样的，如果想使用更简短的地址如 oldzhou.com，那么可以再添加一条解析记录 CNAME 的记录为 <code>@`` 值为</code>oldzhou.com` 这样就可以了。</p>
-<p>现在进入 Docker 配置阿里云的 DDNS 解析。</p>
-<p>首先启动 Docker，在注册表里面输入 aliyun，搜索。chenhw2 的这个下载。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5041557846451_.pic_hd.jpg" alt=""><br>完成之后，点击下载下来的映像，点击启动。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5031557846334_.pic_hd.jpg" alt=""><br>在高级设置里，选择最右边的环境，修改里面的值：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5051557846579_.pic_hd.jpg" alt=""><br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">PATH 不用改</div><div class="line"><span class="string">AKID :</span>就是 AccessKey ID</div><div class="line"><span class="string">AKSCT:</span> Access Key Secret</div><div class="line"><span class="string">DOMAIN:</span> 输入域名，带 www，如 www.oldzhou.com</div><div class="line">IPAPI 不用改</div><div class="line">REDO 设置为<span class="number">600</span>——为啥呢？我也不知道。</div></pre></td></tr></table></figure></p>
-<p>如此这般，设置就完成了。点击应用，就启动了：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5071557846863_.pic_hd.jpg" alt=""><br>CPU 使用 0%，内存 17MB，感人不？最重要的是刚才删除掉的阿里云域名解析里面的 A 记录自动添加了。我的天哪，竟然成功了。</p>
+<p>阿里云域名解析端的 app ID 及 Key 什么的就不多介绍了。需要注意的，跟马化腾家的 Dnspod 不同的，是需要把域名解析里面的 A 记录删除掉，就是将域名指向 IP 地址的这个解析记录，删除。值得注意的是，这里的 DDNS 是更新到 <code>www</code> 的，也就是 DDNS 成功之后访问域名是需要完整输入 <code>www.oldzhou.com</code> 这样的，如果想使用更简短的地址如 oldzhou.com，那么可以再添加一条解析记录 CNAME 的记录为 <code>@</code> 值为 <code>oldzhou.com</code> 这样就可以了。</p>
+<p>现在进入 Docker 配置阿里云的 DDNS 解析。选择 chenhw2 的这个下载。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5041557846451_.pic_hd.jpg" alt=""><br>完成之后，点击下载下来的映像，再点击启动。<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5031557846334_.pic_hd.jpg" alt=""><br>在高级设置里，选择最右边的<strong>环境</strong>设置，修改里面的值：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5051557846579_.pic_hd.jpg" alt=""><br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">PATH 不用改</div><div class="line"><span class="string">AKID :</span>就是 AccessKey ID</div><div class="line"><span class="string">AKSCT:</span> Access Key Secret</div><div class="line"><span class="string">DOMAIN:</span> 输入域名，带 www，如 www.oldzhou.com</div><div class="line">IPAPI 不用改</div><div class="line">REDO 设置为<span class="number">600</span>——为啥呢？我也不知道。</div></pre></td></tr></table></figure></p>
+<p>如此这般，设置就完成了。点击<strong>应用</strong>，即可启动了：<br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5071557846863_.pic_hd.jpg" alt=""><br>CPU 使用 0%，内存 17MB，感人不？最重要的是刚才删除掉的阿里云域名解析里面的 A 记录自动添加了。我的天哪，竟然成功了。</p>
 <p>至此，使用 Docker 来做阿里云的 DDNS，就成功解决了。目前看起来是表现良好，持久性如何有待观察。</p>
 <p><strong>不带 www 访问域名的设置</strong></p>
 <p>这里似乎跟之前的腾讯系不同。同样是添加一个 CNAME 类型的记录，主机记录 @，记录值设置为自己的完整域名（带 www), 如 <code>www.olzhou.com</code><br><img src="http://www.oldzhou.com:2020/hexophoto/ddnsaliyun/5081557849463_.pic_hd.jpg" alt=""></p>
-<h2 id="如此就实现了不带-www也能正常访问。"><a href="#如此就实现了不带-www也能正常访问。" class="headerlink" title="如此就实现了不带 www也能正常访问。"></a>如此就实现了不带 <code>www</code>也能正常访问。</h2><h1 id="最后：安全是回家最快的路。"><a href="#最后：安全是回家最快的路。" class="headerlink" title="最后：安全是回家最快的路。"></a>最后：安全是回家最快的路。</h1><hr>
-<p><strong>再来每日一题：</strong></p>
+<p>如此就实现了不带 <code>www</code>也能正常访问。</p>
 <blockquote>
+<p>跟新于2019-05-17</p>
+<h2 id="今天学习到申请企业邮箱，使用这个域名的时候出现了-MX-解析记录和-CNAME-解析记录冲突的问题，暂时没法解决，以后再说了。由于已经有很多的素材使用的是-oldzhou-com-的这个顶级域名，所以如果为了邮箱服务修改的话，成本有点高。"><a href="#今天学习到申请企业邮箱，使用这个域名的时候出现了-MX-解析记录和-CNAME-解析记录冲突的问题，暂时没法解决，以后再说了。由于已经有很多的素材使用的是-oldzhou-com-的这个顶级域名，所以如果为了邮箱服务修改的话，成本有点高。" class="headerlink" title="今天学习到申请企业邮箱，使用这个域名的时候出现了 MX 解析记录和 CNAME 解析记录冲突的问题，暂时没法解决，以后再说了。由于已经有很多的素材使用的是 oldzhou.com 的这个顶级域名，所以如果为了邮箱服务修改的话，成本有点高。"></a>今天学习到申请企业邮箱，使用这个域名的时候出现了 MX 解析记录和 CNAME 解析记录冲突的问题，暂时没法解决，以后再说了。由于已经有很多的素材使用的是 oldzhou.com 的这个顶级域名，所以如果为了邮箱服务修改的话，成本有点高。</h2><h1 id="最后：安全是回家最快的路。"><a href="#最后：安全是回家最快的路。" class="headerlink" title="最后：安全是回家最快的路。"></a>最后：安全是回家最快的路。</h1><hr>
+<p><strong>再来每日一题：</strong></p>
 <p>北仑锚地范围小，旁又有码头，故应开启雷达，准确定位，离大码头距离涨水时不少于(0.6’)，落水时不少于（0.4’），离岸距离不可少于（0.5’），离北仑山亦不可少于0.5’。</p>
 </blockquote>
 ]]></content>
@@ -1886,6 +1928,38 @@
     </entry>
     
     <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -2048,38 +2122,6 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
             
         </tags>
         
