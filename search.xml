@@ -4,6 +4,50 @@
   
     
     <entry>
+      <title><![CDATA[win10激活]]></title>
+      <url>https://www.oldzhou.com/2019/06/27/190626win10%E6%BF%80%E6%B4%BB/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg" alt=""><br>先在的主力电脑是 27 寸的 iMac 2015 款，系统是 MacOS ，有些时候需要用到 win 系统的时候，就用很老的但是被我跟换处理器、内存、固态硬盘的 ThinkPAD R61e，尽管老，但仍然可以用，比如做一些优盘写入什么的。</p>
+<p>一段时间没用，最近打开出现了需要激活的提示，就在右下角，很碍眼。由于没有经常使用，再加上勉强可用，所以一直也去研究激活。</p>
+<p>前几天不知道怎么想到了，把实体的 win10 直接转到了 mac 下的虚拟机 Parallels Desktop，非常顺利，直接提供了一个软件将之前的系统转移到移动硬盘，再回到 mac下面的 Parallels 下面导入，就 OK 了，但还有个问题，就是未激活。</p>
+<p>首先是把虚拟机的 win10 激活了，值得注意的是，原来的系统是专业版，转到虚拟机的却成了企业版，不知道具体是什么原理。不管怎么讲，搜索一下激活方法，大致分为软件激活和密匙激活。以前是在淘宝花几块钱买一个序列号激活的，现在搜索一下，先试试，不行在淘宝。<br><img src="http://www.oldzhou.com:2020/hexophoto/win10act/6121561564819_.pic_hd.jpg" alt=""></p>
+<p><a href="http://m.xitongtiandi.net/wenzhang/key/24532.html" target="_blank" rel="external">Win10激活密钥key</a><br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">专业版：W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">企业版：NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">家庭版：TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">教育版：NW6C2-QMPVW-D7KKK<span class="number">-3</span>GKT6-VCFB2</div><div class="line"></div><div class="line">专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"></div><div class="line">企业版N：DPH2V-TTNVB<span class="number">-4</span>X9Q3-TJR4H-KHJW4</div><div class="line"></div><div class="line">教育版N：<span class="number">2</span>WH4N<span class="number">-8</span>QGBV-H22JP-CT43Q-MDWWJ</div><div class="line"></div><div class="line">企业版LSTB：WNMTR<span class="number">-4</span>C88C-JK8YV-HQ7T2<span class="number">-76</span>DF9</div><div class="line"></div><div class="line">企业版LSTB N：<span class="number">2</span>F77B-TNFGY<span class="number">-69</span>QQF-B8YKP-D69TJ</div></pre></td></tr></table></figure></p>
+<p><strong>激活方法：</strong></p>
+<p>系统安装完毕后，首先以管理员身份打开 CMD 命令行窗口，按下<code>Win+X</code>，选择命令提示符(管理员)。</p>
+<p>说明：<code>kms.03k.org</code> 是 <code>kms</code> 服务器地址，可能会失效，如果激活失败，可以自行搜索 <code>kms</code> 服务器地址，将 <code>kms.xspace.in</code> 替换成新的地址即可，比如换成 <code>kms.03k.org</code>，参考可用的 <code>kms</code> 激活服务器有哪些</p>
+<p>Win10专业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p>
+<p>Win10企业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p>
+<p>Win10家庭版用户依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p>
+<p>Win10 激活密钥 key 激活次数有限制，不能保证 100% 激活成功。</p>
+<h2 id="幸运的是：虚拟机里面的-win10-一次成功。"><a href="#幸运的是：虚拟机里面的-win10-一次成功。" class="headerlink" title="幸运的是：虚拟机里面的 win10 一次成功。"></a>幸运的是：虚拟机里面的 win10 一次成功。</h2><p>隔几天之后才又尝试把 R61e 的系统激活</p>
+<p>查看系统的时候才注意到，这是专业版，跟虚拟机里面的企业版是否不同，不知道具体什么原因造成的。同样安装激活虚拟机系统的方法，失败了。</p>
+<p>重新搜索，发现了这个</p>
+<p><a href="http://www.ylmfwin100.com/ylmf/8642.html" target="_blank" rel="external">2019最新windows10永久激活码 win10专业版密钥 win10通用序列号</a></p>
+<p>1、专业版：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line">MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"><span class="number">2</span>X7P3-NGJTH-Q9TJF<span class="number">-8</span>XDP9-T83GT</div><div class="line">J2WWN-Q4338<span class="number">-3</span>GFW9-BWQVK-MG9TT</div><div class="line">NBQWQ-W9PTV-B4YWP<span class="number">-4</span>K773-T6PKG</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line">J783Y-JKQWR<span class="number">-677</span>Q8-KCXTF-BHWGC</div><div class="line">C4M9W-WPRDG-QBB3F-VM9K8-KDQ9Y</div><div class="line"><span class="number">2</span>VCGQ-BRVJ4<span class="number">-2</span>HGJ2-K36X9-J66JG</div><div class="line">MGX79-TPQB9-KQ248-KXR2V-DHRTD</div><div class="line">FJHWT-KDGHY-K2384<span class="number">-93</span>CT7<span class="number">-323</span>RC</div></pre></td></tr></table></figure>
+<p>2、神Key(适用各版本)：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line"><span class="number">6</span>K2KY-BFH24-PJW6W<span class="number">-9</span>GK29-TMPWP</div><div class="line">RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289</div></pre></td></tr></table></figure></p>
+<p>3、常用笔记本激活码：</p>
+<p>戴尔 DELL 序列号： <code>342DG-6YJR8-X92GV-V7DCV-P4K27</code><br>联想 LENOVO 序列号：<code>22TKD-F8XX6-YG69F-9M66D-PMJBM</code><br>三星 SAMSUNG 序列号：<code>49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD</code><br>宏基 ACER 序列号：<code>YKHFT-KW986-GK4PY-FDWYH-7TP9F或</code><br><code>FJGCP-4DFJD-GJY49-VJBQ7-HYRR2</code></p>
+<p>方法是直接在属性里面激活-跟换密匙，确定之后稍等一会儿就搞定了。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> win10 </tag>
+            
+            <tag> 激活 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[九亿吨儿童配音版]]></title>
       <url>https://www.oldzhou.com/2019/06/24/190624%E4%B9%9D%E4%BA%BF%E5%90%A8%E5%84%BF%E7%AB%A5%E9%85%8D%E9%9F%B3%E7%89%88/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -111,6 +155,39 @@
             <tag> 评估 </tag>
             
             <tag> 考核 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[低潮前靠泊乌沙山一号泊位]]></title>
+      <url>https://www.oldzhou.com/2019/06/18/190618%E4%BD%8E%E6%BD%AE%E5%89%8D%E9%9D%A0%E6%B3%8A%E4%B9%8C%E6%B2%99%E5%B1%B1%E4%B8%80%E5%8F%B7%E6%B3%8A%E4%BD%8D/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/wushas1/6101561388499_.pic_hd.jpg" alt=""></p>
+<a id="more"></a>
+<p>跟班学习</p>
+<p>计划发车时间0945，差不多准时，联系上船时间1115。实际上船时间1106</p>
+<p>上船时half车，速度5节左右，加到full车，速度慢慢增加到7到8节。</p>
+<p>上船开始到象山大桥，时间25分钟。进入桥区航道，与东锚进入金塘大桥类似，及早走到航道的延长线，便于更早感受流压的影响，易于配流压角度。比金塘大桥好的是这里的交通流趋于简单，甚至可能没有进出口船。</p>
+<p>到达第一个转向点时间40分钟。大概是大桥之后 15分钟左右。全部航程速度再full的状态下，基本在8节左右。</p>
+<p>距离乌沙山电厂码头2.2海里，从上船开始耗时1.5小时，速度7.8左右，开始减车。船长介绍说full 与half之间转速差不大，所以减车到half之后，会提早再减到slow。</p>
+<p>2分钟后减车到slow。速度衰减不快也不慢。</p>
+<p>5链距离减车到最慢，之后一直行驶到两号泊位偏东位置速度3.7，停车</p>
+<p>淌航至船头接近一号泊位，速度两节多，在停车状态下该轮舵效不错，左满舵时可以微微左偏，左舵二十能稳定。开始倒车，先deadslow，随即加到slow</p>
+<p>速度刹减明显，停车后在急落流下容易后退，需要及时进车抑制。<br><img src="http://www.oldzhou.com:2020/hexophoto/wushas1/6091561388490_.pic_hd.jpg" alt=""><br>30米范围之外，前面拖轮需要持续快车顶，减速到慢车会出现船头不再往里。落流急，易于产生后腿速度，注意后面船舶的安全距离，同时应注意与码头夹角不宜过大，避免迎流角变大后流压作用及偏转力矩突然增大，在前面拖轮持续快顶，后面的拖轮适时调整顶推的力，控制角度。</p>
+<p>在码头边30米范围之内，落流变缓，感受到推开流，注意前后速度变化，切忌出现大的偏转，及时加车，但也要注意横移速度变化——总体来讲，横移速度不会太大，重点中的重点是要控制船舶的偏转，特别是很接近码头时。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 引航 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 跟班学习 </tag>
             
         </tags>
         
@@ -388,9 +465,9 @@
         
         <tags>
             
-            <tag> 群晖 </tag>
-            
             <tag> docker </tag>
+            
+            <tag> 群晖 </tag>
             
         </tags>
         
@@ -450,9 +527,9 @@
         
         <tags>
             
-            <tag> DDNS </tag>
-            
             <tag> 群晖 </tag>
+            
+            <tag> DDNS </tag>
             
         </tags>
         
@@ -2285,6 +2362,38 @@
     </entry>
     
     <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -2447,38 +2556,6 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
             
         </tags>
         
@@ -4008,6 +4085,45 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
     </entry>
     
     <entry>
+      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
+      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
+      <content type="html"><![CDATA[<hr>
+<blockquote>
+<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
+</blockquote>
+<hr>
+<a id="more"></a>
+<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
+<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
+<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
+<ol>
+<li>虽然很难做到早、大、宽，但目的必须是清。</li>
+<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
+</ol>
+<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
+<p>(还没写完，敬请期待）</p>
+<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
+<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 引航 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 引航 </tag>
+            
+            <tag> 港区 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[DaVinci出现RED Decoder错误]]></title>
       <url>https://www.oldzhou.com/2017/02/21/DaVinci%E5%87%BA%E7%8E%B0RED%20Decoder%E9%94%99%E8%AF%AF/</url>
       <content type="html"><![CDATA[<p>先上图</p>
@@ -4046,45 +4162,6 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
             <tag> 视频 </tag>
             
             <tag> 达芬奇 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
-      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
-      <content type="html"><![CDATA[<hr>
-<blockquote>
-<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
-</blockquote>
-<hr>
-<a id="more"></a>
-<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
-<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
-<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
-<ol>
-<li>虽然很难做到早、大、宽，但目的必须是清。</li>
-<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
-</ol>
-<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
-<p>(还没写完，敬请期待）</p>
-<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
-<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 引航 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 引航 </tag>
-            
-            <tag> 港区 </tag>
             
         </tags>
         

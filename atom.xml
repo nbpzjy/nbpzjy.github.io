@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2019-06-24T04:17:26.000Z</updated>
+  <updated>2019-06-26T16:18:30.000Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10激活</title>
+    <link href="https://www.oldzhou.com/2019/06/27/190626win10%E6%BF%80%E6%B4%BB/"/>
+    <id>https://www.oldzhou.com/2019/06/27/190626win10激活/</id>
+    <published>2019-06-26T16:11:35.000Z</published>
+    <updated>2019-06-26T16:18:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg" alt=""><br>先在的主力电脑是 27 寸的 iMac 2015 款，系统是 MacOS ，有些时候需要用到 win 系统的时候，就用很老的但是被我跟换处理器、内存、固态硬盘的 ThinkPAD R61e，尽管老，但仍然可以用，比如做一些优盘写入什么的。</p><p>一段时间没用，最近打开出现了需要激活的提示，就在右下角，很碍眼。由于没有经常使用，再加上勉强可用，所以一直也去研究激活。</p><p>前几天不知道怎么想到了，把实体的 win10 直接转到了 mac 下的虚拟机 Parallels Desktop，非常顺利，直接提供了一个软件将之前的系统转移到移动硬盘，再回到 mac下面的 Parallels 下面导入，就 OK 了，但还有个问题，就是未激活。</p><p>首先是把虚拟机的 win10 激活了，值得注意的是，原来的系统是专业版，转到虚拟机的却成了企业版，不知道具体是什么原理。不管怎么讲，搜索一下激活方法，大致分为软件激活和密匙激活。以前是在淘宝花几块钱买一个序列号激活的，现在搜索一下，先试试，不行在淘宝。<br><img src="http://www.oldzhou.com:2020/hexophoto/win10act/6121561564819_.pic_hd.jpg" alt=""></p><p><a href="http://m.xitongtiandi.net/wenzhang/key/24532.html" target="_blank" rel="external">Win10激活密钥key</a><br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">专业版：W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">企业版：NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">家庭版：TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">教育版：NW6C2-QMPVW-D7KKK<span class="number">-3</span>GKT6-VCFB2</div><div class="line"></div><div class="line">专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"></div><div class="line">企业版N：DPH2V-TTNVB<span class="number">-4</span>X9Q3-TJR4H-KHJW4</div><div class="line"></div><div class="line">教育版N：<span class="number">2</span>WH4N<span class="number">-8</span>QGBV-H22JP-CT43Q-MDWWJ</div><div class="line"></div><div class="line">企业版LSTB：WNMTR<span class="number">-4</span>C88C-JK8YV-HQ7T2<span class="number">-76</span>DF9</div><div class="line"></div><div class="line">企业版LSTB N：<span class="number">2</span>F77B-TNFGY<span class="number">-69</span>QQF-B8YKP-D69TJ</div></pre></td></tr></table></figure></p><p><strong>激活方法：</strong></p><p>系统安装完毕后，首先以管理员身份打开 CMD 命令行窗口，按下<code>Win+X</code>，选择命令提示符(管理员)。</p><p>说明：<code>kms.03k.org</code> 是 <code>kms</code> 服务器地址，可能会失效，如果激活失败，可以自行搜索 <code>kms</code> 服务器地址，将 <code>kms.xspace.in</code> 替换成新的地址即可，比如换成 <code>kms.03k.org</code>，参考可用的 <code>kms</code> 激活服务器有哪些</p><p>Win10专业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10企业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10家庭版用户依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10 激活密钥 key 激活次数有限制，不能保证 100% 激活成功。</p><h2 id="幸运的是：虚拟机里面的-win10-一次成功。"><a href="#幸运的是：虚拟机里面的-win10-一次成功。" class="headerlink" title="幸运的是：虚拟机里面的 win10 一次成功。"></a>幸运的是：虚拟机里面的 win10 一次成功。</h2><p>隔几天之后才又尝试把 R61e 的系统激活</p><p>查看系统的时候才注意到，这是专业版，跟虚拟机里面的企业版是否不同，不知道具体什么原因造成的。同样安装激活虚拟机系统的方法，失败了。</p><p>重新搜索，发现了这个</p><p><a href="http://www.ylmfwin100.com/ylmf/8642.html" target="_blank" rel="external">2019最新windows10永久激活码 win10专业版密钥 win10通用序列号</a></p><p>1、专业版：</p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line">MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"><span class="number">2</span>X7P3-NGJTH-Q9TJF<span class="number">-8</span>XDP9-T83GT</div><div class="line">J2WWN-Q4338<span class="number">-3</span>GFW9-BWQVK-MG9TT</div><div class="line">NBQWQ-W9PTV-B4YWP<span class="number">-4</span>K773-T6PKG</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line">J783Y-JKQWR<span class="number">-677</span>Q8-KCXTF-BHWGC</div><div class="line">C4M9W-WPRDG-QBB3F-VM9K8-KDQ9Y</div><div class="line"><span class="number">2</span>VCGQ-BRVJ4<span class="number">-2</span>HGJ2-K36X9-J66JG</div><div class="line">MGX79-TPQB9-KQ248-KXR2V-DHRTD</div><div class="line">FJHWT-KDGHY-K2384<span class="number">-93</span>CT7<span class="number">-323</span>RC</div></pre></td></tr></table></figure><p>2、神Key(适用各版本)：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line"><span class="number">6</span>K2KY-BFH24-PJW6W<span class="number">-9</span>GK29-TMPWP</div><div class="line">RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289</div></pre></td></tr></table></figure></p><p>3、常用笔记本激活码：</p><p>戴尔 DELL 序列号： <code>342DG-6YJR8-X92GV-V7DCV-P4K27</code><br>联想 LENOVO 序列号：<code>22TKD-F8XX6-YG69F-9M66D-PMJBM</code><br>三星 SAMSUNG 序列号：<code>49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD</code><br>宏基 ACER 序列号：<code>YKHFT-KW986-GK4PY-FDWYH-7TP9F或</code><br><code>FJGCP-4DFJD-GJY49-VJBQ7-HYRR2</code></p><p>方法是直接在属性里面激活-跟换密匙，确定之后稍等一会儿就搞定了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;先在的主力电脑是 27 寸的 iMac 2015 款，系统是 MacOS ，有些时候需要用到 win 系统的时候，就用
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="win10" scheme="https://www.oldzhou.com/tags/win10/"/>
+    
+      <category term="激活" scheme="https://www.oldzhou.com/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>九亿吨儿童配音版</title>
@@ -119,6 +146,28 @@
   </entry>
   
   <entry>
+    <title>低潮前靠泊乌沙山一号泊位</title>
+    <link href="https://www.oldzhou.com/2019/06/18/190618%E4%BD%8E%E6%BD%AE%E5%89%8D%E9%9D%A0%E6%B3%8A%E4%B9%8C%E6%B2%99%E5%B1%B1%E4%B8%80%E5%8F%B7%E6%B3%8A%E4%BD%8D/"/>
+    <id>https://www.oldzhou.com/2019/06/18/190618低潮前靠泊乌沙山一号泊位/</id>
+    <published>2019-06-18T05:45:00.000Z</published>
+    <updated>2019-06-24T15:05:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/wushas1/6101561388499_.pic_hd.jpg" alt=""></p><a id="more"></a><p>跟班学习</p><p>计划发车时间0945，差不多准时，联系上船时间1115。实际上船时间1106</p><p>上船时half车，速度5节左右，加到full车，速度慢慢增加到7到8节。</p><p>上船开始到象山大桥，时间25分钟。进入桥区航道，与东锚进入金塘大桥类似，及早走到航道的延长线，便于更早感受流压的影响，易于配流压角度。比金塘大桥好的是这里的交通流趋于简单，甚至可能没有进出口船。</p><p>到达第一个转向点时间40分钟。大概是大桥之后 15分钟左右。全部航程速度再full的状态下，基本在8节左右。</p><p>距离乌沙山电厂码头2.2海里，从上船开始耗时1.5小时，速度7.8左右，开始减车。船长介绍说full 与half之间转速差不大，所以减车到half之后，会提早再减到slow。</p><p>2分钟后减车到slow。速度衰减不快也不慢。</p><p>5链距离减车到最慢，之后一直行驶到两号泊位偏东位置速度3.7，停车</p><p>淌航至船头接近一号泊位，速度两节多，在停车状态下该轮舵效不错，左满舵时可以微微左偏，左舵二十能稳定。开始倒车，先deadslow，随即加到slow</p><p>速度刹减明显，停车后在急落流下容易后退，需要及时进车抑制。<br><img src="http://www.oldzhou.com:2020/hexophoto/wushas1/6091561388490_.pic_hd.jpg" alt=""><br>30米范围之外，前面拖轮需要持续快车顶，减速到慢车会出现船头不再往里。落流急，易于产生后腿速度，注意后面船舶的安全距离，同时应注意与码头夹角不宜过大，避免迎流角变大后流压作用及偏转力矩突然增大，在前面拖轮持续快顶，后面的拖轮适时调整顶推的力，控制角度。</p><p>在码头边30米范围之内，落流变缓，感受到推开流，注意前后速度变化，切忌出现大的偏转，及时加车，但也要注意横移速度变化——总体来讲，横移速度不会太大，重点中的重点是要控制船舶的偏转，特别是很接近码头时。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/wushas1/6101561388499_.pic_hd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
+    
+    
+      <category term="跟班学习" scheme="https://www.oldzhou.com/tags/%E8%B7%9F%E7%8F%AD%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>应知应会  好好学习  天天向上</title>
     <link href="https://www.oldzhou.com/2019/06/11/190611%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A%E5%90%88%E9%9B%86/"/>
     <id>https://www.oldzhou.com/2019/06/11/190611应知应会合集/</id>
@@ -218,9 +267,9 @@
       <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
-    
       <category term="docker" scheme="https://www.oldzhou.com/tags/docker/"/>
+    
+      <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
     
   </entry>
   
@@ -247,9 +296,9 @@
       <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="DDNS" scheme="https://www.oldzhou.com/tags/DDNS/"/>
-    
       <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
+    
+      <category term="DDNS" scheme="https://www.oldzhou.com/tags/DDNS/"/>
     
   </entry>
   
@@ -542,61 +591,6 @@
       <category term="台塑" scheme="https://www.oldzhou.com/tags/%E5%8F%B0%E5%A1%91/"/>
     
       <category term="落流" scheme="https://www.oldzhou.com/tags/%E8%90%BD%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雾与风的洗礼</title>
-    <link href="https://www.oldzhou.com/2019/04/20/%E9%9B%BE%E4%B8%8E%E9%A3%8E%E7%9A%84%E6%B4%97%E7%A4%BC/"/>
-    <id>https://www.oldzhou.com/2019/04/20/雾与风的洗礼/</id>
-    <published>2019-04-20T14:34:15.000Z</published>
-    <updated>2019-04-21T10:02:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<video src="https://www.oldzhou.com:2021/hexophoto/20190419.mp4" controls="controls" width="100%"></video><p>安全，是你我共同的追求！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;video src=&quot;https://www.oldzhou.com:2021/hexophoto/20190419.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-
-
-&lt;p&gt;安全，是你我共同的追求！&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-      <category term="音乐" scheme="https://www.oldzhou.com/tags/%E9%9F%B3%E4%B9%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>是不是快了？反省一下</title>
-    <link href="https://www.oldzhou.com/2019/04/17/%E6%98%AF%E4%B8%8D%E6%98%AF%E5%BF%AB%E4%BA%86%EF%BC%9F%E5%8F%8D%E7%9C%81%E4%B8%80%E4%B8%8B/"/>
-    <id>https://www.oldzhou.com/2019/04/17/是不是快了？反省一下/</id>
-    <published>2019-04-17T04:35:15.000Z</published>
-    <updated>2019-05-09T06:40:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天靠泊高丽幸福（SUNNY CLOVER），计划是1845靠泊，低潮时间1520，右靠正好（早期的潮水规律高潮前3小时到高潮后2小时东北流）。由于码头船1800开，所以按照惯例1700桃花进口刚好。<br><img src="https://www.oldzhou.com:2021/hexophoto/IMG_20190416_182837.jpg" alt="晚霞下的梅山码头"><br><a id="more"></a><br>一路无话。</p><p>双屿门时有一个北插船影响，动态不明朗，似乎穿越又似乎不穿越。依据对是否存在危险有疑惑时把这个危险当作是存在的，所以右舵明显地右转，给北插船一个明显的操纵意图：过红灯。与此同时与出口的外轮交汇也更加的明朗且空间更加的宽裕。一切都很美好。</p><p>感受比较强烈的，是在带好拖轮之后的趟航阶段。</p><p>这个时候正值转流前后，流并不急，所以不应该压拢，且船头在初期确实左偏意味明显，需要压满舵进车来克服。但是带好拖轮之后，这个感觉不一样了，虽然依旧控制船头的偏转趋势，但是似乎往码头方向压拢的矢量线分量更大了。假如不是压拢流影响，那么应该是前面拖轮顶了。由于即将接近泊位，在操纵意图上也需要保持不左偏的姿态，所以即便如此，也没有给前面拖轮采取措施。</p><p>感受更明显的是在经过2号泊位时，横向距离不多，速度也不快，3节左右，能够感受到，这个态势保持的话似乎到不了自己的位置就能靠上了。措施是需要立即采取的，由于速度依然在可控的合适范围，于是左舵20进车调整首向，角度合适之后右满舵压住：一来保持姿态不大幅度变化，二来调整整个船身的运动态势并调整船尾的运动。稳定后停车，速度依然在三节以内，倒车减速不存在问题。只等后面跟2号泊位的船清爽，开始倒车，slowastern足够。</p><p>一个感觉是船尾依然靠拢较快，由于横距不大，不宜采用前面顶的方式调整，所以后面拖轮在早一些的时候沟通确认可以在不需要时间松缆的前提下朝外拖。当然安全和稳妥起见，还是给出了准备拖的位置的指令，之后再缆绳得力。由于船舶本身不大，所以惯性也不大，这样的船舶受拖轮的影响效果显著，得力所产生的力量已经足够，并且要密切注意变化趋势，切忌后面拖多了导致前面的靠拢速度与后面靠拢速度的差值太大造成角度和态势的破坏。在小型船舶的操纵时，拖轮的使用应该温柔可控，行云流水，任何大幅度的调整大幅度的偏转都是危险的、不可取的、必须避免的。</p><p>由于本身横距不大，加上靠拢调整的还算平稳，靠拢速度合适、靠拢角度安全，所以贴靠码头也比较省时，位置也控制的刚好，带缆也比较迅速，所以较快地靠泊完成。</p><p>一切似乎都很完美。</p><p>开始沉思的，是在上车后驾驶员的一句话：今天靠的挺快啊。之前没有思考的问题这个时候开始回想了：</p><p>快，就或多或少存在风险。虽然说船舶小靠泊快带缆快是客观原因，但似乎横距较小且没有提早控制更合适的横距是一个风险点。<br><img src="https://www.oldzhou.com:2021/hexophoto/sunnyclovertomeishantrack.png" alt=""><br>看回放轨迹，这是直接开到码头上去啊，没什么所谓的横距了。这是不应该的：应该让安全更可控一点，给自己多一点空间多一点时间，多一些调整的余地。一个“快”，饱含了较多的风险，而且是没必要的风险：多给自己5分钟或者10分钟，会舒服很多安全很多，毕竟——小心使驶得万年船。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;昨天靠泊高丽幸福（SUNNY CLOVER），计划是1845靠泊，低潮时间1520，右靠正好（早期的潮水规律高潮前3小时到高潮后2小时东北流）。由于码头船1800开，所以按照惯例1700桃花进口刚好。&lt;br&gt;&lt;img src=&quot;https://www.oldzhou.com:2021/hexophoto/IMG_20190416_182837.jpg&quot; alt=&quot;晚霞下的梅山码头&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
-    
-    
-      <category term="引航" scheme="https://www.oldzhou.com/tags/%E5%BC%95%E8%88%AA/"/>
-    
-      <category term="港区" scheme="https://www.oldzhou.com/tags/%E6%B8%AF%E5%8C%BA/"/>
     
   </entry>
   
