@@ -4,11 +4,48 @@
   
     
     <entry>
+      <title><![CDATA[VNC连接树莓派]]></title>
+      <url>https://www.oldzhou.com/2019/07/04/190704VNC%E8%BF%9E%E6%8E%A5%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/logo.jpg" alt=""><br>树莓派是个好玩的东西，爱折腾的人估计都会搞来玩玩，有些人可能还搞好几个。我的树莓派还是2B，现在都已经出4了，本来想弄一个4来<del>玩玩</del>玩一下，但是想到之前的2B还在吃灰，就放弃了。</p>
+<p>吃灰的2B在买来的时候玩的多一点，搞过KODI，也用过Raspberry系统，没玩的太明白，最后搁置在 raspberry 这里，一放就是一两年。</p>
+<p>树莓派<del>是</del>虽然好玩，但是极为简陋，键盘鼠标什么的没有就不说了，没有显示器就是个麻烦，总不能老是连接电视的HDMI：一方面不在电视旁，另一反面一直占用电视显然也没道理。最好的好办法就是VNC远程连接。</p>
+<p>开启VNC，之前也尝试过，曾经连接成功过，但不知道为什么，后来再没连上。</p>
+<p>现在才知道，之前开启的方法是<strong>临时使用</strong>的，重新开机后就没有了，所以怎么尝试都失败。</p>
+<p><strong>永久开启</strong></p>
+<ul>
+<li>在命令行输入：<code>sudo raspi-config</code>，然后回车<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/1.png" alt=""></li>
+<li>选择：<code>5 Interfacing Options</code>，回车<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/2.png" alt=""></li>
+<li>选择第三项：“VNC”，回车<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/3.png" alt=""></li>
+<li>选择是，回车<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/4.webp" alt=""></li>
+<li>之后会安装一些依赖包，稍等一会儿，应该还有输入Y确认安装之类的，按提示来。<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/4-2.png" alt=""><br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/4-3.png" alt=""></li>
+<li>最后点选“Finish”完成即可。<br><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/5.webp" alt=""></li>
+</ul>
+<p>然后就去其他电脑上尝试连接吧。安装完成第一次连接是失败的，重启一次搞定。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> VNC </tag>
+            
+            <tag> 树莓派 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[win10激活]]></title>
       <url>https://www.oldzhou.com/2019/06/27/190626win10%E6%BF%80%E6%B4%BB/</url>
-      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg" alt=""><br>先在的主力电脑是 27 寸的 iMac 2015 款，系统是 MacOS ，有些时候需要用到 win 系统的时候，就用很老的但是被我跟换处理器、内存、固态硬盘的 ThinkPAD R61e，尽管老，但仍然可以用，比如做一些优盘写入什么的。</p>
-<p>一段时间没用，最近打开出现了需要激活的提示，就在右下角，很碍眼。由于没有经常使用，再加上勉强可用，所以一直也去研究激活。</p>
-<p>前几天不知道怎么想到了，把实体的 win10 直接转到了 mac 下的虚拟机 Parallels Desktop，非常顺利，直接提供了一个软件将之前的系统转移到移动硬盘，再回到 mac下面的 Parallels 下面导入，就 OK 了，但还有个问题，就是未激活。</p>
+      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg" alt=""><br>现在的主力电脑是 27 寸的 iMac 2015 款，系统 MacOS ，有些时候需要用到 win 系统，就用很老的但是被我跟换处理器、内存、固态硬盘的 ThinkPAD R61e，尽管老，但仍然可以用，比如做一些优盘写入什么的。</p>
+<p>一段时间没怎么用，最近打开却出现了需要激活的提示，就在右下角，很碍眼。由于不经常使用，再加上勉强可用，所以一直也去研究怎么激活。</p>
+<p>前几天不知道怎么想到了，把实体的 win10 直接转到 mac 下的虚拟机 Parallels Desktop，非常顺利，直接提供了一个软件将之前的系统转移到移动硬盘，再回到 mac下面的 Parallels 下面导入，就 OK 了，但存在一个问题，就是<strong>未激活</strong>。</p>
 <p>首先是把虚拟机的 win10 激活了，值得注意的是，原来的系统是专业版，转到虚拟机的却成了企业版，不知道具体是什么原理。不管怎么讲，搜索一下激活方法，大致分为软件激活和密匙激活。以前是在淘宝花几块钱买一个序列号激活的，现在搜索一下，先试试，不行在淘宝。<br><img src="http://www.oldzhou.com:2020/hexophoto/win10act/6121561564819_.pic_hd.jpg" alt=""></p>
 <p><a href="http://m.xitongtiandi.net/wenzhang/key/24532.html" target="_blank" rel="external">Win10激活密钥key</a><br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">专业版：W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">企业版：NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">家庭版：TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">教育版：NW6C2-QMPVW-D7KKK<span class="number">-3</span>GKT6-VCFB2</div><div class="line"></div><div class="line">专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"></div><div class="line">企业版N：DPH2V-TTNVB<span class="number">-4</span>X9Q3-TJR4H-KHJW4</div><div class="line"></div><div class="line">教育版N：<span class="number">2</span>WH4N<span class="number">-8</span>QGBV-H22JP-CT43Q-MDWWJ</div><div class="line"></div><div class="line">企业版LSTB：WNMTR<span class="number">-4</span>C88C-JK8YV-HQ7T2<span class="number">-76</span>DF9</div><div class="line"></div><div class="line">企业版LSTB N：<span class="number">2</span>F77B-TNFGY<span class="number">-69</span>QQF-B8YKP-D69TJ</div></pre></td></tr></table></figure></p>
 <p><strong>激活方法：</strong></p>
@@ -18,15 +55,16 @@
 <p>Win10企业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p>
 <p>Win10家庭版用户依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p>
 <p>Win10 激活密钥 key 激活次数有限制，不能保证 100% 激活成功。</p>
-<h2 id="幸运的是：虚拟机里面的-win10-一次成功。"><a href="#幸运的是：虚拟机里面的-win10-一次成功。" class="headerlink" title="幸运的是：虚拟机里面的 win10 一次成功。"></a>幸运的是：虚拟机里面的 win10 一次成功。</h2><p>隔几天之后才又尝试把 R61e 的系统激活</p>
-<p>查看系统的时候才注意到，这是专业版，跟虚拟机里面的企业版是否不同，不知道具体什么原因造成的。同样安装激活虚拟机系统的方法，失败了。</p>
-<p>重新搜索，发现了这个</p>
-<p><a href="http://www.ylmfwin100.com/ylmf/8642.html" target="_blank" rel="external">2019最新windows10永久激活码 win10专业版密钥 win10通用序列号</a></p>
+<p>幸运的是：虚拟机里面的 win10 一次就激活成功。</p>
+<hr>
+<p>隔几天之后才又尝试把 R61e 的系统激活</p>
+<p>查看系统的时候才注意到，这是专业版，跟虚拟机里面的企业版不同，不知道具体什么原因造成的。使用激活虚拟机系统的方法尝试，失败了。</p>
+<p>重新搜索，发现了这个：<a href="http://www.ylmfwin100.com/ylmf/8642.html" target="_blank" rel="external">2019最新windows10永久激活码 win10专业版密钥 win10通用序列号</a></p>
 <p>1、专业版：</p>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line">MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"><span class="number">2</span>X7P3-NGJTH-Q9TJF<span class="number">-8</span>XDP9-T83GT</div><div class="line">J2WWN-Q4338<span class="number">-3</span>GFW9-BWQVK-MG9TT</div><div class="line">NBQWQ-W9PTV-B4YWP<span class="number">-4</span>K773-T6PKG</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line">J783Y-JKQWR<span class="number">-677</span>Q8-KCXTF-BHWGC</div><div class="line">C4M9W-WPRDG-QBB3F-VM9K8-KDQ9Y</div><div class="line"><span class="number">2</span>VCGQ-BRVJ4<span class="number">-2</span>HGJ2-K36X9-J66JG</div><div class="line">MGX79-TPQB9-KQ248-KXR2V-DHRTD</div><div class="line">FJHWT-KDGHY-K2384<span class="number">-93</span>CT7<span class="number">-323</span>RC</div></pre></td></tr></table></figure>
 <p>2、神Key(适用各版本)：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line"><span class="number">6</span>K2KY-BFH24-PJW6W<span class="number">-9</span>GK29-TMPWP</div><div class="line">RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289</div></pre></td></tr></table></figure></p>
 <p>3、常用笔记本激活码：</p>
-<p>戴尔 DELL 序列号： <code>342DG-6YJR8-X92GV-V7DCV-P4K27</code><br>联想 LENOVO 序列号：<code>22TKD-F8XX6-YG69F-9M66D-PMJBM</code><br>三星 SAMSUNG 序列号：<code>49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD</code><br>宏基 ACER 序列号：<code>YKHFT-KW986-GK4PY-FDWYH-7TP9F或</code><br><code>FJGCP-4DFJD-GJY49-VJBQ7-HYRR2</code></p>
+<p>戴尔 DELL 序列号： <code>342DG-6YJR8-X92GV-V7DCV-P4K27</code><br>联想 LENOVO 序列号：<code>22TKD-F8XX6-YG69F-9M66D-PMJBM</code><br>三星 SAMSUNG 序列号：<code>49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD</code><br>宏基 ACER 序列号：<code>YKHFT-KW986-GK4PY-FDWYH-7TP9F</code>或<br><code>FJGCP-4DFJD-GJY49-VJBQ7-HYRR2</code></p>
 <p>方法是直接在属性里面激活-跟换密匙，确定之后稍等一会儿就搞定了。</p>
 ]]></content>
       
@@ -338,6 +376,59 @@
             <tag> 应知应会 </tag>
             
             <tag> 做题 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PVE 虚拟机下挂载硬盘]]></title>
+      <url>https://www.oldzhou.com/2019/06/03/190603PVE%E4%B8%AD%E7%BB%99%E6%B7%B1%E8%89%B2%E7%BE%A4%E6%99%96%E6%B7%BB%E5%8A%A0%E7%A1%AC%E7%9B%98/</url>
+      <content type="html"><![CDATA[<p>在PVE节点选择 Shell, 进入命令窗口</p>
+<p>查看插入的硬盘<br><code>ls /dev/disk/by-id</code></p>
+<p><code>fdisk -lu</code></p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Disk /dev/sdc: 223.6 GiB,<span class="number"> 240065183744 </span>bytes,<span class="number"> 468877312 </span>sectors</div><div class="line">Units: sectors of<span class="number"> 1 </span>*<span class="number"> 512 </span>=<span class="number"> 512 </span>bytes</div><div class="line">Sector size (logical/physical):<span class="number"> 512 </span>bytes /<span class="number"> 512 </span>bytes</div><div class="line">I/O size (minimum/optimal):<span class="number"> 512 </span>bytes /<span class="number"> 512 </span>bytes</div></pre></td></tr></table></figure>
+<p>格式化分区<br><code>fdisk /dev/sdc</code></p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Welcome <span class="built_in">to</span> fdisk (util-linux <span class="number">2.29</span><span class="number">.2</span>).</div><div class="line">Changes will remain <span class="keyword">in</span> memory only, <span class="keyword">until</span> you decide <span class="built_in">to</span> <span class="built_in">write</span> them.</div><div class="line">Be careful <span class="keyword">before</span> <span class="keyword">using</span> <span class="keyword">the</span> <span class="built_in">write</span> <span class="keyword">command</span>.</div><div class="line"></div><div class="line">Device does <span class="keyword">not</span> contain <span class="keyword">a</span> recognized partition table.</div><div class="line">Created <span class="keyword">a</span> <span class="built_in">new</span> DOS disklabel <span class="keyword">with</span> disk identifier <span class="number">0x86681f0d</span>.</div><div class="line"></div><div class="line">Command (m <span class="keyword">for</span> help):</div></pre></td></tr></table></figure>
+<p>可以输入 m 查看帮助</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Help</span>:</div><div class="line"></div><div class="line">  DOS (MBR)</div><div class="line">   a   toggle a bootable flag</div><div class="line">   b   edit <span class="keyword">nested</span> BSD disklabel</div><div class="line">   c   toggle the dos <span class="keyword">compatibility</span> flag</div><div class="line"></div><div class="line">  Generic</div><div class="line">   d   <span class="keyword">delete</span> a <span class="keyword">partition</span></div><div class="line">   F   <span class="keyword">list</span> free unpartitioned <span class="keyword">space</span></div><div class="line">   l   <span class="keyword">list</span> known <span class="keyword">partition</span> types</div><div class="line">   n   <span class="keyword">add</span> a <span class="keyword">new</span> <span class="keyword">partition</span></div><div class="line">   p   print the <span class="keyword">partition</span> <span class="keyword">table</span></div><div class="line">   t   <span class="keyword">change</span> a <span class="keyword">partition</span> <span class="keyword">type</span></div><div class="line">   v   <span class="keyword">verify</span> the <span class="keyword">partition</span> <span class="keyword">table</span></div><div class="line">   i   print information about a <span class="keyword">partition</span></div><div class="line"></div><div class="line">  Misc</div><div class="line">   m   print this menu</div><div class="line">   u   <span class="keyword">change</span> display/entry units</div><div class="line">   x   extra functionality (experts <span class="keyword">only</span>)</div><div class="line"></div><div class="line">  Script</div><div class="line">   I   <span class="keyword">load</span> disk layout <span class="keyword">from</span> sfdisk script <span class="keyword">file</span></div><div class="line">   O   dump disk layout <span class="keyword">to</span> sfdisk script <span class="keyword">file</span></div><div class="line"></div><div class="line">  <span class="keyword">Save</span> &amp; <span class="keyword">Exit</span></div><div class="line">   w   write <span class="keyword">table</span> <span class="keyword">to</span> disk <span class="keyword">and</span> <span class="keyword">exit</span></div><div class="line">   q   quit <span class="keyword">without</span> saving changes</div><div class="line"></div><div class="line">  <span class="keyword">Create</span> a <span class="keyword">new</span> label</div><div class="line">   g   <span class="keyword">create</span> a <span class="keyword">new</span> <span class="keyword">empty</span> GPT <span class="keyword">partition</span> <span class="keyword">table</span></div><div class="line">   G   <span class="keyword">create</span> a <span class="keyword">new</span> <span class="keyword">empty</span> SGI (IRIX) <span class="keyword">partition</span> <span class="keyword">table</span></div><div class="line">   o   <span class="keyword">create</span> a <span class="keyword">new</span> <span class="keyword">empty</span> DOS <span class="keyword">partition</span> <span class="keyword">table</span></div><div class="line">   s   <span class="keyword">create</span> a <span class="keyword">new</span> <span class="keyword">empty</span> Sun <span class="keyword">partition</span> <span class="keyword">table</span></div></pre></td></tr></table></figure>
+<p>创建新的分区用 n 命令</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Command (m for <span class="keyword">help</span>): n</div><div class="line"><span class="keyword">Partition</span> <span class="keyword">type</span></div><div class="line">   p   primary (<span class="number">0</span> primary, <span class="number">0</span> <span class="keyword">extended</span>, <span class="number">4</span> free)</div><div class="line">   e   <span class="keyword">extended</span> (<span class="keyword">container</span> <span class="keyword">for</span> <span class="keyword">logical</span> <span class="keyword">partitions</span>)</div></pre></td></tr></table></figure>
+<p>选择创建主分区</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Select</span> (<span class="keyword">default</span> p): p</div><div class="line"><span class="keyword">Partition</span> <span class="built_in">number</span> (<span class="number">1</span><span class="number">-4</span>, <span class="keyword">default</span> <span class="number">1</span>): <span class="number">1</span></div><div class="line"><span class="keyword">First</span> sector (<span class="number">2048</span><span class="number">-468877311</span>, <span class="keyword">default</span> <span class="number">2048</span>): </div><div class="line"><span class="keyword">Last</span> sector, +sectors <span class="keyword">or</span> +<span class="keyword">size</span>&#123;K,M,G,T,P&#125; (<span class="number">2048</span><span class="number">-468877311</span>, <span class="keyword">default</span> <span class="number">468877311</span>): </div><div class="line"></div><div class="line">Created a <span class="keyword">new</span> <span class="keyword">partition</span> <span class="number">1</span> <span class="keyword">of</span> <span class="keyword">type</span> <span class="string">'Linux'</span> <span class="keyword">and</span> <span class="keyword">of</span> <span class="keyword">size</span> <span class="number">223.6</span> GiB.</div></pre></td></tr></table></figure>
+<p>一路默认下来，就创建成功了，分区表写入磁盘，输入 w</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Command (m for <span class="keyword">help</span>): w</div><div class="line">The <span class="keyword">partition</span> <span class="keyword">table</span> has been altered.</div><div class="line"><span class="keyword">Calling</span> ioctl() <span class="keyword">to</span> re-<span class="keyword">read</span> <span class="keyword">partition</span> table.</div><div class="line">Syncing disks.</div></pre></td></tr></table></figure>
+<p>这样就完成创建分区了，并退出 <code>fdisk</code></p>
+<p>格式化分区<br><code>mkfs -t ext4 /dev/sdc1</code></p>
+<p>创建目录用于挂载分区<br><code>mkdir -p /mnt/sdc1</code></p>
+<p>挂载分区到目录<br><code>mount -t ext4 /dev/sdc1 /mnt/sdc1</code></p>
+<p>查看挂载情况<br><code>df -h</code></p>
+<p>开机磁盘自动挂载<br><code>echo /dev/sdc1 /mnt/sdc1 ext4 defaults 0 2 &gt;&gt; /etc/fstab</code></p>
+<p>查看自动挂载配置<br><code>cat /etc/fstab</code></p>
+<p><code>./img2kvm ds918+1.04b.img 103 vm-103-disk-1</code></p>
+<p>PVE安装黑色群晖<br>winSCP 登录 PVE 根目录，上传 img2kvm，还有一个是群晖的引导 img</p>
+<p>完毕之后关闭 winSCP，回到 PVE  shell</p>
+<p><strong>PVE群晖添加挂载硬盘</strong></p>
+<p>先查看所有的硬盘<br><code>ls -l /dev/disk/by-id/</code></p>
+<p>确定要挂载的硬盘id，copy下来<br><code>ata-ST4000VN008-2DR166_ZGY4XP24</code></p>
+<p><code>ata-SAMSUNG_HM320JI_S16LJ90S701201</code></p>
+<p>这个命令就直接挂载了<br><code>qm set 103 --sata2 /dev/disk/by-id/ata-ST4000VN008-2DR166_ZGY4XP24</code></p>
+<p><code>qm set 105 --sata1 /dev/disk/by-id/ata-SAMSUNG_HM320JI_S16LJ90S701201</code></p>
+<p>这里一定要注意是挂载给哪个虚拟机，编号一定要准确，同时要记得修改指定sata序号。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> PVE </tag>
+            
+            <tag> 硬盘挂载 </tag>
             
         </tags>
         
@@ -2362,38 +2453,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -2556,6 +2615,38 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
             
         </tags>
         
@@ -4085,45 +4176,6 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
     </entry>
     
     <entry>
-      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
-      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
-      <content type="html"><![CDATA[<hr>
-<blockquote>
-<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
-</blockquote>
-<hr>
-<a id="more"></a>
-<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
-<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
-<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
-<ol>
-<li>虽然很难做到早、大、宽，但目的必须是清。</li>
-<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
-</ol>
-<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
-<p>(还没写完，敬请期待）</p>
-<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
-<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 引航 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 引航 </tag>
-            
-            <tag> 港区 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[DaVinci出现RED Decoder错误]]></title>
       <url>https://www.oldzhou.com/2017/02/21/DaVinci%E5%87%BA%E7%8E%B0RED%20Decoder%E9%94%99%E8%AF%AF/</url>
       <content type="html"><![CDATA[<p>先上图</p>
@@ -4162,6 +4214,45 @@ Win\040Ntfs\040Drive</code> 这串字符中<code>\040</code>代表空格，<code
             <tag> 视频 </tag>
             
             <tag> 达芬奇 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[港区航行的“早、大、宽、清”]]></title>
+      <url>https://www.oldzhou.com/2017/02/21/%E6%B8%AF%E5%8C%BA%E8%88%AA%E8%A1%8C%E7%9A%84%E2%80%9C%E6%97%A9%E3%80%81%E5%A4%A7%E3%80%81%E5%AE%BD%E3%80%81%E6%B8%85%E2%80%9D/</url>
+      <content type="html"><![CDATA[<hr>
+<blockquote>
+<p>21日上午有幸听到18#康老师的一堂关于港区航行的速度控制的课，收获颇丰。对于港区这个特殊水域中，怎么么做才是安全，有了一些新的认识。仔细地梳理了在国际海上避碰规则中有关速度相关的一些规定及描述，这是一种新的阅读和理解规则的方法。于是我就有了一种，怎么去理解规则中的早大宽清，在港区航行中怎么才能符合这个规定</p>
+</blockquote>
+<hr>
+<a id="more"></a>
+<p>大幅度及早采取行动宽让他船直到完全让清，这就是早大宽清的由来。</p>
+<p>在港区，尤其是宁波港这样的航道极为繁忙，交通密度大，又处于岛礁区域，潮流复杂，且有很多遮蔽区域，对于怎么做到早大宽清，有了更为复杂的要求。</p>
+<p>规则，是关于两个船舶直接的相互关系来做描述的，事实上有三条或者以上的相关船舶的局面已经属于特殊情况了。而通常为简化操作，往往把复杂局面分解为相互有影响的两两相遇的局面。</p>
+<ol>
+<li>虽然很难做到早、大、宽，但目的必须是清。</li>
+<li>怎么样做到让的适当，这是一个很大的课题。不同类型的船舶，不同尺寸的船舶，以及操作人员不同的操作水平，都会导致怎么让的合适有着较多的区别。</li>
+</ol>
+<h1 id="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"><a href="#有过一些嚷得过多而造成与其他船舶发生碰撞的教训" class="headerlink" title="有过一些嚷得过多而造成与其他船舶发生碰撞的教训"></a>有过一些嚷得过多而造成与其他船舶发生碰撞的教训</h1><p>某日一条出口船在羊小猫北出口航行，由于能见度不良，进口小船的航行动态不明朗，导致在避让的过程中与周边的挖砂船发生了 擦碰擦，造成了一定的经济损失，特别是给当事人造成了深远的影响。</p>
+<p>(还没写完，敬请期待）</p>
+<p>下面是Rule 8 action to avoid collison 避碰规则第8条 避免碰撞的行动</p>
+<p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=q01969iy8gw&tiny=0&auto=0" allowfullscreen\="">\</iframe></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 引航 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 引航 </tag>
+            
+            <tag> 港区 </tag>
             
         </tags>
         
