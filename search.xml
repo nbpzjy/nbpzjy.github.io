@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title><![CDATA[特朗普说提词器坏了]]></title>
+      <url>https://www.oldzhou.com/2019/07/07/190707%E7%89%B9%E6%9C%97%E6%99%AE%E8%AF%B4%E6%8F%90%E8%AF%8D%E5%99%A8%E5%9D%8F%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>特朗普说，提词器坏了，气人不？这么牛逼的国家的提词器竟然因为下雨坏掉了，sad.</p>
+<video src="http://www.oldzhou.com:2020/hexophoto/DonaldTrumpwatchlive.mp4" controls="controls" width="100%"></video>]]></content>
+      
+        <categories>
+            
+            <category> 视频 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[VNC连接树莓派]]></title>
       <url>https://www.oldzhou.com/2019/07/04/190704VNC%E8%BF%9E%E6%8E%A5%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
       <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/raspvnc/logo.jpg" alt=""><br>树莓派是个好玩的东西，爱折腾的人估计都会搞来玩玩，有些人可能还搞好几个。我的树莓派还是2B，现在都已经出4了，本来想弄一个4来<del>玩玩</del>玩一下，但是想到之前的2B还在吃灰，就放弃了。</p>
@@ -556,9 +577,9 @@
         
         <tags>
             
-            <tag> docker </tag>
-            
             <tag> 群晖 </tag>
+            
+            <tag> docker </tag>
             
         </tags>
         
@@ -618,9 +639,9 @@
         
         <tags>
             
-            <tag> 群晖 </tag>
-            
             <tag> DDNS </tag>
+            
+            <tag> 群晖 </tag>
             
         </tags>
         
@@ -888,9 +909,9 @@
         
         <tags>
             
-            <tag> NAS </tag>
-            
             <tag> PVE </tag>
+            
+            <tag> NAS </tag>
             
         </tags>
         
@@ -2453,6 +2474,38 @@
     </entry>
     
     <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -2615,38 +2668,6 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
             
         </tags>
         
