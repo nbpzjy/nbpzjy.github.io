@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2019-09-02T11:00:15.000Z</updated>
+  <updated>2019-10-10T15:13:28.000Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我和我的祖国</title>
+    <link href="https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/"/>
+    <id>https://www.oldzhou.com/2019/10/10/191010蔚蓝/</id>
+    <published>2019-10-10T15:13:15.000Z</published>
+    <updated>2019-10-10T15:13:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我和我的祖国</title>
+    <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
+    <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
+    <published>2019-10-10T15:13:15.000Z</published>
+    <updated>2019-10-10T15:18:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>融学学习攻略</title>
+    <link href="https://www.oldzhou.com/2019/09/18/190918%E8%9E%8D%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%94%BB%E7%95%A5/"/>
+    <id>https://www.oldzhou.com/2019/09/18/190918融学学习攻略/</id>
+    <published>2019-09-18T15:47:35.000Z</published>
+    <updated>2019-09-18T15:52:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/rongxue.jpg" alt=""><br>融学，其实是一个app的名称，实际上的作用是连接宁波市继续教育网络平台的一个客户端，在电脑端也可以登录。</p><p>作为一个虽然有些跑偏的技术型海港引航员，低劣地使用手机老老实实地播放几十分钟甚至几个小时的视频，然后答题，再看视频，且无法后台运行无法拖动（严格说是不能快进，但是看过的内容是可以拖动的），这么笨拙地搞，实在不是鄙人的风格。</p><p>于是开始考虑比较先进高效的方法：</p><p>1.多台手机登录融学app，同时进行？取决于是否支持同时多设备登录<br>2.手机平板多app端进行？这个跟上面那个类似方案，但是不同操作系统情况是否不同？<br>3.电脑端、手机端、平板电脑端？<br>4.同一电脑多网页登录<br>5.不同电脑各登录一个</p><p>第一种方案，起码在android手机上是可行的，测试同时登录两台。并且同时开始两个学习，没有问题</p><p>第二种，由于苹果平板有点抽风，没能下载app，原则上应该是没有问题的。</p><p>第三种，也可以成功<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/duoshebeitu.jpg" alt=""><br>第四种，失败了，由于其设置为必须获得焦点，一旦鼠标在其他地方点击，网页失去焦点，就立即停止播放了。所以，即使想多开几个网页，也只能其中一个获得焦点的网页可以正常播放。多开网页方式失败到时候其次，更严重的是这个电脑想继续播放学习视频就啥也不能干了。</p><p>第五种，也失败了，虽然刚开始几乎以为就要成功了，但是内置了对多网页播放的监测，很快就在其中一个网页提示无法继续同时播放并停止了。这样，打算多几个电脑同时开工的想法就失败了。</p><hr><p>显然多手机客户端应该是可行的方案，但是还是比较弱智：一直开着手机等着慢慢播放，这真的是极为糟糕的体验。</p><p>怎么可能这样就把自诩技术党的我阻击在这里呢？</p><p>终极大招：</p><p>虚拟机远程控制网页播放学习视频</p><p>优点：</p><ol><li>虚拟机一直开机，不存在占用手机或者电脑屏幕无法做其他操作的弊端</li><li>虚拟机在家里，只需要远程启动，在无wifi时学习不使用移动流量</li><li>不用苦心等待，只管开始，然后退出控制软件，播放始终在进行，直到结束</li><li>24小时学习都可以，只要点击开始，可以全天候无死角</li></ol><p>缺点：</p><ol><li>手机端远程控制的 vnc viewer的使用体验一搬，毕竟这样的方式操纵的是一个十几年前的压根没有触摸控制这玩意的windows xp，现在却要通过手机这么小的屏幕来远程触摸操控，实属不易。</li><li>蜗牛的能力确实是有限了，已经压榨到极致了</li><li>还是安卓手机版vnc viewer的问题，稳定性一般，连接有时存在困难。最好在其他设备采用更稳定的vnc控制软件，效率高一些<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/vncshibai.jpg" alt=""></li></ol><p>食用方法：</p><p>在蜗牛的PVE下，按照Windows xp，并且安装 vnc server，在Windows xp内按照浏览器（chrome），chrome打开网页版，把需要学习的课程选择好，这样可以免除在手机那么小的屏幕去选择课程操作不方便的烦恼。全部寻找好想学的课程，反正学习课程的页面，最大化减少在手机远程控制端的操作。</p><p>路由器设置端口转发，把vnc的端口转发到这个虚拟的windows xp上来</p><p>在手机端，用vnc viewer远程连接虚拟的windows xp。这个过程涉及到的知识点比较多，比如公网ip，DDNS等，不深入了。大致意思就是使用DDNS解析动态公网iP，来连接家里的虚拟windows xp。</p><p>这么地，愉快滴开始学习吧！<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/shoujikongzhi.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://www.oldzhou.com:2021/hexophoto/rongxue/rongxue.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;融学，其实是一个app的名称，实际上的作用是连接宁波市继续教育网络平台的一个客户端，在电脑端也可以登录。&lt;/p&gt;
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="融学" scheme="https://www.oldzhou.com/tags/%E8%9E%8D%E5%AD%A6/"/>
+    
+      <category term="vnc" scheme="https://www.oldzhou.com/tags/vnc/"/>
+    
+  </entry>
   
   <entry>
     <title>两号警戒区的一些顾虑</title>
@@ -519,87 +598,6 @@
       <category term="定位故障" scheme="https://www.oldzhou.com/tags/%E5%AE%9A%E4%BD%8D%E6%95%85%E9%9A%9C/"/>
     
       <category term="Mate 20X" scheme="https://www.oldzhou.com/tags/Mate-20X/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日一题  好好学习</title>
-    <link href="https://www.oldzhou.com/2019/05/13/190513%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-    <id>https://www.oldzhou.com/2019/05/13/190513每日一题记录/</id>
-    <published>2019-05-13T07:18:15.000Z</published>
-    <updated>2019-05-20T03:11:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>根据李科长的建议，我们小组将以每日一题的方式，发一些应知应会的题目，供大家复习练习，也欢迎各位师傅们有针对性地发一些好的题目，供大家共同学习。大家一起努力，同心协力，积沙成丘，在此感谢各位师傅！</p></blockquote><p>金塘大桥主通航孔及其对应的桥区航道允许（50000）载重吨及以下的船舶双向通行，金塘大桥主通航孔通航高度为（51）米，通航宽度为（544）米。</p><p>每日一题:<br>拖轮口令有关名词的含义：<br>最慢车：拖轮单车合上的最小转速<br>微速：拖轮双车合上的最小转速；<br>慢车：二分之一的拖轮工作马力<br>快车：四分之三的拖轮工作马力<br>最快车：拖轮的最大工作马力<br>保持拖缆得力：拖缆刚受力但未能拖动大船</p><p>镇海化工泊位系带缆方案：载重吨4500吨以下，甬江内（前4后4），甬江外（前5后5）；载重吨4501-12500，甬江内（前5后5），甬江外（前6后6）；载重吨12501-27500，甬江外（前后3-2-2），载重吨27501吨以上（前后4-2-2）。</p><p>超大型船舶使用深水航槽时应遵守下列规定：（一）配备经最新改正的航海图书资料。（二）船长在驾驶台值班，轮机长在机舱值班。（三）在白天且能见度（2海里）及以上，风力不超过（8级）（风力参照上海中心气象台预报）的情况下使用深水航槽。（四）船舶富裕水深不小于船舶最大吃水的（10%），且最小不少于（2米）。（五）编队航行时，按顺序依次通行，前后两船的间距不少于（4）海里。</p><p>船舶在金塘锚地单锚锚泊时，出链长度不得小于（6节）。船舶在七里锚地单锚锚泊时，出链长度不得小于（5节）。 船舶达不到上述要求或一舷出链长度超过（8节）时，应向VTS中心报告，并说明原因。</p><p>根据当时潮流情况控制抵泊（艏进泊位范围）速度，各类船舶要求如下：（1）5千吨级以内船舶，余速不得大于（3节）。<br>（2）3万吨级以内船舶，余速不得大于（2.5节）。<br>（3）5万吨级以内船舶，余速不得大于（2节）。<br>（4）10万吨级以内船舶，余速不得大于（1.5节）。<br>（5）10万吨级以上船舶，余速不得大于（1节）。</p><p>甬江水域码头，靠落水开涨水，把开锚绞至吃力，留一前倒缆和艏头缆，当船转至与码头（80°-90°）角时，方可解头缆和倒缆，并开始绞锚。</p><p>当水域能见距离小于（1000米）或海事管理机构发布能见度不良黄色预警信息时，禁止船舶驶入金塘大桥桥区航道、象山港公路大桥桥区航道、下湾门航道和从虾峙门东口驶入虾峙门航道。</p><p>（2万）总吨及以上船舶进入双向航路时，应事先向周围船舶通报本船动态，避免在第一双向航路（下篮山）灯桩前后500米航段和第二双向航路（黄礁头）灯桩前后500米航段与他船交会。</p><p>1.虾峙门航道引水登轮点-L1报告线里外（1海里)，离轮点-老虎礁往外（5链至1.5海里)。</p><p>2.金塘登离轮点为-鹅礁正北（1.8海里)为圆心，半径为（5链)的区域</p><p>3.金塘大桥北登离轮点为大桥北（2.5海里)为圆心，半径为5链的区域</p><p>4.笤帚门登轮点浪高大于1.5米，风力大于6级时，登轮点为L2报告线至往里（1.5海里)区域，离轮点为小黄礁往外（1.5至2.5海里)区。一般气象海况时，登离轮点为雷康N正东（4海里)处为圆心，5链为半径的区域。</p><p>金塘水道为       水道，平均流速      ，最大流速达      。（A）<br>A.强流   3节   6节             B.混流   3节   6节<br>C.半日潮   3节   7节           D一般   2节   5节</p><p>二万吨级重载船舶靠泊镇海港区甬江内码头，其最佳靠泊时间大潮汛与小潮汛分别是：（B）                          A 镇海高潮时   镇海高潮后1小时  B 镇海高潮后45分钟 镇海高潮后1小时1刻钟C 只要有落水就行       D 镇海高潮后1小时    镇海高潮后1小时</p><p>北仑港区涨潮流由东向西，落潮流由西向东，以(落潮流)为主。冬天落潮约(8～9)小时，涨潮约(2～3)小时，如遇西北风健，可能终日无涨水；夏天落潮约(7～8)小时，涨潮(3～4)小时。涨潮时，外海的重盐度水与来自杭州湾、甬江的低盐度水相遇，锲入下层，形成下层强流，表层缓流的现象，有时表层无流而底层流已有力,一般以(10)米为分隔层。</p><p>北仑锚地范围小，旁又有码头，故应开启雷达，准确定位，离大码头距离涨水时不少于(0.6’)，落水时不少于（0.4’），离岸距离不可少于（0.5’），离北仑山亦不可少于0.5’。</p><ol><li>穿白水域船舶航行时实际速度顺流不得超过（10）节，逆流不得超过（8）节。在甬江航道内航行时，顺流不得超过（ 8）节，逆流不得超过（ 6）节；进出甬江航行实际富裕水深不少于（ 0.5）米。金塘大桥桥区航道顺流不得超过（12）节，逆流不得超过（10）节。</li></ol><p>宁波海事局辖区水域以北纬29°40′线为界分南、北两部分，南部以石浦(东门岛)（29°12′18″N/121°57′15″E）为参考基点，北部以(北仑山)（29°56′30″N/121°50′57″E）为参考基点。根据《宁波海事局辖区水上防台监督管理规定》，锚泊船舶应与桥梁保持足够的安全距离。其中，与金塘大桥、象山港公路大桥应保持3000米以上的距离；与其他桥梁应保持1000米以上的距离。</p><p><strong>Ⅳ级防台</strong>–防台戒备阶段：根据台风动态分析，预计<strong>(72)小时</strong>内宁波沿海水域可能受台风外围影响时。<br><strong>Ⅲ级防台</strong>–防台准备阶段：当台风中心距参考基点(580)海里并可能影响宁波沿海水域，或在未来<strong>(48)小时</strong>内宁波沿海水域平均风力将达(8)级及以上时。<br><strong>Ⅱ级防台</strong>–防台实施阶段：当台风中心距参考基点(320)海里并可能影响宁波沿海水域，或在未来<strong>(24)</strong>小时内宁波沿海水域平均风力将达(10)级及以上时。<br><strong>Ⅰ级防台</strong>–抗击台风阶段：当台风中心预计在未来<strong>(12)小时</strong>内进入宁波沿海水域，或在未来(12)小时内宁波沿海水域平均风力将达(12)级及以上时。</p><p>进出梅山航道的船舶在溜网山附近，即宁波-舟山港深水航路船舶定线制航路第一警戒区附近航行时，应充分考虑到该区域(<strong>通航密度大</strong>)、(<strong>流态复杂</strong>)、(<strong>大角度</strong>)及<strong>居间障碍物</strong>等因素的影响，引航员应特别保持警戒，提前减速，以留有更多的时间判断局面和采取行动。</p><p>北仑9#锚位水深<strong>38米/允许最大吃水24.5</strong>米，为泥底/危险品锚地，由于地形关系，该锚点潮流较为复杂。一般镇海<strong>高潮后2.0小时初落</strong>，镇海<strong>低潮后2小时初涨</strong>，目前控制的抛锚时间为镇海<strong>高潮后（2）个小时或镇海低潮前（1）小时</strong>，抛落水。抛锚方法及出链长度：（<strong>顶流、深水抛锚</strong>）法，至少（<strong>9节</strong>）入水；<strong>过驳</strong>时至少（<strong>11节</strong>）入水。 重要节点：涂泥嘴正东，距锚位航行距离3.7nm，速度控制（7）节以下，船首抛锚人员就位；距离锚点1.0nm，速度控制（4）节左右；船首距落锚点<strong>0.15nm</strong>,速度控制在（<strong>2.0</strong>）节左右，令船头用锚机松锚至1节落水，准备抛锚。</p><p>梅山码头1#、2#泊位位于佛渡水道汀子门内，码头前沿-10米等深线宽度（600）米，目前规定，1#泊位允许靠离的最大船舶长度为（310）米，2#泊位最长为（354）米。</p><p>大型集装箱船靠泊时，桥吊放置原则是（4-3-3），即码头距船首应留出近（40%）船长的位置，船尾建议留出（30%）的船长位置，剩下的（30%）船长的位置可以用来放置桥吊。根据这个原则，270米船型，可放置（2台）桥吊，360米船型，可放置（3-4台）桥吊。</p><p><strong>中宅卸船泊位靠泊时间窗口：</strong><br>左舷靠泊：原靠泊时间为（镇海高潮前1h），新靠泊时段（镇海高潮前2h～镇海高潮时）；<br>右舷靠泊：原靠泊时间为（镇海低潮后2h）,新靠泊时段（镇海低潮后1.5h～镇海低潮后3.5h）。<br>中宅码头25万吨级船舶靠泊，拖轮配备至少（4）条，总马力不小于（19000）HP；离泊，拖轮配备至少（3）条，总马力不小于（14000）HP。</p><hr><p> 【5月13日】满载万吨轮以2kn余速拖单锚，淌航距离约为<strong>A__</strong>。<br>A．1.0倍船长     B．1.5倍船长<br>C．2.0倍船长    D．2.5倍船长</p><p>【5月9日】吊拖时拖缆的俯角一般应低于<strong>B__</strong>。<br>A．10°   B．15°   C．20°   D．25°</p><p>【5月10号】镇海18泊位主靠把最大间距<strong><strong>，两侧最大间距</strong></strong>，靠离小型化工船时应十分注意。需先对靠把贴拢后，再前后移船对上接卸管子。  (A)<br>A  72米   42米            B   55米     40米<br>C  85米   50米            D   79米     54米</p><p>甬江口进口引导灯桩为     ，射程     海里，引导方向为       。（）<br>A定红  10   260°30′    B闪红前1.5秒后2秒    8    260°<br>C定绿  10   260°30′    D闪绿前1.5秒后2秒    8    260°</p><p>每日一题  某轮总长84米，驾驶台至船尾14米。落水头靠镇海14#泊位。在涨水调头过程中，当船身与码头前沿垂直且在驾驶台看甬江进口导标一线时，船头与码头距离大约为（）。<br>A．10米          B.15米           C.20米          D.25米</p><p>【每日一“题”醒】<br>4月19日  在甬江航道内航行时，顺流不得超过（ ）节，逆流不得超过（ ）节；进出甬江航行实际富裕水深不少于（ ）米。</p><p>【5月15日】被引船主机发生故障而停车，应立即通知船方备妥双锚，淌航至船速小于（ ）节后，用锚机松出锚链，长度为（  ），当速度小于（ ）节后再时松时停，慢慢松链至需要长度，如情况紧急，可同时用同样方法下双锚，不可采取抛锚和一次出链太多，以免断链和损坏锚机。B<br>A  2 水深加0.5节链 1         B  3 水深加半节链 1<br>C  2 水深加1节链 0.5         D  3 水深加1节链 0.5</p><hr><p>80# </p><ol><li>平行靠泊入泊前要作好靠泊力学分析和充分的准备,船到码头边要细心观察现场的风流,确认泊位情况和所要协助靠泊拖轮马力配备等相关情况，合理控制入泊速度和入泊角度。</li><li>大型船舶平行靠泊，关键是控制靠泊三要素，速度，横距和靠拢角度。</li><li>拖轮的配备要考虑风流的综合影响，考虑船舶的吃水和受风面及侧推的配备情况。</li><li>实际操纵中首尾很难时完全同时并以几乎为零的速度贴拢码头，我们能做到的时尽量的平行靠泊，作为最基本要求，集装箱船舶触靠码头的速度不得超过10~15cm/s，大型矿油船不超过5cm/s。</li><li>用好最后一车对平行靠泊非常重要，尤其在大风浪天气，我们将这个一车叫做“救命车”，用这一车前，最好要先留好余地，包括前冲和偏转的余地。</li><li>靠码头时我们经常给大船一个惯性漂移的过程，这不仅仅是让大船有个惯性衰减的过程，实际上也是让其附加质量有个能量衰减的过程。</li></ol><p>招宝山大桥的净空高度（ 32）米桥梁通航净空宽度(200)米，，金塘大桥主通航孔通航净空高度(51)米，桥梁通航净空宽度(544)米，航道走向(178°-358°)。允许(50000)载重吨及以下船舶双向通行。西喉咙门大桥主通航孔通航净空高度(47)米，桥梁通航净宽度(636)米允许3万载重吨及以下船舶双向通行。象山大桥主通航孔通航净空高度( 53) 米，桥梁通航净宽度(448)米。明州大桥净空24米。<br>中柱门电缆净高20米<br>穿山东口外峙—-外神马电缆净高39米<br>梅山多用西电缆线净空69米<br>条帚门小黄礁架空电缆72.5米<br>螺头角电缆净空高度83.26米</p><p>1.根据宁波引航操作规程相关规定，船舶靠泊速度要求，1万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</p><ol><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求,5万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求,10万吨级以内船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li><li>根据宁波引航操作规程相关规定，船舶靠泊速度要求10万吨级以上船舶，靠泊速度控制在__厘米/秒内。(  )<br>A.5     B.8     C.10     D.12</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;根据李科长的建议，我们小组将以每日一题的方式，发一些应知应会的题目，供大家复习练习，也欢迎各位师傅们有针对性地发一些好的题目，供大家共同学习。大家一起努力，同心协力，积沙成丘，在此感谢各位师傅！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;金塘大桥主
-      
-    
-    </summary>
-    
-      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
-    
-    
-      <category term="应知应会" scheme="https://www.oldzhou.com/tags/%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A/"/>
-    
-      <category term="做题" scheme="https://www.oldzhou.com/tags/%E5%81%9A%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>群晖运行 VPN Server</title>
-    <link href="https://www.oldzhou.com/2019/05/12/%E7%BE%A4%E6%99%96%E8%BF%90%E8%A1%8C%20VPN%20Server/"/>
-    <id>https://www.oldzhou.com/2019/05/12/群晖运行 VPN Server/</id>
-    <published>2019-05-12T14:42:35.000Z</published>
-    <updated>2019-05-12T14:55:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开放很多的端口转发，一点也不优雅。</p><p>如何更好地访问家里的群晖文件呢？</p><p>VPN 就上场了。</p><p>VPN 全称就是虚拟专用网络。使用 VPN，可以在公共的互联网上建立一个与目标主机直接的好像是专用的链接一样，之所以说好像，是因为实际上没用这个真的直接连接，而是通过 VPN 来建设了一个专用的通道，通过这个通道来传输数据，叫虚拟专用网络。</p><p>群晖本身带有一个套件叫 VPN Server。使用这个套件和相应的客户端就可以实现上面提到的专用网络，让远在外地的客户端就如同在本地的路由器下的一个客户端一样的使用在本地的群晖服务了。妙就妙在，这个远端处在外部网络下的客户端，直接虚拟专用网络连接，让其完全跟在本地路由器下面的任何一台服务器一样，直接使用局域网内的同网段 IP 就能访问相应的服务。比如直接使用局域网内的 IP 192.168.1.x 访问相应的服务，不用再担心端口的问题，前提是 VPN 的端口做好了，只需要这个端口就够了。</p><p>使用起来说简单也复杂，说复杂其实也简单。遇到问题了，就难搞，没问题就太简单。</p><p>安装，直接搜索 VPV Server。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4871557670384.jpg" alt=""><br>安装完成，再打开。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4881557670421.jpg" alt=""><br>可以设置三种 VPN</p><ol><li>PPTP</li><li>OpenVPN</li><li>L2TP/IPSec</li></ol><p>第一种最简单，最容易成功。第二种没试过，是因为用不到，要么第一种，要么第三种。比如 iOS，很多版本之前就开始放弃支持 PPTP 了，直接就没有这个选项了。所以第一种很简单搞定了，反正 Android 可以用。之后尝试第三种，iOS 和 MacOS 用，失败了一段时间，现在终于搞定。</p><p>PPTP</p><p>设置最容易，基本打开，点击应用就好了，基本不用修改什么，默认就可以。需要注意的是，PPTP 需要在路由器设置端口转发，对应到本地的 1723 端口，注意，外部也需要 1723 端口。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4891557670984.jpg" alt=""><br>这样就可以远端连接 PPTP 了。</p><p>L2TP/IPSec</p><p>这个之前失败很多次，现在才搞定。失败有两方面的原因。</p><p>一是服务器设置的问题：</p><p>预共享密匙，这里设置 8 位的能成功，其他的不知道，但是 6 位的失败。之前就是一直设置 6 位的，一直连接失败。<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4911557671364.jpg" alt=""></p><p>二是客户端设置的问题：<br><img src="http://oldzhou.com:2020/hexophoto/nasvpn/4921557671498.jpg" alt=""><br>建立 L2TP/IPSec 连接，选择 L2TP/SecPSK 类型，填写服务器——对应自己的域名，后面的两个 L2TP 密匙和 IPSec 标识符都空着，再填好之前设置的 IPSec 预共享密匙，就可以点保存了。再点击连接的时候，才提示输入用户名和密码，这个用户名和密码指的是群晖的账户和密码。别搞错了。这样基本就成功了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;外网访问家里的群晖，是个很好玩的事情。虽然端口转发可以外网访问，但是如果只是访问控制页面，就没什么意思了。要是想使用群晖里面的文件，那么需要配合 webDav 服务器才能操作开来。这就导致要开放很多的端口转发，一点也不优雅。&lt;/p&gt;
-&lt;p&gt;如何更好地访问家里的群晖文件呢？&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="群晖" scheme="https://www.oldzhou.com/tags/%E7%BE%A4%E6%99%96/"/>
-    
-      <category term="NAS" scheme="https://www.oldzhou.com/tags/NAS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>π 的前 5000 位</title>
-    <link href="https://www.oldzhou.com/2019/05/09/%E5%9C%86%E5%91%A8%E7%8E%87%E7%9A%84%E5%89%8D5000%E4%BD%8D/"/>
-    <id>https://www.oldzhou.com/2019/05/09/圆周率的前5000位/</id>
-    <published>2019-05-09T06:23:15.000Z</published>
-    <updated>2019-05-09T06:36:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://oldzhou.com:2020/hexophoto/pi-image.jpeg" alt=""></p><p>无意间发现的，据说为了测试计算机 CPU 的计算性能，顺便学习了这个命令，有没有人能背一下的？<br><a id="more"></a></p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line">➜  ~ time echo <span class="string">"scale=5000; 4*a(1)"</span> | bc -l -q</div><div class="line"><span class="number">3.141592653589793238462643383279502884197169399375105820974944592307</span>\</div><div class="line"><span class="number">81640628620899862803482534211706798214808651328230664709384460955058</span>\</div><div class="line"><span class="number">22317253594081284811174502841027019385211055596446229489549303819644</span>\</div><div class="line"><span class="number">28810975665933446128475648233786783165271201909145648566923460348610</span>\</div><div class="line"><span class="number">45432664821339360726024914127372458700660631558817488152092096282925</span>\</div><div class="line"><span class="number">40917153643678925903600113305305488204665213841469519415116094330572</span>\</div><div class="line"><span class="number">70365759591953092186117381932611793105118548074462379962749567351885</span>\</div><div class="line"><span class="number">75272489122793818301194912983367336244065664308602139494639522473719</span>\</div><div class="line"><span class="number">07021798609437027705392171762931767523846748184676694051320005681271</span>\</div><div class="line"><span class="number">45263560827785771342757789609173637178721468440901224953430146549585</span>\</div><div class="line"><span class="number">37105079227968925892354201995611212902196086403441815981362977477130</span>\</div><div class="line"><span class="number">99605187072113499999983729780499510597317328160963185950244594553469</span>\</div><div class="line"><span class="number">08302642522308253344685035261931188171010003137838752886587533208381</span>\</div><div class="line"><span class="number">42061717766914730359825349042875546873115956286388235378759375195778</span>\</div><div class="line"><span class="number">18577805321712268066130019278766111959092164201989380952572010654858</span>\</div><div class="line"><span class="number">63278865936153381827968230301952035301852968995773622599413891249721</span>\</div><div class="line"><span class="number">77528347913151557485724245415069595082953311686172785588907509838175</span>\</div><div class="line"><span class="number">46374649393192550604009277016711390098488240128583616035637076601047</span>\</div><div class="line"><span class="number">10181942955596198946767837449448255379774726847104047534646208046684</span>\</div><div class="line"><span class="number">25906949129331367702898915210475216205696602405803815019351125338243</span>\</div><div class="line"><span class="number">00355876402474964732639141992726042699227967823547816360093417216412</span>\</div><div class="line"><span class="number">19924586315030286182974555706749838505494588586926995690927210797509</span>\</div><div class="line"><span class="number">30295532116534498720275596023648066549911988183479775356636980742654</span>\</div><div class="line"><span class="number">25278625518184175746728909777727938000816470600161452491921732172147</span>\</div><div class="line"><span class="number">72350141441973568548161361157352552133475741849468438523323907394143</span>\</div><div class="line"><span class="number">33454776241686251898356948556209921922218427255025425688767179049460</span>\</div><div class="line"><span class="number">16534668049886272327917860857843838279679766814541009538837863609506</span>\</div><div class="line"><span class="number">80064225125205117392984896084128488626945604241965285022210661186306</span>\</div><div class="line"><span class="number">74427862203919494504712371378696095636437191728746776465757396241389</span>\</div><div class="line"><span class="number">08658326459958133904780275900994657640789512694683983525957098258226</span>\</div><div class="line"><span class="number">20522489407726719478268482601476990902640136394437455305068203496252</span>\</div><div class="line"><span class="number">45174939965143142980919065925093722169646151570985838741059788595977</span>\</div><div class="line"><span class="number">29754989301617539284681382686838689427741559918559252459539594310499</span>\</div><div class="line"><span class="number">72524680845987273644695848653836736222626099124608051243884390451244</span>\</div><div class="line"><span class="number">13654976278079771569143599770012961608944169486855584840635342207222</span>\</div><div class="line"><span class="number">58284886481584560285060168427394522674676788952521385225499546667278</span>\</div><div class="line"><span class="number">23986456596116354886230577456498035593634568174324112515076069479451</span>\</div><div class="line"><span class="number">09659609402522887971089314566913686722874894056010150330861792868092</span>\</div><div class="line"><span class="number">08747609178249385890097149096759852613655497818931297848216829989487</span>\</div><div class="line"><span class="number">22658804857564014270477555132379641451523746234364542858444795265867</span>\</div><div class="line"><span class="number">82105114135473573952311342716610213596953623144295248493718711014576</span>\</div><div class="line"><span class="number">54035902799344037420073105785390621983874478084784896833214457138687</span>\</div><div class="line"><span class="number">51943506430218453191048481005370614680674919278191197939952061419663</span>\</div><div class="line"><span class="number">42875444064374512371819217999839101591956181467514269123974894090718</span>\</div><div class="line"><span class="number">64942319615679452080951465502252316038819301420937621378559566389377</span>\</div><div class="line"><span class="number">87083039069792077346722182562599661501421503068038447734549202605414</span>\</div><div class="line"><span class="number">66592520149744285073251866600213243408819071048633173464965145390579</span>\</div><div class="line"><span class="number">62685610055081066587969981635747363840525714591028970641401109712062</span>\</div><div class="line"><span class="number">80439039759515677157700420337869936007230558763176359421873125147120</span>\</div><div class="line"><span class="number">53292819182618612586732157919841484882916447060957527069572209175671</span>\</div><div class="line"><span class="number">16722910981690915280173506712748583222871835209353965725121083579151</span>\</div><div class="line"><span class="number">36988209144421006751033467110314126711136990865851639831501970165151</span>\</div><div class="line"><span class="number">16851714376576183515565088490998985998238734552833163550764791853589</span>\</div><div class="line"><span class="number">32261854896321329330898570642046752590709154814165498594616371802709</span>\</div><div class="line"><span class="number">81994309924488957571282890592323326097299712084433573265489382391193</span>\</div><div class="line"><span class="number">25974636673058360414281388303203824903758985243744170291327656180937</span>\</div><div class="line"><span class="number">73444030707469211201913020330380197621101100449293215160842444859637</span>\</div><div class="line"><span class="number">66983895228684783123552658213144957685726243344189303968642624341077</span>\</div><div class="line"><span class="number">32269780280731891544110104468232527162010526522721116603966655730925</span>\</div><div class="line"><span class="number">47110557853763466820653109896526918620564769312570586356620185581007</span>\</div><div class="line"><span class="number">29360659876486117910453348850346113657686753249441668039626579787718</span>\</div><div class="line"><span class="number">55608455296541266540853061434443185867697514566140680070023787765913</span>\</div><div class="line"><span class="number">44017127494704205622305389945613140711270004078547332699390814546646</span>\</div><div class="line"><span class="number">45880797270826683063432858785698305235808933065757406795457163775254</span>\</div><div class="line"><span class="number">20211495576158140025012622859413021647155097925923099079654737612551</span>\</div><div class="line"><span class="number">76567513575178296664547791745011299614890304639947132962107340437518</span>\</div><div class="line"><span class="number">95735961458901938971311179042978285647503203198691514028708085990480</span>\</div><div class="line"><span class="number">10941214722131794764777262241425485454033215718530614228813758504306</span>\</div><div class="line"><span class="number">33217518297986622371721591607716692547487389866549494501146540628433</span>\</div><div class="line"><span class="number">66393790039769265672146385306736096571209180763832716641627488880078</span>\</div><div class="line"><span class="number">69256029022847210403172118608204190004229661711963779213375751149595</span>\</div><div class="line"><span class="number">01566049631862947265473642523081770367515906735023507283540567040386</span>\</div><div class="line"><span class="number">74351362222477158915049530984448933309634087807693259939780541934144</span>\</div><div class="line"><span class="number">73774418426312986080998886874132604720</span></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://oldzhou.com:2020/hexophoto/pi-image.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;无意间发现的，据说为了测试计算机 CPU 的计算性能，顺便学习了这个命令，有没有人能背一下的？&lt;br&gt;
-    
-    </summary>
-    
-      <category term="冷知识" scheme="https://www.oldzhou.com/categories/%E5%86%B7%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="π" scheme="https://www.oldzhou.com/tags/%CF%80/"/>
-    
-      <category term="圆周率" scheme="https://www.oldzhou.com/tags/%E5%9C%86%E5%91%A8%E7%8E%87/"/>
     
   </entry>
   

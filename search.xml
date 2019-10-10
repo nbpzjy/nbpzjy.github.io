@@ -4,6 +4,101 @@
   
     
     <entry>
+      <title><![CDATA[我和我的祖国]]></title>
+      <url>https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
+      
+        <categories>
+            
+            <category> 视频 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我和我的祖国]]></title>
+      <url>https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+      
+        <categories>
+            
+            <category> 视频 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[融学学习攻略]]></title>
+      <url>https://www.oldzhou.com/2019/09/18/190918%E8%9E%8D%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%94%BB%E7%95%A5/</url>
+      <content type="html"><![CDATA[<p><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/rongxue.jpg" alt=""><br>融学，其实是一个app的名称，实际上的作用是连接宁波市继续教育网络平台的一个客户端，在电脑端也可以登录。</p>
+<p>作为一个虽然有些跑偏的技术型海港引航员，低劣地使用手机老老实实地播放几十分钟甚至几个小时的视频，然后答题，再看视频，且无法后台运行无法拖动（严格说是不能快进，但是看过的内容是可以拖动的），这么笨拙地搞，实在不是鄙人的风格。</p>
+<p>于是开始考虑比较先进高效的方法：</p>
+<p>1.多台手机登录融学app，同时进行？取决于是否支持同时多设备登录<br>2.手机平板多app端进行？这个跟上面那个类似方案，但是不同操作系统情况是否不同？<br>3.电脑端、手机端、平板电脑端？<br>4.同一电脑多网页登录<br>5.不同电脑各登录一个</p>
+<p>第一种方案，起码在android手机上是可行的，测试同时登录两台。并且同时开始两个学习，没有问题</p>
+<p>第二种，由于苹果平板有点抽风，没能下载app，原则上应该是没有问题的。</p>
+<p>第三种，也可以成功<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/duoshebeitu.jpg" alt=""><br>第四种，失败了，由于其设置为必须获得焦点，一旦鼠标在其他地方点击，网页失去焦点，就立即停止播放了。所以，即使想多开几个网页，也只能其中一个获得焦点的网页可以正常播放。多开网页方式失败到时候其次，更严重的是这个电脑想继续播放学习视频就啥也不能干了。</p>
+<p>第五种，也失败了，虽然刚开始几乎以为就要成功了，但是内置了对多网页播放的监测，很快就在其中一个网页提示无法继续同时播放并停止了。这样，打算多几个电脑同时开工的想法就失败了。</p>
+<hr>
+<p>显然多手机客户端应该是可行的方案，但是还是比较弱智：一直开着手机等着慢慢播放，这真的是极为糟糕的体验。</p>
+<p>怎么可能这样就把自诩技术党的我阻击在这里呢？</p>
+<p>终极大招：</p>
+<p>虚拟机远程控制网页播放学习视频</p>
+<p>优点：</p>
+<ol>
+<li>虚拟机一直开机，不存在占用手机或者电脑屏幕无法做其他操作的弊端</li>
+<li>虚拟机在家里，只需要远程启动，在无wifi时学习不使用移动流量</li>
+<li>不用苦心等待，只管开始，然后退出控制软件，播放始终在进行，直到结束</li>
+<li>24小时学习都可以，只要点击开始，可以全天候无死角</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>手机端远程控制的 vnc viewer的使用体验一搬，毕竟这样的方式操纵的是一个十几年前的压根没有触摸控制这玩意的windows xp，现在却要通过手机这么小的屏幕来远程触摸操控，实属不易。</li>
+<li>蜗牛的能力确实是有限了，已经压榨到极致了</li>
+<li>还是安卓手机版vnc viewer的问题，稳定性一般，连接有时存在困难。最好在其他设备采用更稳定的vnc控制软件，效率高一些<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/vncshibai.jpg" alt=""></li>
+</ol>
+<p>食用方法：</p>
+<p>在蜗牛的PVE下，按照Windows xp，并且安装 vnc server，在Windows xp内按照浏览器（chrome），chrome打开网页版，把需要学习的课程选择好，这样可以免除在手机那么小的屏幕去选择课程操作不方便的烦恼。全部寻找好想学的课程，反正学习课程的页面，最大化减少在手机远程控制端的操作。</p>
+<p>路由器设置端口转发，把vnc的端口转发到这个虚拟的windows xp上来</p>
+<p>在手机端，用vnc viewer远程连接虚拟的windows xp。这个过程涉及到的知识点比较多，比如公网ip，DDNS等，不深入了。大致意思就是使用DDNS解析动态公网iP，来连接家里的虚拟windows xp。</p>
+<p>这么地，愉快滴开始学习吧！<br><img src="https://www.oldzhou.com:2021/hexophoto/rongxue/shoujikongzhi.jpg" alt=""></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 融学 </tag>
+            
+            <tag> vnc </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[两号警戒区的一些顾虑]]></title>
       <url>https://www.oldzhou.com/2019/09/02/190902%E4%B8%A4%E5%8F%B7%E8%AD%A6%E6%88%92%E5%8C%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E9%A1%BE%E8%99%91%E5%92%8C%E6%80%9D%E8%80%83/</url>
       <content type="html"><![CDATA[<h2 id="交通流密度分析"><a href="#交通流密度分析" class="headerlink" title="交通流密度分析"></a>交通流密度分析</h2><p><img src="https://www.oldzhou.com:2021/hexophoto/no2cautiopnarea/1.png" alt=""><br>由于特殊的地理位置，2号警戒区是宁波港最繁忙交通流区域之一，在一些时段，其复杂程度甚至高于其他警戒区。</p>
