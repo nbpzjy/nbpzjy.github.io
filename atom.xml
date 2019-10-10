@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2019-10-10T15:21:38.000Z</updated>
+  <updated>2019-10-10T15:22:44.000Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -21,17 +21,13 @@
     <link href="https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/"/>
     <id>https://www.oldzhou.com/2019/10/10/191010蔚蓝/</id>
     <published>2019-10-10T15:13:15.000Z</published>
-    <updated>2019-10-10T15:21:38.000Z</updated>
+    <updated>2019-10-10T15:22:44.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
+    <content type="html"><![CDATA[<p>蔚蓝——宁波引航<br><a id="more"></a></p><video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-      
+      &lt;p&gt;蔚蓝——宁波引航&lt;br&gt;
     
     </summary>
     
@@ -47,15 +43,16 @@
     <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
     <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
     <published>2019-10-10T15:13:15.000Z</published>
-    <updated>2019-10-10T15:21:40.000Z</updated>
+    <updated>2019-10-10T15:22:46.000Z</updated>
     
-    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+    <content type="html"><![CDATA[<p>我和我的祖国</p><video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+        &lt;p&gt;我和我的祖国&lt;/p&gt;
+&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
       
     
     </summary>
