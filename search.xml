@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[虾峙靠泊光明3-计划.md]]></title>
+      <title><![CDATA[虾峙靠泊光明3-计划]]></title>
       <url>https://www.oldzhou.com/2020/01/13/200113%20%E8%99%BE%E5%B3%99%E9%9D%A0%E6%B3%8A%E5%85%89%E6%98%8E-%E8%AE%A1%E5%88%92/</url>
       <content type="html"><![CDATA[<h1 id="风流概况"><a href="#风流概况" class="headerlink" title="风流概况"></a>风流概况</h1><p>阴局部小雨转阴到多云，7～10℃；能见度：虾峙东近三天5-10km。</p>
 <p>风力：<br>港区：2时起西北到北风3～4级阵风5级，7时起4～5级阵风6级，20时起偏北风3～4级阵风5级</p>
@@ -175,9 +175,10 @@
     </entry>
     
     <entry>
-      <title><![CDATA[我和我的祖国]]></title>
-      <url>https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/</url>
-      <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+      <title><![CDATA[蔚蓝——宁波引航]]></title>
+      <url>https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
       
         <categories>
             
@@ -195,10 +196,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[蔚蓝——宁波引航]]></title>
-      <url>https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<video src="http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4" controls="controls" width="100%"></video>]]></content>
+      <title><![CDATA[我和我的祖国]]></title>
+      <url>https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/</url>
+      <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
       
         <categories>
             
@@ -1088,9 +1088,9 @@
         
         <tags>
             
-            <tag> docker </tag>
-            
             <tag> 群晖 </tag>
+            
+            <tag> docker </tag>
             
         </tags>
         
@@ -1150,9 +1150,9 @@
         
         <tags>
             
-            <tag> 群晖 </tag>
-            
             <tag> DDNS </tag>
+            
+            <tag> 群晖 </tag>
             
         </tags>
         
@@ -2985,6 +2985,38 @@
     </entry>
     
     <entry>
+      <title><![CDATA[旋回影响]]></title>
+      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
+<p>​    &lt; 1.5 - D明显增大</p>
+<p>​    &lt; 1.2 - D急剧增大</p>
+<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
+<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
+<p>高速时，波峰压力——高侧偏</p>
+<p>——总体来讲，对D影响不大</p>
+]]></content>
+      
+        <categories>
+            
+            <category> PilotSuff </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 上海 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 操纵 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[声响和灯光信号]]></title>
       <url>https://www.oldzhou.com/2017/10/24/%E5%A3%B0%E5%93%8D%E5%92%8C%E7%81%AF%E5%85%89%E4%BF%A1%E5%8F%B7/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -3147,38 +3179,6 @@
             <tag> 考试 </tag>
             
             <tag> 避碰 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[旋回影响]]></title>
-      <url>https://www.oldzhou.com/2017/10/24/%E6%93%8D%E7%BA%B5-%E6%97%8B%E5%9B%9E/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<h1 id="对旋回的影响"><a href="#对旋回的影响" class="headerlink" title="对旋回的影响"></a>对旋回的影响</h1><h3 id="d-D-吃水比"><a href="#d-D-吃水比" class="headerlink" title="d/D - 吃水比"></a>d/D - 吃水比</h3><p>d/D &lt; 2     - D稍微增大</p>
-<p>​    &lt; 1.5 - D明显增大</p>
-<p>​    &lt; 1.2 - D急剧增大</p>
-<h3 id="车"><a href="#车" class="headerlink" title="车"></a>车</h3><p>右旋车，向左旋回较向右旋回的D小，一般影响不大</p>
-<h3 id="横倾"><a href="#横倾" class="headerlink" title="横倾"></a>横倾</h3><p>低速时，阻力——低侧偏</p>
-<p>高速时，波峰压力——高侧偏</p>
-<p>——总体来讲，对D影响不大</p>
-]]></content>
-      
-        <categories>
-            
-            <category> PilotSuff </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 上海 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 操纵 </tag>
             
         </tags>
         
