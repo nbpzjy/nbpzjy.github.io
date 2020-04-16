@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2020-02-27T14:54:50.000Z</updated>
+  <updated>2020-04-16T15:38:57.521Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vysor破解方法</title>
+    <link href="https://www.oldzhou.com/2020/04/16/20200416Vysor%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95/"/>
+    <id>https://www.oldzhou.com/2020/04/16/20200416Vysor破解方法/</id>
+    <published>2020-04-16T15:17:35.000Z</published>
+    <updated>2020-04-16T15:38:57.521Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/1.png" alt=""></p><p>首先得说说 Vysor 是干嘛的：Vysor 是一个免 root 实现电脑控制手机的 Chrome 插件,页面简洁，操作简单，可以同屏显示。最早是在 Chrome 网页版的应用中使用过，当然之前还试过其他的模拟软件等。个人感觉 Vysor 是最好用的，即便是后来跟安卓开发走散了，也一直存在于我的 Chrome 浏览器中。</p><p>最近打算试试手机连接电脑，才发现已经不能用了，提示谷歌 2020 年三月将其移出了 Chrome 应用，得下载桌面版，才知道原来这玩意不仅仅在 Chrome 浏览器中有，在众多的桌面系统都存在。</p><p>官网下载最新版本系统，<a href="http://www.vysor.io/" target="_blank" rel="external">http://www.vysor.io/</a>，可能是我的网络问题，下载起来比较慢，后来是拷贝连接放到迅雷里下的。</p><p>安装完事之后，才发现，原来有些功能必须得购买订阅才可用。经过一番搜索，找到解决方法：</p><ol><li>在应用中找到 Vysor，点击右键-显示包内容<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/3.png" alt=""></li><li>进入 /Contents/Resources/app/unpacked-crx 目录,找到 uglify.js 并用文本编辑器打开，我用的是 Sublime Text<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/4.png" alt=""></li><li>搜索 Account Management<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/5.png" alt=""><br>将其前面的 g!=1 和 b!=1 更改为 g=1 和 b=1,保存后打开 Vysor 即可<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/2.png" alt=""></li></ol><p>至此，搞定，愉快地玩耍吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/2020/vysor/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先得说说 Vysor 是干嘛的：Vysor 是一个免 root 实现电脑控制手机的 Chrome 插件,页面简
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Vysor" scheme="https://www.oldzhou.com/tags/Vysor/"/>
+    
+      <category term="破解" scheme="https://www.oldzhou.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>众志成城 抗击疫情</title>
     <link href="https://www.oldzhou.com/2020/02/27/20200227%E4%BC%97%E5%BF%97%E6%88%90%E5%9F%8E%E6%8A%97%E5%87%BB%E7%96%AB%E6%83%85/"/>
     <id>https://www.oldzhou.com/2020/02/27/20200227众志成城抗击疫情/</id>
     <published>2020-02-27T14:47:35.000Z</published>
-    <updated>2020-02-27T14:54:50.000Z</updated>
+    <updated>2020-02-28T12:40:31.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://www.oldzhou.com:2021/hexophoto/2020/kangjiyiqing.jpg" alt=""></p>]]></content>
     
@@ -511,58 +539,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/yiqi5/6061561384629_.pic_hd.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
-    
-    
-      <category term="评估" scheme="https://www.oldzhou.com/tags/%E8%AF%84%E4%BC%B0/"/>
-    
-      <category term="考核" scheme="https://www.oldzhou.com/tags/%E8%80%83%E6%A0%B8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高潮后0.5小时靠泊万华1</title>
-    <link href="https://www.oldzhou.com/2019/06/21/190621%E9%AB%98%E6%BD%AE%E5%90%8E0.5%E5%B0%8F%E6%97%B6%E9%9D%A0%E6%B3%8A%E4%B8%87%E5%8D%8E1/"/>
-    <id>https://www.oldzhou.com/2019/06/21/190621高潮后0.5小时靠泊万华1/</id>
-    <published>2019-06-21T06:00:00.000Z</published>
-    <updated>2019-08-06T14:54:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>考核靠泊</p><p>21+18</p><p>船名 STOLT SINCERITY , LOA： 185, B： 32.25, Draft： 9.2</p><table><thead><tr><th style="text-align:center">主机状态</th><th style="text-align:center">对应速度</th></tr></thead><tbody><tr><td style="text-align:center">full ahead</td><td style="text-align:center">12kts</td></tr><tr><td style="text-align:center">half ahead</td><td style="text-align:center">8kts</td></tr><tr><td style="text-align:center">slow ahead</td><td style="text-align:center">6kts</td></tr><tr><td style="text-align:center">dead slow ahead</td><td style="text-align:center">4kts</td></tr></tbody></table><a id="more"></a><p>CPP, 倒车马力是前进的 87.2%。</p><p><img src="http://www.oldzhou.com:2020/hexophoto/wanhua1/6051561382034_.pic_hd.jpg" alt=""></p><p>进口联系时间是1120，基本是准时进口的，1116上船。一个小时到达羊小猫东边，两个小时到达涂泥咀东。航行过程中，速度基本在11节左右，出了虾峙门水道之后由于有穿越船，再加上速度基本在12节左右，所以一开始并没有加车。过了急流区，速度开始衰减之后加速到full，速度基本维持在12节多。</p><p>近螺头角之前，前面的矿船在减速到10节至9点几，右前一条小船同向，速度9节。在转向之前追上是比较困难的，特别是前面船已经衰减速度并且其在转向过程中可能速度还会衰减，不宜过近。所以减车，同时联系右前小船确保可以联系到，必要时可能需要其配合，得知其打算直插航道到大榭沿岸去航行，基本想法是减速让其先行，避免在转向附近由于流向大幅度变化之后发生不可预计的速度航向变化吗，留出更宽阔的水域和更充裕的时间。</p><p>在转向之前减车到slow，密切注意右前直插航道船的速度及位置，同时关注前面进口矿船的速度衰减情况，一度衰减到8节左右，所以本船衰减到9节上下，仍然在缓速接近中，但距离尚较宽裕。</p><p>在螺头角转向进入大猫岛西侧水域，在船头逐渐进入流被遮蔽区域时，船尾继续受涨流影响，而出现船首右转，已经注意到右转趋势并注意到舵工用舵情况，所以在其左满舵而船首依然在右转时，立即给出加车的指令，同时避免舵工不熟悉潮流且在加车时改变舵角，同时也给出了左满舵的口令——虽然知道其已经在左满舵，但是没有舵令，不确定其会不会改变，稳妥起见还是加一个舵令。在这个位置，即便速度略比前船快，也不宜减车，本身舵效偏弱，流急，需要螺旋桨的排除流增加舵力维持航向，即便需要减速也应在坚持到船身全部进入大猫岛西侧一段距离后在潮流不复杂的水域再减车。</p><p>进入涂泥咀转向时，关注前船速度变化，本船由于转向后即接近码头，所以在转向之前进一步减速，车减小到最慢，前船速度一度减小到6节甚至6节以内。由于出口船已清爽，也联系交管中心，提早转向进入出口航道进口。在转向时，在涂泥咀东北侧，仍然在涨流，所以即便是船首已转到西南，而船身仍然在继续西北方向行驶。这是要特别注意的，在有进出口船交会时是极为危险的。同时要特别留意在涂泥咀北侧或北偏西位置的流切变线，在部分时候可以看到明显的分界，不管明不明显，都要特别注意，在之前要减车减速，在接近这个位置时要加车用舵，才能控制。明锐地关注船头，特别要留意，如果有ROT最好关注ROT，没有就只能自己观察，一定要当心。之前流压一直往右，而过了这里之后，流压基本就在左边了。</p><p>由于涂泥咀到万华1距离也就在一海里左右，所以加车过了切变线之后，稳定船头，就需要减车减速，准备靠泊了。</p><p>高潮后半小时，万华码头前沿已经落水明显，最慢车一直走，速度基本上能衰减到2节左右。到达万华2正北，速度衰减到2节以内停车。</p><p>靠泊过程比较慢，基本一直动车去靠，前面一直顶，而后面压拢快，大多数时候是左舵20控制船尾。</p><p>总结：<br>这样的船型，舵效略差，事实上倒车马力尚可，拖轮控制还算有效，可以略微快一些到码头正对开，不宜边走边靠，流急的码头在靠泊时可以动车是一个好处，但是流急的码头靠泊过程中需要注意船舶迎流的角度，角度一旦变大，速度起来之后再控制可能会存在难度，如果拖轮在急流中位置控制不当，紧急关头不能发挥作用，就会造成糟糕的后果。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;考核靠泊&lt;/p&gt;
-&lt;p&gt;21+18&lt;/p&gt;
-&lt;p&gt;船名 STOLT SINCERITY , LOA： 185, B： 32.25, Draft： 9.2&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;主机状态&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;对应速度&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;full ahead&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;12kts&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;half ahead&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;8kts&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;slow ahead&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;6kts&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;dead slow ahead&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;4kts&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
     
     </summary>
     

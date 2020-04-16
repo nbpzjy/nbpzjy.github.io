@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title><![CDATA[Vysor破解方法]]></title>
+      <url>https://www.oldzhou.com/2020/04/16/20200416Vysor%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/1.png" alt=""></p>
+<p>首先得说说 Vysor 是干嘛的：Vysor 是一个免 root 实现电脑控制手机的 Chrome 插件,页面简洁，操作简单，可以同屏显示。最早是在 Chrome 网页版的应用中使用过，当然之前还试过其他的模拟软件等。个人感觉 Vysor 是最好用的，即便是后来跟安卓开发走散了，也一直存在于我的 Chrome 浏览器中。</p>
+<p>最近打算试试手机连接电脑，才发现已经不能用了，提示谷歌 2020 年三月将其移出了 Chrome 应用，得下载桌面版，才知道原来这玩意不仅仅在 Chrome 浏览器中有，在众多的桌面系统都存在。</p>
+<p>官网下载最新版本系统，<a href="http://www.vysor.io/" target="_blank" rel="external">http://www.vysor.io/</a>，可能是我的网络问题，下载起来比较慢，后来是拷贝连接放到迅雷里下的。</p>
+<p>安装完事之后，才发现，原来有些功能必须得购买订阅才可用。经过一番搜索，找到解决方法：</p>
+<ol>
+<li>在应用中找到 Vysor，点击右键-显示包内容<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/3.png" alt=""></li>
+<li>进入 /Contents/Resources/app/unpacked-crx 目录,找到 uglify.js 并用文本编辑器打开，我用的是 Sublime Text<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/4.png" alt=""></li>
+<li>搜索 Account Management<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/5.png" alt=""><br>将其前面的 g!=1 和 b!=1 更改为 g=1 和 b=1,保存后打开 Vysor 即可<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/2.png" alt=""></li>
+</ol>
+<p>至此，搞定，愉快地玩耍吧。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 网络技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Vysor </tag>
+            
+            <tag> 破解 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[众志成城 抗击疫情]]></title>
       <url>https://www.oldzhou.com/2020/02/27/20200227%E4%BC%97%E5%BF%97%E6%88%90%E5%9F%8E%E6%8A%97%E5%87%BB%E7%96%AB%E6%83%85/</url>
       <content type="html"><![CDATA[<p><img src="https://www.oldzhou.com:2021/hexophoto/2020/kangjiyiqing.jpg" alt=""></p>
@@ -1153,9 +1186,9 @@
         
         <tags>
             
-            <tag> docker </tag>
-            
             <tag> 群晖 </tag>
+            
+            <tag> docker </tag>
             
         </tags>
         
@@ -1215,9 +1248,9 @@
         
         <tags>
             
-            <tag> 群晖 </tag>
-            
             <tag> DDNS </tag>
+            
+            <tag> 群晖 </tag>
             
         </tags>
         
