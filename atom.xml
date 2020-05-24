@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2020-04-16T15:38:57.521Z</updated>
+  <updated>2020-05-02T07:05:32.731Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>世界最大集装箱船悬空带缆</title>
+    <link href="https://www.oldzhou.com/2020/05/02/202005%E6%82%AC%E7%A9%BA%E5%B8%A6%E7%BC%86/"/>
+    <id>https://www.oldzhou.com/2020/05/02/202005悬空带缆/</id>
+    <published>2020-05-02T06:56:35.000Z</published>
+    <updated>2020-05-02T07:05:32.731Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2020/hmm/4.jpg" alt=""></p><p>拖船倒航悬空带缆操作</p><h2 id=""><a href="#" class="headerlink" title=""></a><video src="http://www.oldzhou.com:2020/hexophoto/2020/hmm/xkdl.mp4" controls="controls" width="100%"></video></h2><p><img src="http://www.oldzhou.com:2020/hexophoto/2020/hmm/1.jpg" alt=""><br><img src="http://www.oldzhou.com:2020/hexophoto/2020/hmm/2.jpg" alt=""><br><img src="http://www.oldzhou.com:2020/hexophoto/2020/hmm/3.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/2020/hmm/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;拖船倒航悬空带缆操作&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vysor破解方法</title>
     <link href="https://www.oldzhou.com/2020/04/16/20200416Vysor%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95/"/>
     <id>https://www.oldzhou.com/2020/04/16/20200416Vysor破解方法/</id>
     <published>2020-04-16T15:17:35.000Z</published>
-    <updated>2020-04-16T15:38:57.521Z</updated>
+    <updated>2020-05-02T07:04:13.631Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/1.png" alt=""></p><p>首先得说说 Vysor 是干嘛的：Vysor 是一个免 root 实现电脑控制手机的 Chrome 插件,页面简洁，操作简单，可以同屏显示。最早是在 Chrome 网页版的应用中使用过，当然之前还试过其他的模拟软件等。个人感觉 Vysor 是最好用的，即便是后来跟安卓开发走散了，也一直存在于我的 Chrome 浏览器中。</p><p>最近打算试试手机连接电脑，才发现已经不能用了，提示谷歌 2020 年三月将其移出了 Chrome 应用，得下载桌面版，才知道原来这玩意不仅仅在 Chrome 浏览器中有，在众多的桌面系统都存在。</p><p>官网下载最新版本系统，<a href="http://www.vysor.io/" target="_blank" rel="external">http://www.vysor.io/</a>，可能是我的网络问题，下载起来比较慢，后来是拷贝连接放到迅雷里下的。</p><p>安装完事之后，才发现，原来有些功能必须得购买订阅才可用。经过一番搜索，找到解决方法：</p><ol><li>在应用中找到 Vysor，点击右键-显示包内容<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/3.png" alt=""></li><li>进入 /Contents/Resources/app/unpacked-crx 目录,找到 uglify.js 并用文本编辑器打开，我用的是 Sublime Text<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/4.png" alt=""></li><li>搜索 Account Management<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/5.png" alt=""><br>将其前面的 g!=1 和 b!=1 更改为 g=1 和 b=1,保存后打开 Vysor 即可<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/vysor/2.png" alt=""></li></ol><p>至此，搞定，愉快地玩耍吧。</p>]]></content>
     
@@ -237,31 +264,6 @@
   </entry>
   
   <entry>
-    <title>我和我的祖国</title>
-    <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
-    <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
-    <published>2019-10-10T15:13:15.000Z</published>
-    <updated>2019-10-10T15:25:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-      
-    
-    </summary>
-    
-      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>蔚蓝——宁波引航</title>
     <link href="https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/"/>
     <id>https://www.oldzhou.com/2019/10/10/191010蔚蓝/</id>
@@ -276,6 +278,31 @@
       
         &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我和我的祖国</title>
+    <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
+    <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
+    <published>2019-10-10T15:13:15.000Z</published>
+    <updated>2019-10-10T15:25:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
       
     
     </summary>
@@ -524,30 +551,6 @@
     
     
       <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>低潮时靠泊一期5</title>
-    <link href="https://www.oldzhou.com/2019/06/23/190623%E4%BD%8E%E6%BD%AE%E6%97%B6%E9%9D%A0%E6%B3%8A%E4%B8%80%E6%9C%9F5/"/>
-    <id>https://www.oldzhou.com/2019/06/23/190623低潮时靠泊一期5/</id>
-    <published>2019-06-23T01:15:15.000Z</published>
-    <updated>2019-06-24T14:45:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/yiqi5/6061561384629_.pic_hd.jpg" alt=""><br><a id="more"></a><br>低潮时间0917，鑫哲（XINZHE）计划0915靠泊一期5号。<br><img src="http://www.oldzhou.com:2020/hexophoto/yiqi5/6081561386605_.pic_hd.jpg" alt=""><br>一期5号泊位位于一期港池内，南岸，由引桥开始算3、4、5，5号泊位在东端，在一期2的正南偏西，临近建龙钢厂，而建龙钢厂码头较一期5突出。建龙钢厂西端到一期5东端，连线距离220米，横向距离是150米。同时注意，台塑码头西端与一期2东端距离612米，一期2东端与建龙钢厂距离500米。算起来距离应该是宽裕的，但是进口之后即很快到达码头水域，淌航距离不多，需要及早控制速度。<br><img src="http://www.oldzhou.com:2020/hexophoto/yiqi5/6021561241458_.pic.jpg" alt=""><br>本来联系时间是0815，黄牛礁上，由于船方对自己船速过于自信，实际上晚了大约半小时，上船时间应该再0840左右。此时拖轮调度联系确认，拖轮工作人员需要换班。由于距离尚较宽裕，便同意了。</p><p>上船之后，船长说还在海速，此时船速在8节左右，询问减车到港速需要多久，有点蒙。所以干脆叫减速到港内航速。等待左前的小船过了之后，往左调整了一些航向，目的是早一些让船位偏南，避免再有出口船过红灯会造成麻烦，同时偏南之后可以减小进口时的角度。</p><p>由于落水急，让船位过早偏南实际上是不可取的，因为受流压影响，矢量线往左偏的较大，偏南非常容易，而想再调回北，就比较困难一些，这就要特别注意在过台塑码头西端时的距离。在协和码头以北，逐渐减到最慢车，保持这个车速，注意舵效。<br><img src="http://www.oldzhou.com:2020/hexophoto/yiqi5/52391561258440_.pic.jpg" alt=""><br>有一个失误，本来叫后面的拖轮松开缆绳跟着的，不知道是自己口误还是拖轮误听，结果前面的拖轮松开了，反倒是需要松的后面一个一直贴着本船，自己又没有出去核查，这是不应该的。导致一直用左舵20或左舵10才能保持航航向。下次遇到需要一直压舵才能保持航向时，要多思考是什么原因导致的。</p><p>但是需要注意的是，在拖轮贴在船身，用舵保持航向，速度一度衰减到3.8节，而之后拖轮松开，进口之后速度逐渐增加到4节4.5节，也可能是进口之后流变缓，也有肯能是不再用舵时速度略有增加。总之，在进口之后速度意外地增加了0.7节，这就给本来淌航距离不多的靠泊过程带来一些麻烦，而在进口过程中需要调整航向，不宜停车，只能等待完全进口且船首调整到合适的角度，开始停车淌航。</p><p>急落流进口特别注意跟台塑码头清爽，进口后及时调整航向，避免跟建龙钢厂过近，速度控制上特别要注意，前面没有太多空间。</p><p>事实上，淌航过程的降速还是可观的，由于流急，舵效也没有过早失去。</p><p>重点是，这个码头的碰垫，看了让人发慌，与镇海垃圾船的碰垫类似，多了卷筒式的碰垫，不论怎么讲，还是小的让人发慌的：靠拢速度不能过快，角度不能过大，不然极易触碰码头水泥。<br><img src="http://www.oldzhou.com:2020/hexophoto/yiqi5/6071561386555_.pic_hd.jpg" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/yiqi5/6061561384629_.pic_hd.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="引航" scheme="https://www.oldzhou.com/categories/%E5%BC%95%E8%88%AA/"/>
-    
-    
-      <category term="评估" scheme="https://www.oldzhou.com/tags/%E8%AF%84%E4%BC%B0/"/>
-    
-      <category term="考核" scheme="https://www.oldzhou.com/tags/%E8%80%83%E6%A0%B8/"/>
     
   </entry>
   
