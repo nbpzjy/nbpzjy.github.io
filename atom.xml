@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2020-05-24T07:14:11.328Z</updated>
+  <updated>2020-08-03T06:28:59.398Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>树莓派2B跑起OpenWRT</title>
+    <link href="https://www.oldzhou.com/2020/08/03/20200803%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85OPENWRT/"/>
+    <id>https://www.oldzhou.com/2020/08/03/20200803树莓派安装OPENWRT/</id>
+    <published>2020-08-03T06:03:35.000Z</published>
+    <updated>2020-08-03T06:28:59.398Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/logo.svg" alt=""><br>安装OPENWRT的方式有很多，最近几次出差，总想在win或者mac电脑上面用虚拟机的方式来安装。一开始以为应该没有什么问题，试了几次虽然没成功，但总觉得应该离成功不远了。</p><p>在家里又试验了几回，所有一切都搞定以为就要成功的时候，最后发现还是不行，特别是在已经配置了虚拟机的openwrt作为旁路由来使用时，失败了。失败的原因，就是想把电脑本身也使用虚拟机中的openwrt提供的爬梯子服务。虽然虚拟机使用的是桥接网络从主路由获取自己的独立IP，但是当本地电脑修改路由器网关和DNS服务为虚拟机OPENWRT的IP地址时，电脑就跟internet失去联系了，甚至都无法ping捅主路由或者openwrt的IP地址。这是为啥呢？防火墙？有可能，也有可能是虚拟机虽然是桥接，但当本地电脑的网关发生变化，虚拟机的网络也就出现了变化，找不到真正的网关和实际的DNS地址了，这就废了。</p><p>这时意识到，这条路不太能通，之所以说不太，是这样的方法确实可以为除本电脑以外的其他设备提供服务，就是自己本身却使用不到这个服务。这多不好玩？</p><p>于是把目标改向了我吃灰多时的树莓派。</p><p>目前应该是有一个Ubuntu，还有一个其他的系统。由于之前618买的128G内存卡无法在gopro使用（难过），所以就干脆把这128G的内存卡拿来开干。</p><p>步骤</p><ol><li>硬件准备</li><li>软件准备</li><li>安装设置</li></ol><p>硬件<br>树莓派，电源，网线，TF卡，读卡器，另外一台可用的电脑（win 或者mac应该都可以），反正我用mac，使用工具不同而已，本质没什么区别。</p><p>软件</p><ul><li>首先是OPENWRT的固件<br>这是个严重的问题，说实在，百毒一搜可以出来一堆，但是好用的几乎没有，找不到合适的能用的好用的固件，有时候即便找到了能安装了最后进入系统发现各种功能缺失——别问我怎么知道的。</li></ul><p><a href="https://downloads.openwrt.org/releases/19.07.3/targets/brcm2708/bcm2709/" target="_blank" rel="external">https://downloads.openwrt.org/releases/19.07.3/targets/brcm2708/bcm2709/</a><br>这里可以下载到一个固件，运行正常，但是各种包缺失，还得自己找，麻烦。</p><p><a href="https://github.com/SuLingGG/OpenWrt-Rpi/actions/runs/188953473" target="_blank" rel="external">https://github.com/SuLingGG/OpenWrt-Rpi/actions/runs/188953473</a><br>这个就厉害了，SuLingGG采用github action自动编译固件,每天都自动编译一次,随时打开能找到几个小时前刚刚编译好的新鲜的固件。最喜欢的就是这样的新鲜劲。<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/1.jpg" alt=""></p><p>记得选择自己的树莓派型号。我的树莓派2B，就找个树莓派2的，并选择<code>squashfs-factory.img</code>这个标识的。<img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/2.jpg" alt="">github上可以直接下，但是速度有点慢，但是作者贴心地准备了奶牛快传的地址，就在正下方，进去之后还是要注意版本选择，鼠标放上去会在上方显示版本的全部名称方便阅读选择。奶牛快传的速度应该不会吐槽了吧？<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/3.jpg" alt=""></p><ul><li>写入工具<br>balenaEtcher, <a href="https://www.balena.io/etcher/" target="_blank" rel="external">https://www.balena.io/etcher/</a><br>自己下载，按自己的系统选择最新版本下载。<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/4.jpg" alt=""></li></ul><p>安装设置</p><ol><li><p>固件写入TF卡<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/5.jpg" alt=""><br>写入固件简直不要太简单，选择固件（注意：如果是刚才下的那个.gz结尾的，这是个压缩包，解压一下，得到.img的一个文件才是固件包），选择好固件第二步是选择目标TF卡，多花两秒钟看清楚点别选错了把有用的usb啥的格式化了。我的128G由于比一般的空间大，大的有点离谱，balenaEtcher还贴心地提醒我这个空间比长见的大，要再次确认一下要求输入系统密码防呆。</p></li><li><p>写入结束，安装其实也就结束了。剩下的就是插入树莓派的TF卡槽，插电启动。</p></li><li><p>详细设置可以去这里查看：<a href="https://mlapp.cn/369.html" target="_blank" rel="external">https://mlapp.cn/369.html</a><br>需要注意：多点耐心等系统启动，初始的管理ip地址192.168.1.1，最好连一根网线直接到电脑来设置，完成之后再接入网络系统。<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/6.jpg" alt=""></p></li></ol><p>之所以说多花点时间，是启动需要时间，不要着急。启动成功输入管理IP进入后台，root用户名，password密码进入，先在系统-管理权-设置管理员密码。</p><p>网络-接口-设置IP地址，网关地址，DNS地址。如果只做旁路由使用，需要忽略掉DHCP接口以防止冲突。我的爬梯子只用IPV4，所以把IPV6也都禁止掉了。设置好之后保存应用，就可以拿去接入路由器准备使用了。</p><p>网线插好再次启动，管理IP为上一步自己设置的IP地址，进入登录页面输入自己设置的管理权密码，重新进入后台去设置。</p><p>在服务里面有很多的服务，怎么使用就自己专研了。<br><img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/7.jpg" alt=""></p><p>另外：<br>由于树莓派2B只有一个网络接口，所以插入网线接入路由器之后只能作为旁路由使用。如果有意使用起作为真正的wifi路由器，得再入一个免驱wifi适配器。<img src="http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/8.jpg" alt="">于是拿出了十年前买的D-link无线wifi适配器插入，就可以在路由器管理中找到无线，发现已经开始服务了，这里跟普通无线路由器设置并没有区别，修改密码啥的都很简单。我这玩意是十多年前买的了，百兆以下，最好还是入一个快一点的。这里需要注意的是由于DHCP在openwrt中禁用，所以实际上wifi获取的IP地址还是路由器分配的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/2020/Raspopenwrt/logo.svg&quot; alt=&quot;&quot;&gt;&lt;br&gt;安装OPENWRT的方式有很多，最近几次出差，总想在win或者mac电脑上面用虚拟机的方式来安装。一开
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="树莓派" scheme="https://www.oldzhou.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+      <category term="OPENWRT" scheme="https://www.oldzhou.com/tags/OPENWRT/"/>
+    
+  </entry>
   
   <entry>
     <title>世界最大集装箱船悬空带缆</title>
@@ -259,6 +286,31 @@
   </entry>
   
   <entry>
+    <title>我和我的祖国</title>
+    <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
+    <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
+    <published>2019-10-10T15:13:15.000Z</published>
+    <updated>2019-10-10T15:25:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+      
+    
+    </summary>
+    
+      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蔚蓝——宁波引航</title>
     <link href="https://www.oldzhou.com/2019/10/10/191010%E8%94%9A%E8%93%9D/"/>
     <id>https://www.oldzhou.com/2019/10/10/191010蔚蓝/</id>
@@ -273,31 +325,6 @@
       
         &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/wl/wl.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-      
-    
-    </summary>
-    
-      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我和我的祖国</title>
-    <link href="https://www.oldzhou.com/2019/10/10/191010%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BDpilot/"/>
-    <id>https://www.oldzhou.com/2019/10/10/191010我和我的祖国pilot/</id>
-    <published>2019-10-10T15:13:15.000Z</published>
-    <updated>2019-10-10T15:25:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4" controls="controls" width="100%"></video>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/whwdzg/whwdzg.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
       
     
     </summary>
@@ -520,32 +547,6 @@
       <category term="win10" scheme="https://www.oldzhou.com/tags/win10/"/>
     
       <category term="激活" scheme="https://www.oldzhou.com/tags/%E6%BF%80%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>九亿吨儿童配音版</title>
-    <link href="https://www.oldzhou.com/2019/06/24/190624%E4%B9%9D%E4%BA%BF%E5%90%A8%E5%84%BF%E7%AB%A5%E9%85%8D%E9%9F%B3%E7%89%88/"/>
-    <id>https://www.oldzhou.com/2019/06/24/190624九亿吨儿童配音版/</id>
-    <published>2019-06-24T04:15:15.000Z</published>
-    <updated>2019-06-24T04:17:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a><video src="http://www.oldzhou.com:2020/hexophoto/9yidunchildvoice.mp4" controls="controls" width="100%"></video>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/9yidunchildvoice.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
-      
-    
-    </summary>
-    
-      <category term="视频" scheme="https://www.oldzhou.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://www.oldzhou.com/tags/%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
