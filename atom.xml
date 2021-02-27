@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2020-08-03T06:46:49.000Z</updated>
+  <updated>2021-02-26T02:11:03.056Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的2020</title>
+    <link href="https://www.oldzhou.com/2021/02/11/20210211%E8%BE%9B%E4%B8%91%E5%B9%B4%E6%98%A5%E8%8A%82/"/>
+    <id>https://www.oldzhou.com/2021/02/11/20210211辛丑年春节/</id>
+    <published>2021-02-11T08:03:35.000Z</published>
+    <updated>2021-02-26T02:11:03.056Z</updated>
+    
+    <content type="html"><![CDATA[<video src="http://www.oldzhou.com:2020/hexophoto/2021/02/my2020.mp4" controls="controls" width="100%"></video><p>对2020年的一个总结。</p><p>2020年，有些稀碎，疫情影响，总是在“专班-非专班”的工作状态中度过。也正因为专班，才有了很多的时间拍延时照片，也才有了很多的时间处理延时视频。</p><p>前期基本都是 SONY a6300 和 Gopro 7 拍摄的素材，双十一后入了一个DJI MINI 2，尽管天气都不太好，但起码也有了一些的不同视角的视频。</p><p>姑且算是对自己一个交代，纪念这不平凡的一年，希望2021一切都好。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/2021/02/my2020.mp4&quot; controls=&quot;controls&quot; width=&quot;100%&quot;&gt;&lt;/video&gt;
+
+&lt;p&gt;对2020年的一个总结。&lt;/p&gt;
+&lt;p&gt;2020
+      
+    
+    </summary>
+    
+      <category term="年终总结" scheme="https://www.oldzhou.com/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="2020" scheme="https://www.oldzhou.com/tags/2020/"/>
+    
+      <category term="延时摄影" scheme="https://www.oldzhou.com/tags/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>树莓派2B跑起OpenWRT</title>
@@ -520,33 +550,6 @@
       <category term="VNC" scheme="https://www.oldzhou.com/tags/VNC/"/>
     
       <category term="树莓派" scheme="https://www.oldzhou.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10激活</title>
-    <link href="https://www.oldzhou.com/2019/06/27/190626win10%E6%BF%80%E6%B4%BB/"/>
-    <id>https://www.oldzhou.com/2019/06/27/190626win10激活/</id>
-    <published>2019-06-26T16:11:35.000Z</published>
-    <updated>2019-06-27T10:57:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg" alt=""><br>现在的主力电脑是 27 寸的 iMac 2015 款，系统 MacOS ，有些时候需要用到 win 系统，就用很老的但是被我跟换处理器、内存、固态硬盘的 ThinkPAD R61e，尽管老，但仍然可以用，比如做一些优盘写入什么的。</p><p>一段时间没怎么用，最近打开却出现了需要激活的提示，就在右下角，很碍眼。由于不经常使用，再加上勉强可用，所以一直也去研究怎么激活。</p><p>前几天不知道怎么想到了，把实体的 win10 直接转到 mac 下的虚拟机 Parallels Desktop，非常顺利，直接提供了一个软件将之前的系统转移到移动硬盘，再回到 mac下面的 Parallels 下面导入，就 OK 了，但存在一个问题，就是<strong>未激活</strong>。</p><p>首先是把虚拟机的 win10 激活了，值得注意的是，原来的系统是专业版，转到虚拟机的却成了企业版，不知道具体是什么原理。不管怎么讲，搜索一下激活方法，大致分为软件激活和密匙激活。以前是在淘宝花几块钱买一个序列号激活的，现在搜索一下，先试试，不行在淘宝。<br><img src="http://www.oldzhou.com:2020/hexophoto/win10act/6121561564819_.pic_hd.jpg" alt=""></p><p><a href="http://m.xitongtiandi.net/wenzhang/key/24532.html" target="_blank" rel="external">Win10激活密钥key</a><br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">专业版：W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">企业版：NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">家庭版：TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">教育版：NW6C2-QMPVW-D7KKK<span class="number">-3</span>GKT6-VCFB2</div><div class="line"></div><div class="line">专业版N：MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"></div><div class="line">企业版N：DPH2V-TTNVB<span class="number">-4</span>X9Q3-TJR4H-KHJW4</div><div class="line"></div><div class="line">教育版N：<span class="number">2</span>WH4N<span class="number">-8</span>QGBV-H22JP-CT43Q-MDWWJ</div><div class="line"></div><div class="line">企业版LSTB：WNMTR<span class="number">-4</span>C88C-JK8YV-HQ7T2<span class="number">-76</span>DF9</div><div class="line"></div><div class="line">企业版LSTB N：<span class="number">2</span>F77B-TNFGY<span class="number">-69</span>QQF-B8YKP-D69TJ</div></pre></td></tr></table></figure></p><p><strong>激活方法：</strong></p><p>系统安装完毕后，首先以管理员身份打开 CMD 命令行窗口，按下<code>Win+X</code>，选择命令提示符(管理员)。</p><p>说明：<code>kms.03k.org</code> 是 <code>kms</code> 服务器地址，可能会失效，如果激活失败，可以自行搜索 <code>kms</code> 服务器地址，将 <code>kms.xspace.in</code> 替换成新的地址即可，比如换成 <code>kms.03k.org</code>，参考可用的 <code>kms</code> 激活服务器有哪些</p><p>Win10专业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10企业版用户请依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk NPPR9-FWDCX-D2C8J-H872K<span class="number">-2</span>YT43</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10家庭版用户依次输入：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">slmgr /ipk TX9XD<span class="number">-98</span>N7V<span class="number">-6</span>WMQ6-BX7FG-H8Q99</div><div class="line"></div><div class="line">slmgr /skms kms<span class="number">.03</span>k.org</div><div class="line"></div><div class="line">slmgr /ato</div></pre></td></tr></table></figure></p><p>Win10 激活密钥 key 激活次数有限制，不能保证 100% 激活成功。</p><p>幸运的是：虚拟机里面的 win10 一次就激活成功。</p><hr><p>隔几天之后才又尝试把 R61e 的系统激活</p><p>查看系统的时候才注意到，这是专业版，跟虚拟机里面的企业版不同，不知道具体什么原因造成的。使用激活虚拟机系统的方法尝试，失败了。</p><p>重新搜索，发现了这个：<a href="http://www.ylmfwin100.com/ylmf/8642.html" target="_blank" rel="external">2019最新windows10永久激活码 win10专业版密钥 win10通用序列号</a></p><p>1、专业版：</p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">W269N-WFGWX-YVC9B<span class="number">-4</span>J6C9-T83GX</div><div class="line">MH37W-N47XK-V7XM9-C7227-GCQG9</div><div class="line"><span class="number">2</span>X7P3-NGJTH-Q9TJF<span class="number">-8</span>XDP9-T83GT</div><div class="line">J2WWN-Q4338<span class="number">-3</span>GFW9-BWQVK-MG9TT</div><div class="line">NBQWQ-W9PTV-B4YWP<span class="number">-4</span>K773-T6PKG</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line">J783Y-JKQWR<span class="number">-677</span>Q8-KCXTF-BHWGC</div><div class="line">C4M9W-WPRDG-QBB3F-VM9K8-KDQ9Y</div><div class="line"><span class="number">2</span>VCGQ-BRVJ4<span class="number">-2</span>HGJ2-K36X9-J66JG</div><div class="line">MGX79-TPQB9-KQ248-KXR2V-DHRTD</div><div class="line">FJHWT-KDGHY-K2384<span class="number">-93</span>CT7<span class="number">-323</span>RC</div></pre></td></tr></table></figure><p>2、神Key(适用各版本)：<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">KH2J9-PC326-T44D4<span class="number">-39</span>H6V-TVPBY</div><div class="line">TFP9Y-VCY3P-VVH3T<span class="number">-8</span>XXCC-MF4YK</div><div class="line"><span class="number">236</span>TW-X778T<span class="number">-8</span>MV9F<span class="number">-937</span>GT-QVKBB</div><div class="line"><span class="number">87</span>VT2-FY2XW-F7K39-W3T8R-XMFGF</div><div class="line"><span class="number">6</span>K2KY-BFH24-PJW6W<span class="number">-9</span>GK29-TMPWP</div><div class="line">RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289</div></pre></td></tr></table></figure></p><p>3、常用笔记本激活码：</p><p>戴尔 DELL 序列号： <code>342DG-6YJR8-X92GV-V7DCV-P4K27</code><br>联想 LENOVO 序列号：<code>22TKD-F8XX6-YG69F-9M66D-PMJBM</code><br>三星 SAMSUNG 序列号：<code>49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD</code><br>宏基 ACER 序列号：<code>YKHFT-KW986-GK4PY-FDWYH-7TP9F</code>或<br><code>FJGCP-4DFJD-GJY49-VJBQ7-HYRR2</code></p><p>方法是直接在属性里面激活-跟换密匙，确定之后稍等一会儿就搞定了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/win10act/timg.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;现在的主力电脑是 27 寸的 iMac 2015 款，系统 MacOS ，有些时候需要用到 win 系统，就用很老的但
-      
-    
-    </summary>
-    
-      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="win10" scheme="https://www.oldzhou.com/tags/win10/"/>
-    
-      <category term="激活" scheme="https://www.oldzhou.com/tags/%E6%BF%80%E6%B4%BB/"/>
     
   </entry>
   
