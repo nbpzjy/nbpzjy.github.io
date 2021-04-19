@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.oldzhou.com/"/>
-  <updated>2021-03-09T14:28:23.208Z</updated>
+  <updated>2021-04-19T04:38:25.140Z</updated>
   <id>https://www.oldzhou.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《中国共产党简史》第一章第一节</title>
+    <link href="https://www.oldzhou.com/2021/04/19/20210419%E5%85%9A%E5%8F%B2%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://www.oldzhou.com/2021/04/19/20210419党史学习/</id>
+    <published>2021-04-19T04:27:00.000Z</published>
+    <updated>2021-04-19T04:38:25.140Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.oldzhou.com:2020/hexophoto/2021/04/image.jpg" alt=""></p><video src="http://www.oldzhou.com:2020/hexophoto/2021/04/chapter1lesson1.mp4" controls="controls" width="100%"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://www.oldzhou.com:2020/hexophoto/2021/04/image.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;video src=&quot;http://www.oldzhou.com:2020/hexophoto/2021/04/
+      
+    
+    </summary>
+    
+      <category term="记录" scheme="https://www.oldzhou.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="党史" scheme="https://www.oldzhou.com/tags/%E5%85%9A%E5%8F%B2/"/>
+    
+      <category term="学习" scheme="https://www.oldzhou.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>新型冠状病毒疫情数据</title>
@@ -526,35 +554,6 @@
       <category term="MacOS" scheme="https://www.oldzhou.com/tags/MacOS/"/>
     
       <category term="安装盘" scheme="https://www.oldzhou.com/tags/%E5%AE%89%E8%A3%85%E7%9B%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Resilio Sync安装及使用</title>
-    <link href="https://www.oldzhou.com/2019/08/06/190806Resilio%20Sync%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>https://www.oldzhou.com/2019/08/06/190806Resilio Sync安装及使用/</id>
-    <published>2019-08-06T14:43:35.000Z</published>
-    <updated>2019-08-06T14:54:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Resilio Sync 是个同步工具，之前的时候用过一次，用来同步网友分享的电子书，电子书是来了很多，但是基本都没看过，后来就卸载了。</p><p>这次是在群晖上运行的。</p><p>Resilio sync 应该是第三方套件，很早之前就添加了这个库，也老看到这个套件，但是一直没安装：主要是用不着。现在同步的工具太多了，好用的不好用的，都有很多选择。目前用的除了群晖的moments同步照片，还有 Syncthing 是主力同步手机杂乱文件到群晖的主要工具。</p><p>Resilio sync 实现的功能应该跟 Syncthing 差不多。在群晖上安装是比较容易的，点击套件安装，稍微等一会儿就好了。打开之后先设置密码，登录用户名等，还有本设备的名称，完成之后就可以开始使用了。</p><p>无意间看到，还可以升级到pro版——当然是需要付费的，大概是七百五十多港币，不贵，但是对于一个喜欢折腾的人来说，怎么可能不去尝试一些科学方法解决呢？</p><p>一搜就找到了一个好方法：</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">YnRvczFfZXlKeklqb2dJbTV4TmpSbU5HZ3JXRGh4V0hGaWFXUm9kRXR5VFdkTmNFVmFNSGRZYVVKTGJF</span></div><div class="line"><span class="symbol">eHdTV0Z3U0RVeE16a3lh</span> SGRxTUZGcFFXSk9UVEZHZDJKR1dHcEpRMEZoVjJ3NFYzWmlkVnBQZW5wSVR</div><div class="line"><span class="symbol">YWm1OVFJMV1UxWFZHVnNWRlpqUzNKR1FVcFlNbVZV</span> TUd0dFQybENNbTh6UTFCalZGZDJWV2xDTHpSc1</div><div class="line"><span class="symbol">RUbFFOMUZzYWxWU1Z6UkVNVkZOVWt0V2NFaHdhRzVJVnpJdlptZHFOMDVNYVRo</span> <span class="keyword">bU1uaE5hMU5ETkVSd</span></div><div class="line"><span class="number">1</span>JWVnBRMHBYWkhwUFdYRkliVzFPTUZkT1VFdDZRV2c0UmtKb2FuTnZVVk5CYTFoS04wOVdTMGM1V0Vsa</div><div class="line"><span class="number">1</span>ZU Y3pXbk5sVldOeFdXMVdWVW8wV0RjMFMwNXdZbWxZWmswdmVtbHNVMnBJSzBVNVkzWk1aMDkyWWxw</div><div class="line"><span class="keyword">bFZqbENaWGx2ZUROd1QzcFJZ </span>VUpPZUZOUVQzRllXRXBUUkhFMWJWUmhSWE12V0dwcFZHdEpWMjF1Vkh</div><div class="line"><span class="symbol">KdWRWSm5iMDFEWjBSQk9IZEJTM1JJWWpSdlZrZHVXbTFq</span> ZVU4eE5saG9RM2R2TDJWa2VIRnhaejA5SW</div><div class="line"><span class="symbol">l3Z0ltUWlPaUFpWlhsS2FtRjVTVFpKUTBwcFpFYzVlbGw2Um1aYVdHeExZVzFPTlZO</span> VVdrcFJNSEJKV</div><div class="line"><span class="symbol">mxab1lWWXhSbGRVYWtac1ZsZG9XVlpyV2xkTk1VcFhVMnRXVlZKVVJsWlpWRVpYWkZaYWNWVnNVbXBOT</span></div><div class="line"><span class="symbol">VVwNVdr</span> Y3hkMUZzVWtWUlZGWldVWHBzTVZacmFHdFVWazV3VDBoc1VGRXpVak5VVjNoclZqSk9jazFJ</div><div class="line"><span class="symbol">YUZWaGVsSTFWWHBPUTFReVVsaGlS</span> M1JUWWxWd2IxWnROVXRVUmxKWlZWUldWRko2UlhwV1ZWVTFUVlp</div><div class="line"><span class="number">3</span>ZFZkdFJsVldiVkoxVlZkNFNrMXNXWGxYYmtac1ltMTRiMVpX YUhkbGJFVjNUVlZLYW1KWGFFNVhWbF</div><div class="line"><span class="symbol">l3WkZad1ZWSllaRlJTYkVwT1ZXNXdVMkpHYkhCa1JYQlZWbFJHU2xZd1VuTldNa1Y1WkVa</span> U2FsWkZSW</div><div class="line"><span class="symbol">GRVYlRWdVRVZEtjazFXWkU1U1IyTjNWbXhXWVZSc1NuSk5WemxxVWxWd01GbFZVbE5sUlRGSllrWmFXb</span></div><div class="line"><span class="symbol">UV4UlhoVmJU</span> RnpUVVV4U1ZwSVpFNWlSM2hWV1d4b2IxSXlUa1ZTYkU1c1ZsaGtlVlZzV205T1YwWkdV</div><div class="line"><span class="keyword">bFJPVW1KV1NuVldWRVpEWVVkS1NWWnJX </span>a3hOVjNoWlZtcEdiMkZ0U2pWUFZXeFNWbFJzVDFsdE1UTk5</div><div class="line"><span class="symbol">iRTV6VWxSQ1lXRnNTbEZXYlhCQ1pVWlJkMVZyU2xwaGExWjVWMjB3</span> TVdSVk5YVlhibFpTVFRKbmVsbD</div><div class="line"><span class="symbol">ZSbGRUYXpsR1RWVTFhRk5IZUZGVVJFRTFUVVpPYzJKRldsZFRSa3BYVmxWYVNrMXNVa1JrUmtw</span> WFVqS</div><div class="line"><span class="symbol">m9VbFl3VWxOamJHeHlUbGhHVGxKSGVGcFhibXd3WWpKR1ZrMVZlRlpXTVZwVlUzcENkMlJGTlRaVmJsc</span></div><div class="line"><span class="symbol">FVZVzE0U1ZwRVFu</span> SmxWa1owVFZWc2FsSkdXWGRXUmxaVFpFWnJlV1ZJY0U5V2JXaExWMVprYjFNeFpF</div><div class="line"><span class="symbol">ZFNhMXBxVFVoU01WVnNhRmRsYkUxM1ZHcFNh</span> VkpzU2pWVVZtUjNaRmRPU0dGRk5XRmxiRlYzV1cweE5</div><div class="line"><span class="symbol">HSkZPVlZoUnpsVVUwVldlVlZXYUU1TlYxWlpWV3hTVGxJeVRUVlZSazVL</span> WXpCc1JGTnRjR0ZSTUdzeV</div><div class="line"><span class="symbol">UxVk9TMkpIVmxaalNHUmFZbFJHYUZwSGRITmpWMGw1V2tkNGJGWllRVEpYYTJONFZERktTRk5ZYkZa</span> a</div><div class="line"><span class="symbol">VdHaExXVmN3TldKc1RsaE9WVGxQVmpCd01GWkhlRWRoYlVwVllVaENWVkpWTlVOWlZscHlaVmRTU1ZGd</span></div><div class="line"><span class="symbol">FJsSk5SM041VlRGV1Qx</span> TXlWa2RXYmxKWFZrVktWRmx0Y3pGamJHdDNWMnMxVG1KVlZqTmFWVll3WVcx</div><div class="line"><span class="symbol">V2MxTnNhRnBsYTBweVZGVmFSbVZHUm5SbFJtUlVV</span> <span class="keyword">bFJXTlZVeFpITk5NVzkzWWtoU1YyRnNTbkZWVkV</span></div><div class="line"><span class="symbol">KeVRXeE9WbFZyY0d4U1ZGWkdWbXhTVjFSc1drZGhla0pWVmxaS1ExbDZRbk5T</span> Ums1MFkwZHdUazFWV2</div><div class="line"><span class="number">5</span>kV1JFcHpVVzFHV0ZOcVZrNVdlbFpRVm10YVlWVkdiRFpSYlRsb1lrWndlbFpzWkhOVVZrVjNVbTVDWV</div><div class="line"><span class="symbol">ZK</span> WGFIcGFSRVozVmtaT1ZWZHJjRkpOU0VGNlZqSjRiMU15Vm5SVFdHeFBWakpvY0ZWVVFuTmxiRTVXV</div><div class="line"><span class="symbol">kd0MGEySlZOVXBXVnpWM1Uy</span> MUdkRTlYTldGWFIzaE1XV3hrU21WWFZraGtSMFpZVWxoQ1ZsWXllR3RV</div><div class="line"><span class="symbol">TWxaWFkwWnNWbFl5ZUZGWlZsWkhZMFpTZEdNemFGVk5W</span> <span class="keyword">bHBJVmpKNFlWWkdTa2hWYTA1VlYwaENWRll</span></div><div class="line"><span class="number">5</span>ZUVkV2JGWlZVbXhvVTFaR1draFdWM1JYVlRGV1YxVnJXazlXVm5CWVZGWldkMVV4 VWxoalJrNVZWbX</div><div class="line"><span class="symbol">hzTkZkcVNuTlVWa1YzVW01Q1dtVnJjRmhaVldSVFUxWlNXR0pHUW1oV1ZWa3dWMjE0Ym1ReVRYZGlSVk</span></div><div class="line"><span class="symbol">pVWWxo</span> <span class="keyword">b2MxVXdWa2RqUmxGNVlrVktiRlpVUmxaV1ZsSkhWVVphUmxaWWJGVk5Sa3BEV2tSS1lWVnNRb</span></div><div class="line"><span class="symbol">FZOUjJ4dFZWUXdPVWxwZDJkSmJX</span> eDFXbTA0YVU5cFFqZEpiVGw1V2tkV2VWTlhVV2xQYVVGcFdWYzFh</div><div class="line"><span class="symbol">R1JYZUcxWlZ6VXhZVEphZFdJeWRIVmlWekY2VFVSWk5XTlhi</span> ek5PUTBselNVTkthR05wU1RaSlJFRnp</div><div class="line"><span class="symbol">TVU5LYkdWSVFXbFBhVUY1VFZSUk1VOVVSVEpQUkVGM1RFTkJhVmt6U214SmFtOW5UVlJS</span> TkUxVVVYbE</div><div class="line"><span class="number">9</span>lazAwVG5sM1owbHVUakpaTUd4clNXcHZaMGx1VGpWaWJVNVJZMjA0ZUVscGQyZEpiVTU2WkVOSk5rbE</div><div class="line"><span class="symbol">RTblpNVjJN</span> eFRsVTFlbE5IVGxkV1UwbHpTVU5LZW1SdFRrUmlNbEpzU1dwdlowbHVUalZpYlU1UlkyM</div><div class="line"><span class="symbol">DRhVXhEUVdsWk1teHJTV3B2WjBsdFpI</span> RmFWMjk1WW1sSmMwbERTakJsV0VKc1NXcHZaMGx1UW14amJr</div><div class="line"><span class="symbol">NTJZbTFHYzBscGQyZEpiVGwzWkVoTmFVOXBRamRKYlZwMllrZFNi</span> R05zVG14Wk0wcHNaRU5KTmtsRFN</div><div class="line"><span class="symbol">rSldNRkpPVkhwU1JsVXhUa0pVYkdoQ1YyeEtWRTFyTUhsT1JscENUbXRrUWxJeFNsaFdWRkpS</span> VGxaWm</div><div class="line"><span class="symbol">FVeERRV2xqTWxab1pFaE5hVTlwUVhobVdEQnpTVU5LYkdWSVFXbFBhVUY1VFZSUk1VOVVSVEpQUkVGM1</span></div><div class="line"><span class="symbol">psRTlQU0o5</span></div></pre></td></tr></table></figure><p>上面的密匙是经过BASE64编码的，如果要想用，可以解码之后拷贝到文本编辑里面另存为.btskey的密匙文件，再在Resilio sync里面添加这个密匙就成功了。<br><img src="https://www.oldzhou.com:2021/hexophoto/resiliosync/6521565102184_.pic_hd.jpg" alt=""></p><p>怎么解码BASE64编码？<a href="https://www.base64decode.org/" target="_blank" rel="external">这里</a>.如果实在懒，就拷贝下面的吧。</p><p>DECODE</p><blockquote><p>btos1_eyJzIjogIm5xNjRmNGgrWDhxWHFiaWRodEtyTWdNcEVaMHdYaUJLbExwSWFwSDUxMzkyaHdqMFFpQWJOTTFGd2JGWGpJQ0FhV2w4V3ZidVpPenpITXZmNTRLWU1XVGVsVFZjS3JGQUpYMmVUMGttT2lCMm8zQ1BjVFd2VWlCLzRsTTlQN1FsalVSVzREMVFNUktWcEhwaG5IVzIvZmdqN05MaThmMnhNa1NDNERwRVVpQ0pXZHpPWXFIbW1OMFdOUEt6QWg4RkJoanNvUVNBa1hKN09WS0c5WElkVTczWnNlVWNxWW1WVUo0WDc0S05wYmlYZk0vemlsU2pIK0U5Y3ZMZ092YlplVjlCZXlveDNwT3pRYUJOeFNQT3FYWEpTRHE1bVRhRXMvWGppVGtJV21uVHJudVJnb01DZ0RBOHdBS3RIYjRvVkduWm1jeU8xNlhoQ3dvL2VkeHFxZz09IiwgImQiOiAiZXlKamF5STZJQ0ppZEc5ell6RmZaWGxLYW1ONVNUWkpRMHBJVlZoYVYxRldUakZsVldoWVZrWldNMUpXU2tWVVJURlZZVEZXZFZacVVsUmpNMUp5Wkcxd1FsUkVRVFZWUXpsMVZraGtUVk5wT0hsUFEzUjNUV3hrVjJOck1IaFVhelI1VXpOQ1QyUlhiR3RTYlVwb1ZtNUtURlJZVVRWVFJ6RXpWVVU1TVZwdVdtRlVWbVJ1VVd4Sk1sWXlXbkZsYm14b1ZWaHdlbEV3TVVKamJXaE5XVlYwZFZwVVJYZFRSbEpOVW5wU2JGbHBkRXBVVlRGSlYwUnNWMkV5ZEZSalZFRXdUbTVuTUdKck1WZE5SR2N3VmxWYVRsSnJNVzlqUlVwMFlVUlNlRTFJYkZaWmExRXhVbTFzTUUxSVpIZE5iR3hVWWxob1IyTkVSbE5sVlhkeVVsWm9OV0ZGUlROUmJWSnVWVEZDYUdKSVZrWkxNV3hZVmpGb2FtSjVPVWxSVlRsT1ltMTNNbE5zUlRCYWFsSlFWbXBCZUZRd1VrSlpha1Z5V20wMWRVNXVXblZSTTJnell6RldTazlGTVU1aFNHeFFUREE1TUZOc2JFWldTRkpXVlVaSk1sUkRkRkpXUjJoUlYwUlNjbGxyTlhGTlJHeFpXbmwwYjJGVk1VeFZWMVpVU3pCd2RFNTZVblpUYW14SVpEQnJlVkZ0TVVsalJGWXdWRlZTZEZreWVIcE9WbWhLV1Zkb1MxZEdSa1pqTUhSMVVsaFdlbE13VGpSaVJsSjVUVmR3ZFdOSGFFNWFlbFV3WW0xNGJFOVVhRzlUU0VWeVVWaE5NV1ZZVWxSTlIyTTVVRk5KYzBsRFNtcGFRMGsyU1VOS2JHVlZjSGRaYlRGaFpHdHNjV0l5Wkd4bFZYQTJXa2N4VDFKSFNYbFZiWGhLWVcwNWJsTlhOVTlPVjBwMFZHeEdhbUpVYUhCVVJVNUNZVlpyZVdSSVFtRlJNR3N5VTFWT1MyVkdWblJXVkVKVFltczFjbGt3V2s1TmJVVjNaVVYwYW1Wc1NsaFpla0pyVFVaRmVGRnRlRmRUUlRWNVUxZHNNMW93YkhSV2FsSnFVVEJyTWxOVlVrcGxSVFZGVmxSV1RsWkdhekJVVlZKQ1l6QnNSRk50Y0dwTk1VWndWREpzUW1GWFNqVk5WelZQVmtaYVVGbDZRbTloYkZwelZsZHNUVkV3Um5CYVJXaHpaREZ3VkZOVVdrcFJNSEF6VjJ4b1MyVnRTWGxPVjJocFVUQnNlbE5WVGt0a2JVNUpWVzV3U21GdE9XNWFXR3hMWWxkSmVXVkhkR0ZYUlhCVlYyeGtUMlZXY0ZsVlYyeFFZVlZHY0ZSdGMzaFVNVlpIVjJ4YVZGSkhVa05VV0hCVFYyeEdWbFZVUmxoU1ZGWkhWV3RXVTFWV1VrWk9WVnBYVFZWd1UxUlhjRk5VVmxsNFdqSnNUVkV3Um5CWmVrcFhZVWRTU1ZSWGJGQmhWVVkwV214bmQyTXdiRVJUYlhoc1UwVkdjRlF5YkVKbFZURlZWVlJHVUZaRlZYbFVNRkpDWkRKYVVsQlVNR2xtVVQwOUlpd2dJbWx1Wm04aU9pQjdJbTl5WkdWeVNXUWlPaUFpWVc1aGRXeG1ZVzUxYTJadWIydHViVzF6TURZNWNXbzNOQ0lzSUNKaGNpSTZJREFzSUNKbGVIQWlPaUF5TVRRMU9URTJPREF3TENBaVkzSmxJam9nTVRRNE1UUXlOek00Tnl3Z0luTjJZMGxrSWpvZ0luTjVibU5RY204eElpd2dJbU56ZENJNklDSnZMV2MxTlU1elNHTldWU0lzSUNKemRtTkRiMlJsSWpvZ0luTjVibU5RY204aUxDQWlZMmxrSWpvZ0ltZHFaV295YmlJc0lDSjBlWEJsSWpvZ0luQmxjbk52Ym1Gc0lpd2dJbTl3ZEhNaU9pQjdJbVp2YkdSbGNsTmxZM0psZENJNklDSkJWMFJOVHpSRlUxTkJUbGhCV2xKVE1rMHlORlpCTmtkQlIxSlhWVFJRTlZZaUxDQWljMlZoZEhNaU9pQXhmWDBzSUNKbGVIQWlPaUF5TVRRMU9URTJPREF3ZlE9PSJ9</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Resilio Sync 是个同步工具，之前的时候用过一次，用来同步网友分享的电子书，电子书是来了很多，但是基本都没看过，后来就卸载了。&lt;/p&gt;
-&lt;p&gt;这次是在群晖上运行的。&lt;/p&gt;
-&lt;p&gt;Resilio sync 应该是第三方套件，很早之前就添加了这个库，也老看到这个套件
-      
-    
-    </summary>
-    
-      <category term="网络技术" scheme="https://www.oldzhou.com/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="sync" scheme="https://www.oldzhou.com/tags/sync/"/>
-    
-      <category term="密匙" scheme="https://www.oldzhou.com/tags/%E5%AF%86%E5%8C%99/"/>
     
   </entry>
   
